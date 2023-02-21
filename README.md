@@ -2,11 +2,11 @@
 It is a fashion web store to make your wardrobe fashionable
 <br>
 # Team Member
-Ragini Kaushal
-nikhil angolkar
-Faizal Siddiqui
-Devarshi Ojha
-Prince Kishorbhai Mendpara
+  ## Ragini Kaushal
+  ## nikhil angolkar
+  ## Faizal Siddiqui
+  ## Devarshi Ojha
+  ## Prince Kishorbhai Mendpara
 # FrontEnd
   react application
   
