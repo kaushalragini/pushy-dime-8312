@@ -10,12 +10,14 @@ import {
   Box,
   GridItem,
   VStack,
+  Hide,
+  Show,
 } from "@chakra-ui/react";
 import React from "react";
 import axios from "axios";
 import { useEffect } from "react";
 import { useState } from "react";
-import FilterDrower from "./FilterDrower";
+import Filter, { FilterDrower, Sort } from "./FilterDrower";
 
 async function getData() {
   try {
@@ -35,19 +37,32 @@ export default function Products() {
 
   return (
     <Stack border={"2px solid red"}>
-      <Heading>Prod</Heading>
+      <Heading position={""}>Products</Heading>
       <Grid
         gridTemplateColumns={{
           base: "repeat(2,1fr)",
-          sm: "repeat(3,1fr)",
-          md: "repeat(2,1fr)",
+          sm: "repeat(2,1fr)",
+          md: "repeat(3,1fr)",
           lg: "repeat(4,1fr)",
           xl: "repeat(5,1fr)",
         }}
+        position="relative"
+        top={"20px"}
       >
-        <GridItem rowSpan={50000} colSpan={1}>
-          <FilterDrower />
-        </GridItem>
+        <Hide below="lg">
+          <GridItem rowSpan={50000} colSpan={1}>
+            <Filter />
+          </GridItem>
+        </Hide>
+        <Show below="lg">
+          <Box position={"fixed"} top="40px" left="20px" zIndex={100}>
+            <FilterDrower />
+          </Box>
+        </Show>
+        <Box position={"fixed"} top="40px" right="0px" zIndex={100}>
+          <Sort />
+        </Box>
+
         {data.map((product) => (
           <Stack
             key={product.id}
@@ -69,27 +84,37 @@ export default function Products() {
             >
               ♥
             </Text>
-            <Stack as={Link} href="#">
+            <VStack as={Link} href="#">
               <Image src={product.images[0] || "/favicon.ico"} alt="products" />
               <Box
                 overflow={"hidden !important"}
                 display={"inline-block"}
                 whiteSpace="nowrap"
                 textOverflow={"ellipsis"}
-                w="200px"
+                w={{ base: "150px" }}
               >
-                <Text fontSize={"lg"} fontWeight="bold">
+                <Text
+                  fontSize={"lg"}
+                  fontWeight="bold"
+                  overflow={"hidden !important"}
+                  textOverflow={"ellipsis"}
+                >
                   {product.title}
                 </Text>
-                <Text>{product.subtitle}</Text>
+                <Text overflow={"hidden !important"} textOverflow={"ellipsis"}>
+                  {product.subtitle}
+                </Text>
               </Box>
               <Text fontWeight="bold">
                 ${product.discounted_price} - ${product.strike_price}
               </Text>
-            </Stack>
+            </VStack>
           </Stack>
         ))}
       </Grid>
+      <Text>
+        {">"} 1 2 3 4 {">"}
+      </Text>
     </Stack>
   );
 }
