@@ -18,64 +18,67 @@ import {
   AccordionPanel,
   AccordionIcon,
   Select,
+  Input,
 } from "@chakra-ui/react";
 import React from "react";
 import RangeSliderComp from "./RangeSlider";
-import { AiTwotoneFilter } from "react-icons/ai";
 
 export default function Filter() {
+  const filters = [
+    { title: "categeory", subtitles: ["men", "women", "boys", "girls"] },
+    { title: "brand", subtitles: ["AMIRI", "VERSACE", "BALENCIAGA", "MARNI"] },
+    { title: "size", subtitles: ["SM", "MD", "LG", "XL"] },
+  ];
+
+  const price = { title: "price", subtitles: [0, 499, 999, 1599, 1999] };
+
+  const handleClick = (main, sub) => {
+    console.log(main, sub);
+  };
+
   return (
     <>
-      <Stack
-        position="sticky"
-        top={0}
-        // overflowY="scroll"
-        h={"100vh"}
-        textAlign="left"
-      >
-        <Accordion defaultIndex={[0]} allowMultiple>
-          <AccordionItem>
+      <Stack position="absolute" top={0} h={"100vh"} p="10px" textAlign="left">
+        <Text>categeories {">"} mens</Text>
+        <Accordion defaultIndex={[0]} allowMultiple minW={"200px"}>
+          <Input placeholder="search for products" />
+          {filters.map((main) => (
+            <AccordionItem key={main.title}>
+              <AccordionButton>
+                <Box as="span" flex="1" textAlign="left" fontWeight={"bold"}>
+                  {main.title.toUpperCase()}
+                </Box>
+                <AccordionIcon />
+              </AccordionButton>
+              <AccordionPanel>
+                {main.subtitles.map((el) => (
+                  <div key={el}>
+                    <button onClick={() => handleClick(main.title, el)}>
+                      {el}
+                    </button>
+                    <br />
+                  </div>
+                ))}
+              </AccordionPanel>
+            </AccordionItem>
+          ))}
+
+          <AccordionItem key={price.title}>
             <AccordionButton>
               <Box as="span" flex="1" textAlign="left" fontWeight={"bold"}>
-                CATEGEORY
+                {price.title.toUpperCase()}
               </Box>
               <AccordionIcon />
             </AccordionButton>
-
-            <AccordionPanel pb={4}>
-              <Text>Cloathing</Text>
-              <Text>Shoes</Text>
-              <Text>Bags</Text>
-              <Text>Accessories</Text>
-            </AccordionPanel>
-          </AccordionItem>
-
-          <AccordionItem>
-            <AccordionButton>
-              <Box as="span" flex="1" textAlign="left" fontWeight={"bold"}>
-                SIZE
-              </Box>
-              <AccordionIcon />
-            </AccordionButton>
-
-            <AccordionPanel pb={4}>
-              <Text>SM</Text>
-              <Text>MD</Text>
-              <Text>LG</Text>
-              <Text>XL</Text>
-            </AccordionPanel>
-          </AccordionItem>
-
-          <AccordionItem>
-            <AccordionButton>
-              <Box as="span" flex="1" textAlign="left" fontWeight={"bold"}>
-                PRICE RANGE
-              </Box>
-              <AccordionIcon />
-            </AccordionButton>
-
-            <AccordionPanel pb={4}>
-              <RangeSliderComp />
+            <AccordionPanel>
+              {price.subtitles.map((el) => (
+                <div key={el}>
+                  <button onClick={() => handleClick(price.title, el)}>
+                    {el}
+                  </button>
+                  <br />
+                </div>
+              ))}
             </AccordionPanel>
           </AccordionItem>
         </Accordion>
@@ -102,7 +105,6 @@ export function FilterDrower() {
       >
         <DrawerOverlay />
         <DrawerContent>
-          <DrawerCloseButton />
           <DrawerHeader></DrawerHeader>
 
           <DrawerBody>
@@ -121,14 +123,22 @@ export function FilterDrower() {
 }
 
 export function Sort() {
+  const handleSort = (e) => {
+    console.log(e.target.value);
+  };
   return (
     <>
-      <Select textAlign={"right"} variant="unstyled" fontWeight={"bold"}>
-        <option>SORT</option>
-        <option>Price Low to High</option>
-        <option>Price High to Low </option>
-        <option>Price Low to High</option>
-        <option>Price Low to High</option>
+      <Select
+        textAlign={"right"}
+        variant="unstyled"
+        fontWeight={"bold"}
+        onChange={handleSort}
+      >
+        <option value={"all"}>SORT</option>
+        <option value={{ name: "name", asc: "asc" }}>A to Z</option>
+        <option value={["name", "desc"]}>Z to A</option>
+        <option value={["price", "asc"]}>Price Low to High</option>
+        <option value={["price", "desc"]}>Price High to Low </option>
       </Select>
     </>
   );
