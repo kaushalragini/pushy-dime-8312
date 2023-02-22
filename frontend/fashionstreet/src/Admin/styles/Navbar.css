@@ -1,0 +1,11 @@
+.nav-right{
+    display: flex;
+    gap:20px;
+    
+}
+@media screen and (max-width:544px) {
+    .Search-field{
+        display: none;
+    }
+
+}
