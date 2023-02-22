@@ -1,0 +1,1805 @@
+{
+  "catalogFeedType": "catalog_listing_page",
+  "enable": false,
+  "catalogs": [
+    {
+      "id": 1010678,
+      "name": "Zamaisha Rayon Tops & Tunics",
+      "category_id": 1020,
+      "sub_sub_category_name": "Tops & Tunics",
+      "min_catalog_price": 300,
+      "min_product_price": 300,
+      "description": "Stylish Women's Top",
+      "full_details": "Fabric: Rayon\nSleeve Length: Three-Quarter Sleeves\nPattern: Printed\nMultipack: 1\nSizes:\nXS,S,M,L,XL,XXL,XXXL,4XL\n\n\nDispatch: 1 Day",
+      "share_text": "Catalog Name:*Zamaisha Rayon Tops & Tunics*\nFabric: Rayon\nSleeve Length: Three-Quarter Sleeves\nPattern: Printed\nNet Quantity (N): 1\nSizes:\nS (Bust Size: 34 in, Length Size: 26 in) \nM (Bust Size: 36 in, Length Size: 26 in) \nL (Bust Size: 38 in, Length Size: 26 in) \nXL (Bust Size: 40 in, Length Size: 26 in) \nXXL (Bust Size: 42 in, Length Size: 26 in) \nXXXL (Bust Size: 46 in, Length Size: 26 in) \n\nDispatch: 2 Days\n\n*Proof of Safe Delivery! Click to know on Safety Standards of Delivery Partners- https://ltl.sh/y_nZrAV3",
+      "hot": false,
+      "type": "catalog",
+      "pre_booking": false,
+      "priority": 0,
+      "num_suppliers": 1,
+      "num_designs": 11,
+      "image": "https://images.meesho.com/images/catalogs/1010678/cover/1/2/4f606945f658324436bd4512ee270b9badd91efa8ebd32d382c8036c181a18e4ca8bb8902aebd81a7b9eb9541ab573aadd17e8cea554906aa3a001cf30308de5_512.jpg",
+      "collage_image": "https://images.meesho.com/images/catalogs/1010678/collages/1/1/4f606945f658324436bd4512ee270b9badd91efa8ebd32d382c8036c181a18e4ca8bb8902aebd81a7b9eb9541ab573aadd17e8cea554906aa3a001cf30308de5.jpg",
+      "image_aspect_ratio": 1.77,
+      "collage_image_aspect_ratio": 1.48,
+      "created": "2020-05-24 09:39:28",
+      "created_iso": "2020-05-24T09:39:28+0530",
+      "valid": true,
+      "trend": "",
+      "popular": false,
+      "has_mrp": true,
+      "is_added_to_wishlist": false,
+      "assured_details": {
+        "is_assured": false,
+        "message": "Best quality products from trusted suppliers."
+      },
+      "mall_verified": false,
+      "shipping_charges_adjustment": 68,
+      "story_images": [],
+      "text_image": "https://images.meesho.com/images/catalogs/1010678/sharetext/dynamic/8b06aaf661b4107e9c66a167e390d7ea.jpg",
+      "catalog_reviews_summary": {
+        "rating_count_map": {
+          "1": 1591,
+          "2": 1113,
+          "3": 2573,
+          "4": 4561,
+          "5": 8769
+        },
+        "average_rating": 4,
+        "absolute_average_rating": 5,
+        "average_rating_str": "",
+        "rating_scale": 5,
+        "review_count": 6213,
+        "rating_count": 18607
+      },
+      "shipping": { "charges": 0, "discount": 70 },
+      "shipping_2": { "charges": 0, "discount": 70 },
+      "tags": [],
+      "gray_tags": [],
+      "has_same_price_products": true,
+      "product_images": [
+        {
+          "id": 6356797,
+          "url": "https://images.meesho.com/images/products/6356797/b64d3_512.jpg"
+        },
+        {
+          "id": 6356792,
+          "url": "https://images.meesho.com/images/products/6356792/65a8f_512.jpg"
+        },
+        {
+          "id": 6356788,
+          "url": "https://images.meesho.com/images/products/6356788/964c1_512.jpg"
+        },
+        {
+          "id": 6356798,
+          "url": "https://images.meesho.com/images/products/6356798/51810_512.jpg"
+        },
+        {
+          "id": 6356793,
+          "url": "https://images.meesho.com/images/products/6356793/510a1_512.jpg"
+        },
+        {
+          "id": 6356795,
+          "url": "https://images.meesho.com/images/products/6356795/9804f_512.jpg"
+        },
+        {
+          "id": 6356794,
+          "url": "https://images.meesho.com/images/products/6356794/46483_512.jpg"
+        },
+        {
+          "id": 6356791,
+          "url": "https://images.meesho.com/images/products/6356791/b1df8_512.jpg"
+        },
+        {
+          "id": 6356790,
+          "url": "https://images.meesho.com/images/products/6356790/fbbc0_512.jpg"
+        },
+        {
+          "id": 6356796,
+          "url": "https://images.meesho.com/images/products/6356796/03d57_512.jpg"
+        },
+        {
+          "id": 174724983,
+          "url": "https://images.meesho.com/images/products/174724983/dqhu1_512.jpg"
+        }
+      ],
+      "activated": "2022-09-26 10:56:20",
+      "activated_iso": "2022-09-26T10:56:20+0530",
+      "num_shares": "0 Shares",
+      "margin": { "enabled": false },
+      "price_type_id": "premium_return_price",
+      "consumer_share_text": "Shop now on Meesho!\nhttps://www.meesho.com/s/p/3s8xp?utm_source=s",
+      "images": [
+        "https://images.meesho.com/images/products/6356797/b64d3_512.jpg"
+      ],
+      "product_id": "3s8xp",
+      "slug": "zamaisha-rayon-tops-tunics",
+      "session_id": "ctx_1_uid_24a0ed39-7617-4f98-8ce3-015a228c15ed_clpid_4582_t_1677002255126",
+      "original_product_id": 6356797,
+      "catalogId": 1010678
+    },
+    {
+      "id": 53417803,
+      "name": "Trendy Fashionista Women Tops & Tunics",
+      "category_id": 1020,
+      "sub_sub_category_name": "Tops & Tunics",
+      "min_catalog_price": 226,
+      "min_product_price": 226,
+      "description": "Trendy Fashionista Women Tops & Tunics",
+      "full_details": "Fabric: Lycra\nSleeve Length: Short Sleeves\nPattern: Ribbed\nNet Quantity (N): 1\nSizes:\nS (Bust Size: 30 in, Length Size: 17 in) \nL (Bust Size: 34 in, Length Size: 19 in) \nM (Bust Size: 32 in, Length Size: 18 in) \n\nDispatch: 2-2 Days",
+      "share_text": "Catalog Name:*Trendy Fashionista Women Tops & Tunics*\nFabric: Lycra\nSleeve Length: Short Sleeves\nPattern: Solid\nNet Quantity (N): 1\nSizes:\nXS, S (Bust Size: 30 in, Length Size: 17 in) \nM (Bust Size: 32 in, Length Size: 18 in) \nL (Bust Size: 34 in, Length Size: 19 in) \n\nDispatch: 2 Days\n\n*Proof of Safe Delivery! Click to know on Safety Standards of Delivery Partners- https://ltl.sh/y_nZrAV3",
+      "hot": false,
+      "type": "catalog",
+      "pre_booking": false,
+      "priority": 0,
+      "num_suppliers": 1,
+      "num_designs": 4,
+      "image": "https://images.meesho.com/images/catalogs/53417803/cover/1/2/049cb650b3684dd3e57cbaafe8aa08fbacb1a6f534d9711f6823521008d145a85f43b0b15dafac65d9c0d0ff906000f13cccd04cfe39730834f22f29fd9c107a_512.jpg",
+      "collage_image": "https://images.meesho.com/images/catalogs/53417803/collages/1/1/049cb650b3684dd3e57cbaafe8aa08fbacb1a6f534d9711f6823521008d145a85f43b0b15dafac65d9c0d0ff906000f13cccd04cfe39730834f22f29fd9c107a.jpg",
+      "image_aspect_ratio": 1.77,
+      "collage_image_aspect_ratio": 1.48,
+      "created": "2022-10-06 14:27:16",
+      "created_iso": "2022-10-06T14:27:16+0530",
+      "valid": true,
+      "trend": "",
+      "popular": false,
+      "has_mrp": true,
+      "is_added_to_wishlist": false,
+      "assured_details": {
+        "is_assured": true,
+        "message": "Best quality products from trusted suppliers."
+      },
+      "mall_verified": false,
+      "shipping_charges_adjustment": 61,
+      "story_images": [],
+      "text_image": "https://images.meesho.com/images/catalogs/53417803/sharetext/dynamic/6348d8abff9c7c0acaaeec5c5dde0ebf.jpg",
+      "catalog_reviews_summary": {
+        "rating_count_map": { "1": 27, "2": 26, "3": 59, "4": 101, "5": 259 },
+        "average_rating": 4.1,
+        "absolute_average_rating": 5,
+        "average_rating_str": "",
+        "rating_scale": 5,
+        "review_count": 64,
+        "rating_count": 472
+      },
+      "shipping": { "charges": 0, "discount": 70 },
+      "shipping_2": { "charges": 0, "discount": 70 },
+      "tags": [],
+      "gray_tags": [],
+      "has_same_price_products": true,
+      "product_images": [
+        {
+          "id": 175464619,
+          "url": "https://images.meesho.com/images/products/175464619/qfgns_512.jpg"
+        },
+        {
+          "id": 175464620,
+          "url": "https://images.meesho.com/images/products/175464620/sxndv_512.jpg"
+        },
+        {
+          "id": 175464621,
+          "url": "https://images.meesho.com/images/products/175464621/xrb8q_512.jpg"
+        },
+        {
+          "id": 175464622,
+          "url": "https://images.meesho.com/images/products/175464622/nyarn_512.jpg"
+        }
+      ],
+      "activated": "2022-10-06 20:05:56",
+      "activated_iso": "2022-10-06T20:05:56+0530",
+      "num_shares": "0 Shares",
+      "margin": { "enabled": false },
+      "price_type_id": "premium_return_price",
+      "consumer_share_text": "Shop now on Meesho!\nhttps://www.meesho.com/s/p/2wgtd7?utm_source=s",
+      "images": [
+        "https://images.meesho.com/images/products/175464619/qfgns_512.jpg"
+      ],
+      "product_id": "2wgtd7",
+      "slug": "trendy-fashionista-women-tops-tunics",
+      "session_id": "ctx_1_uid_24a0ed39-7617-4f98-8ce3-015a228c15ed_clpid_4582_t_1677002255126",
+      "original_product_id": 175464619,
+      "catalogId": 53417803
+    },
+    {
+      "id": 66836935,
+      "name": "Urbane Sensational Women Tops & Tunics",
+      "category_id": 1020,
+      "sub_sub_category_name": "Tops & Tunics",
+      "min_catalog_price": 298,
+      "min_product_price": 298,
+      "description": "Urbane Sensational Women Tops & Tunics",
+      "full_details": "Fabric: Poly Crepe\nSleeve Length: Short Sleeves\nPattern: Printed\nNet Quantity (N): 1\nSizes:\nS (Bust Size: 30 in, Length Size: 14 in) \nXL (Bust Size: 36 in, Length Size: 16 in) \nXS (Bust Size: 28 in, Length Size: 14 in) \nL (Bust Size: 34 in, Length Size: 15 in) \nM (Bust Size: 32 in, Length Size: 15 in) \n\nDispatch: 2-2 Days",
+      "share_text": "Catalog Name:*Urbane Sensational Women Tops & Tunics*\nFabric: Poly Crepe\nSleeve Length: Short Sleeves\nPattern: Printed\nNet Quantity (N): 1\nSizes:\nXS (Bust Size: 28 in, Length Size: 14 in) \nS (Bust Size: 30 in, Length Size: 14 in) \nM (Bust Size: 32 in, Length Size: 15 in) \nL (Bust Size: 34 in, Length Size: 15 in) \nXL (Bust Size: 36 in, Length Size: 16 in) \n\nDispatch: 2 Days\n\n*Proof of Safe Delivery! Click to know on Safety Standards of Delivery Partners- https://ltl.sh/y_nZrAV3",
+      "hot": false,
+      "type": "catalog",
+      "pre_booking": false,
+      "priority": 0,
+      "num_suppliers": 1,
+      "num_designs": 1,
+      "image": "https://images.meesho.com/images/catalogs/66836935/cover/1/2/355451b55fc65d9b06f015e3193f7001482accf7bc127b58ead82267fe65696977f1fafd4e8dee24b06c6fa638b5a39db0af0ba7d5fc5ac65f2f13702922ea69_512.jpg",
+      "collage_image": "https://images.meesho.com/images/catalogs/66836935/collages/1/1/355451b55fc65d9b06f015e3193f7001482accf7bc127b58ead82267fe65696977f1fafd4e8dee24b06c6fa638b5a39db0af0ba7d5fc5ac65f2f13702922ea69.jpg",
+      "image_aspect_ratio": 1.77,
+      "collage_image_aspect_ratio": 1.48,
+      "created": "2023-01-11 11:45:34",
+      "created_iso": "2023-01-11T11:45:34+0530",
+      "valid": true,
+      "trend": "",
+      "popular": false,
+      "has_mrp": true,
+      "is_added_to_wishlist": false,
+      "assured_details": {
+        "is_assured": false,
+        "message": "Best quality products from trusted suppliers."
+      },
+      "mall_verified": false,
+      "shipping_charges_adjustment": 68,
+      "story_images": [],
+      "text_image": "https://images.meesho.com/images/catalogs/66836935/sharetext/dynamic/fecebe7ac99aa78818ad2d6fea03d5bf.jpg",
+      "shipping": { "charges": 0, "discount": 70 },
+      "shipping_2": { "charges": 0, "discount": 70 },
+      "tags": [],
+      "gray_tags": [],
+      "ad": { "active": true, "tag": "Ad" },
+      "has_same_price_products": true,
+      "product_images": [
+        {
+          "id": 222404387,
+          "url": "https://images.meesho.com/images/products/222404387/75yp6_512.jpg"
+        }
+      ],
+      "activated": "2023-01-13 04:12:00",
+      "activated_iso": "2023-01-13T04:12:00+0530",
+      "num_shares": "0 Shares",
+      "margin": { "enabled": false },
+      "price_type_id": "premium_return_price",
+      "consumer_share_text": "Shop now on Meesho!\nhttps://www.meesho.com/s/p/3oewbn?utm_source=s",
+      "images": [
+        "https://images.meesho.com/images/products/222404387/75yp6_512.jpg"
+      ],
+      "product_id": "3oewbn",
+      "slug": "urbane-sensational-women-tops-tunics",
+      "isAdProduct": true,
+      "session_id": "ctx_1_uid_24a0ed39-7617-4f98-8ce3-015a228c15ed_clpid_4582_t_1677002255126",
+      "original_product_id": 222404387,
+      "catalogId": 66836935
+    },
+    {
+      "id": 35017318,
+      "name": "Classic Partywear Women Tops & Tunics",
+      "category_id": 1020,
+      "sub_sub_category_name": "Tops & Tunics",
+      "min_catalog_price": 269,
+      "min_product_price": 269,
+      "description": "Classic Partywear Women Tops & Tunics",
+      "full_details": "Fabric: Cotton Blend\nSleeve Length: Short Sleeves\nPattern: Self-Design\nNet Quantity (N): 1\nSizes:\nS (Bust Size: 36 in, Length Size: 18 in) \nXS (Bust Size: 34 in, Length Size: 17 in) \nL (Bust Size: 40 in, Length Size: 20 in) \nM (Bust Size: 38 in, Length Size: 19 in) \n\nDispatch: 2-3 Days",
+      "share_text": "Catalog Name:*Classic Partywear Women Tops & Tunics*\nFabric: Cotton Blend\nSleeve Length: Short Sleeves\nPattern: Solid\nNet Quantity (N): 1\nSizes:\nXS (Bust Size: 34 in, Length Size: 17 in) \nS (Bust Size: 36 in, Length Size: 18 in) \nM (Bust Size: 38 in, Length Size: 19 in) \nL (Bust Size: 40 in, Length Size: 20 in) \n\nDispatch: 1 Day\n\n*Proof of Safe Delivery! Click to know on Safety Standards of Delivery Partners- https://ltl.sh/y_nZrAV3",
+      "hot": false,
+      "type": "catalog",
+      "pre_booking": false,
+      "priority": 0,
+      "num_suppliers": 1,
+      "num_designs": 1,
+      "image": "https://images.meesho.com/images/catalogs/35017318/cover/1/2/a4b2261d19bb790f49dd0d8bc3da8dfc999d19446912521bf239ceb66227e10c5d8a923807157e49995af8682423988abc06b47eb6dccdc0f8e5a1c0cc43486a_512.jpg",
+      "collage_image": "https://images.meesho.com/images/catalogs/35017318/collages/1/1/a4b2261d19bb790f49dd0d8bc3da8dfc999d19446912521bf239ceb66227e10c5d8a923807157e49995af8682423988abc06b47eb6dccdc0f8e5a1c0cc43486a.jpg",
+      "image_aspect_ratio": 1.77,
+      "collage_image_aspect_ratio": 1.48,
+      "created": "2022-06-01 18:49:26",
+      "created_iso": "2022-06-01T18:49:26+0530",
+      "valid": true,
+      "trend": "",
+      "popular": false,
+      "has_mrp": true,
+      "is_added_to_wishlist": false,
+      "assured_details": {
+        "is_assured": false,
+        "message": "Best quality products from trusted suppliers."
+      },
+      "mall_verified": false,
+      "shipping_charges_adjustment": 68,
+      "story_images": [],
+      "text_image": "https://images.meesho.com/images/catalogs/35017318/sharetext/dynamic/812936423920c3b06560c5d52a04f4ce.jpg",
+      "catalog_reviews_summary": {
+        "rating_count_map": {
+          "1": 657,
+          "2": 493,
+          "3": 1161,
+          "4": 2220,
+          "5": 5705
+        },
+        "average_rating": 4.2,
+        "absolute_average_rating": 5,
+        "average_rating_str": "",
+        "rating_scale": 5,
+        "review_count": 1660,
+        "rating_count": 10236
+      },
+      "shipping": { "charges": 0, "discount": 70 },
+      "shipping_2": { "charges": 0, "discount": 70 },
+      "tags": [{ "name": "NEXT DAY DISPATCH" }],
+      "gray_tags": [],
+      "value_prop_tag": { "name": "NEXT DAY DISPATCH" },
+      "has_same_price_products": true,
+      "product_images": [
+        {
+          "id": 119785564,
+          "url": "https://images.meesho.com/images/products/119785564/gttza_512.jpg"
+        }
+      ],
+      "activated": "2022-06-02 02:10:10",
+      "activated_iso": "2022-06-02T02:10:10+0530",
+      "num_shares": "0 Shares",
+      "margin": { "enabled": false },
+      "price_type_id": "premium_return_price",
+      "consumer_share_text": "Shop now on Meesho!\nhttps://www.meesho.com/s/p/1zbf4s?utm_source=s",
+      "images": [
+        "https://images.meesho.com/images/products/119785564/gttza_512.jpg"
+      ],
+      "product_id": "1zbf4s",
+      "slug": "classic-partywear-women-tops-tunics",
+      "session_id": "ctx_1_uid_24a0ed39-7617-4f98-8ce3-015a228c15ed_clpid_4582_t_1677002255126",
+      "original_product_id": 119785564,
+      "catalogId": 35017318
+    },
+    {
+      "id": 51036744,
+      "name": "Classy Retro Women Tops & Tunics",
+      "category_id": 1020,
+      "sub_sub_category_name": "Tops & Tunics",
+      "min_catalog_price": 205,
+      "min_product_price": 205,
+      "description": "Classy Retro Women Tops & Tunics",
+      "full_details": "Fabric: Georgette / Crepe\nSizes:\nS, XL, L, M\nDispatch: 2-2 Days",
+      "share_text": "Catalog Name:*Classy Retro Women Tops & Tunics*\nFabric: Georgette / Crepe\nSleeve Length: Product Dependent\nPattern: Product Dependent\nSizes:\nS, M, L, XL\nDispatch: 1 Day\n\n*Proof of Safe Delivery! Click to know on Safety Standards of Delivery Partners- https://ltl.sh/y_nZrAV3",
+      "hot": false,
+      "type": "catalog",
+      "pre_booking": false,
+      "priority": 0,
+      "num_suppliers": 1,
+      "num_designs": 4,
+      "image": "https://images.meesho.com/images/catalogs/51036744/cover/1/2/1f2505ead32ff6d01a52da9a1323a9974fa3dc5b6c8da2153f8bf2902fff2060cd966dc7ce48000d58a787177cc7ef47195c6a5da5914ea73d5955546dd0067e_512.jpg",
+      "collage_image": "https://images.meesho.com/images/catalogs/51036744/collages/1/1/1f2505ead32ff6d01a52da9a1323a9974fa3dc5b6c8da2153f8bf2902fff2060cd966dc7ce48000d58a787177cc7ef47195c6a5da5914ea73d5955546dd0067e.jpg",
+      "image_aspect_ratio": 1.77,
+      "collage_image_aspect_ratio": 1.48,
+      "created": "2022-09-20 00:44:38",
+      "created_iso": "2022-09-20T00:44:38+0530",
+      "valid": true,
+      "trend": "",
+      "popular": false,
+      "has_mrp": true,
+      "is_added_to_wishlist": false,
+      "assured_details": {
+        "is_assured": false,
+        "message": "Best quality products from trusted suppliers."
+      },
+      "mall_verified": false,
+      "shipping_charges_adjustment": 60,
+      "story_images": [],
+      "text_image": "https://images.meesho.com/images/catalogs/51036744/sharetext/dynamic/ece1a352dc57115edf6453c1a07308a5.jpg",
+      "catalog_reviews_summary": {
+        "rating_count_map": { "1": 99, "2": 42, "3": 81, "4": 80, "5": 270 },
+        "average_rating": 3.7,
+        "absolute_average_rating": 4,
+        "average_rating_str": "",
+        "rating_scale": 5,
+        "review_count": 41,
+        "rating_count": 572
+      },
+      "shipping": { "charges": 0, "discount": 70 },
+      "shipping_2": { "charges": 0, "discount": 70 },
+      "tags": [{ "name": "NEXT DAY DISPATCH" }],
+      "gray_tags": [],
+      "value_prop_tag": { "name": "NEXT DAY DISPATCH" },
+      "has_same_price_products": true,
+      "product_images": [
+        {
+          "id": 168236193,
+          "url": "https://images.meesho.com/images/products/168236193/quq3w_512.jpg"
+        },
+        {
+          "id": 168236191,
+          "url": "https://images.meesho.com/images/products/168236191/nlyam_512.jpg"
+        },
+        {
+          "id": 168236190,
+          "url": "https://images.meesho.com/images/products/168236190/j9suw_512.jpg"
+        },
+        {
+          "id": 168236192,
+          "url": "https://images.meesho.com/images/products/168236192/pglxl_512.jpg"
+        }
+      ],
+      "activated": "2022-09-20 06:06:04",
+      "activated_iso": "2022-09-20T06:06:04+0530",
+      "num_shares": "0 Shares",
+      "margin": { "enabled": false },
+      "price_type_id": "premium_return_price",
+      "consumer_share_text": "Shop now on Meesho!\nhttps://www.meesho.com/s/p/2s5vvl?utm_source=s",
+      "images": [
+        "https://images.meesho.com/images/products/168236193/quq3w_512.jpg"
+      ],
+      "product_id": "2s5vvl",
+      "slug": "classy-retro-women-tops-tunics",
+      "session_id": "ctx_1_uid_24a0ed39-7617-4f98-8ce3-015a228c15ed_clpid_4582_t_1677002255126",
+      "original_product_id": 168236193,
+      "catalogId": 51036744
+    },
+    {
+      "id": 69929418,
+      "name": "Trendy Sensational Women Tops & Tunics",
+      "category_id": 1020,
+      "sub_sub_category_name": "Tops & Tunics",
+      "min_catalog_price": 251,
+      "min_product_price": 251,
+      "description": "Trendy Sensational Women Tops & Tunics",
+      "full_details": "Fabric: Crepe\nSleeve Length: Variable (Product Dependent)\nPattern: Checked\nNet Quantity (N): 1\nSizes:\nS, XL, L, M, XXL\nDispatch: 2-2 Days",
+      "share_text": "Catalog Name:*Trendy Sensational Women Tops & Tunics*\nFabric: Crepe\nSleeve Length: Product Dependent\nPattern: Product Dependent\nNet Quantity (N): 1\nSizes:\nS, M, L, XL, XXL\nDispatch: 2 Days\n\n*Proof of Safe Delivery! Click to know on Safety Standards of Delivery Partners- https://ltl.sh/y_nZrAV3",
+      "hot": false,
+      "type": "catalog",
+      "pre_booking": false,
+      "priority": 0,
+      "num_suppliers": 1,
+      "num_designs": 4,
+      "image": "https://images.meesho.com/images/catalogs/69929418/cover/1/2/fdac0723935b62599dfb12ffd69286514d188372ff1ca8a4d30b3f3dacf1df2353d4896baa9d5cd16cc801b43201ed3ed72b75b6f86ac2ffb82bd338d6c51477_512.jpg",
+      "collage_image": "https://images.meesho.com/images/catalogs/69929418/collages/1/1/fdac0723935b62599dfb12ffd69286514d188372ff1ca8a4d30b3f3dacf1df2353d4896baa9d5cd16cc801b43201ed3ed72b75b6f86ac2ffb82bd338d6c51477.jpg",
+      "image_aspect_ratio": 1.77,
+      "collage_image_aspect_ratio": 1.48,
+      "created": "2023-02-05 11:37:43",
+      "created_iso": "2023-02-05T11:37:43+0530",
+      "valid": true,
+      "trend": "",
+      "popular": false,
+      "has_mrp": true,
+      "is_added_to_wishlist": false,
+      "assured_details": {
+        "is_assured": false,
+        "message": "Best quality products from trusted suppliers."
+      },
+      "mall_verified": false,
+      "shipping_charges_adjustment": 61,
+      "story_images": [],
+      "text_image": "https://images.meesho.com/images/catalogs/69929418/sharetext/dynamic/080af20c5a997ad8b12e4e4a20b560bc.jpg",
+      "supplier_reviews_summary": {
+        "rating_count_map": { "1": 31, "2": 19, "3": 17, "4": 16, "5": 51 },
+        "average_rating": 3.3,
+        "absolute_average_rating": 3,
+        "average_rating_str": "",
+        "rating_scale": 5,
+        "review_count": 20,
+        "rating_count": 134
+      },
+      "shipping": { "charges": 0, "discount": 70 },
+      "shipping_2": { "charges": 0, "discount": 70 },
+      "tags": [],
+      "gray_tags": [],
+      "ad": { "active": true, "tag": "Ad" },
+      "has_same_price_products": true,
+      "product_images": [
+        {
+          "id": 233194041,
+          "url": "https://images.meesho.com/images/products/233194041/pjqop_512.jpg"
+        },
+        {
+          "id": 233194043,
+          "url": "https://images.meesho.com/images/products/233194043/9dzdv_512.jpg"
+        },
+        {
+          "id": 233194044,
+          "url": "https://images.meesho.com/images/products/233194044/rofif_512.jpg"
+        },
+        {
+          "id": 233194045,
+          "url": "https://images.meesho.com/images/products/233194045/olfll_512.jpg"
+        }
+      ],
+      "activated": "2023-02-05 11:44:28",
+      "activated_iso": "2023-02-05T11:44:28+0530",
+      "num_shares": "0 Shares",
+      "margin": { "enabled": false },
+      "price_type_id": "premium_return_price",
+      "consumer_share_text": "Shop now on Meesho!\nhttps://www.meesho.com/s/p/3uu5o9?utm_source=s",
+      "images": [
+        "https://images.meesho.com/images/products/233194041/pjqop_512.jpg"
+      ],
+      "product_id": "3uu5o9",
+      "slug": "trendy-sensational-women-tops-tunics",
+      "isAdProduct": true,
+      "session_id": "ctx_1_uid_24a0ed39-7617-4f98-8ce3-015a228c15ed_clpid_4582_t_1677002255126",
+      "original_product_id": 233194041,
+      "catalogId": 69929418
+    },
+    {
+      "id": 41457681,
+      "name": "Trendy Retro Women Tops & Tunics",
+      "category_id": 1020,
+      "sub_sub_category_name": "Tops & Tunics",
+      "min_catalog_price": 210,
+      "min_product_price": 210,
+      "description": "Trendy Retro Women Tops & Tunics",
+      "full_details": "Fabric: Lycra\nNet Quantity (N): 1\nSizes:\nL, M\nDispatch: 2-2 Days",
+      "share_text": "Catalog Name:*Trendy Retro Women Tops & Tunics*\nFabric: Cotton Blend\nSleeve Length: Sleeveless\nPattern: Solid\nNet Quantity (N): 1\nSizes:\nM, L\nDispatch: 2 Days\n\n*Proof of Safe Delivery! Click to know on Safety Standards of Delivery Partners- https://ltl.sh/y_nZrAV3",
+      "hot": false,
+      "type": "catalog",
+      "pre_booking": false,
+      "priority": 0,
+      "num_suppliers": 1,
+      "num_designs": 9,
+      "image": "https://images.meesho.com/images/catalogs/41457681/cover/1/2/06cb1f9bf84c9eb4afcbc6cd60978a4943936a489bc7dc42611e3a6ad1439fb9d9f0210b501367374a0a5316f54668ecc3920d0864d35cb9d7e9438c276ccbb6_512.jpg",
+      "collage_image": "https://images.meesho.com/images/catalogs/41457681/collages/1/1/06cb1f9bf84c9eb4afcbc6cd60978a4943936a489bc7dc42611e3a6ad1439fb9d9f0210b501367374a0a5316f54668ecc3920d0864d35cb9d7e9438c276ccbb6.jpg",
+      "image_aspect_ratio": 1.77,
+      "collage_image_aspect_ratio": 1.48,
+      "created": "2022-07-14 13:15:39",
+      "created_iso": "2022-07-14T13:15:39+0530",
+      "valid": true,
+      "trend": "",
+      "popular": false,
+      "has_mrp": true,
+      "is_added_to_wishlist": false,
+      "assured_details": {
+        "is_assured": false,
+        "message": "Best quality products from trusted suppliers."
+      },
+      "mall_verified": false,
+      "shipping_charges_adjustment": 60,
+      "story_images": [],
+      "text_image": "https://images.meesho.com/images/catalogs/41457681/sharetext/dynamic/e7bafa81bd66dd1abbf81112286d6fa7.jpg",
+      "catalog_reviews_summary": {
+        "rating_count_map": { "1": 58, "2": 42, "3": 79, "4": 118, "5": 342 },
+        "average_rating": 4,
+        "absolute_average_rating": 5,
+        "average_rating_str": "",
+        "rating_scale": 5,
+        "review_count": 81,
+        "rating_count": 639
+      },
+      "shipping": { "charges": 0, "discount": 70 },
+      "shipping_2": { "charges": 0, "discount": 70 },
+      "tags": [],
+      "gray_tags": [],
+      "has_same_price_products": true,
+      "product_images": [
+        {
+          "id": 139787905,
+          "url": "https://images.meesho.com/images/products/139787905/020mg_512.jpg"
+        },
+        {
+          "id": 139787910,
+          "url": "https://images.meesho.com/images/products/139787910/cvgcb_512.jpg"
+        },
+        {
+          "id": 139787909,
+          "url": "https://images.meesho.com/images/products/139787909/qljsq_512.jpg"
+        },
+        {
+          "id": 139787904,
+          "url": "https://images.meesho.com/images/products/139787904/t0k0d_512.jpg"
+        },
+        {
+          "id": 139787907,
+          "url": "https://images.meesho.com/images/products/139787907/jjsgl_512.jpg"
+        },
+        {
+          "id": 139787912,
+          "url": "https://images.meesho.com/images/products/139787912/2hikc_512.jpg"
+        },
+        {
+          "id": 139787908,
+          "url": "https://images.meesho.com/images/products/139787908/yuova_512.jpg"
+        },
+        {
+          "id": 139787911,
+          "url": "https://images.meesho.com/images/products/139787911/bka3w_512.jpg"
+        },
+        {
+          "id": 139787906,
+          "url": "https://images.meesho.com/images/products/139787906/mkgsf_512.jpg"
+        }
+      ],
+      "activated": "2022-07-14 22:10:26",
+      "activated_iso": "2022-07-14T22:10:26+0530",
+      "num_shares": "0 Shares",
+      "margin": { "enabled": false },
+      "price_type_id": "premium_return_price",
+      "consumer_share_text": "Shop now on Meesho!\nhttps://www.meesho.com/s/p/2b851d?utm_source=s",
+      "images": [
+        "https://images.meesho.com/images/products/139787905/020mg_512.jpg"
+      ],
+      "product_id": "2b851d",
+      "slug": "trendy-retro-women-tops-tunics",
+      "session_id": "ctx_1_uid_24a0ed39-7617-4f98-8ce3-015a228c15ed_clpid_4582_t_1677002255126",
+      "original_product_id": 139787905,
+      "catalogId": 41457681
+    },
+    {
+      "id": 34640021,
+      "name": "Classic Elegant Women Tops & Tunics",
+      "category_id": 1020,
+      "sub_sub_category_name": "Tops & Tunics",
+      "min_catalog_price": 311,
+      "min_product_price": 311,
+      "description": "Classic Elegant Women Tops & Tunics",
+      "full_details": "Fabric: Poly Crepe\nSleeve Length: Sleeveless\nSizes:\nS, XL, XS, L, M\nDispatch: 2-3 Days",
+      "share_text": "Catalog Name:*Classic Elegant Women Tops & Tunics*\nFabric: Poly Crepe\nSleeve Length: Sleeveless\nPattern: Solid\nNet Quantity (N): 1\nSizes:\nXS, S, M, L, XL\nDispatch: 2 Days\n\n*Proof of Safe Delivery! Click to know on Safety Standards of Delivery Partners- https://ltl.sh/y_nZrAV3",
+      "hot": false,
+      "type": "catalog",
+      "pre_booking": false,
+      "priority": 0,
+      "num_suppliers": 1,
+      "num_designs": 4,
+      "image": "https://images.meesho.com/images/catalogs/34640021/cover/1/2/b7ad3d5976c89f1e2ab59312d4908ff59280926fe43f7136342f2aaff7793ecf42d7f5da7d76b92ec655b40b4d87a67a5cdf027ad4e5334ce757bea0d960a4ae_512.jpg",
+      "collage_image": "https://images.meesho.com/images/catalogs/34640021/collages/1/1/b7ad3d5976c89f1e2ab59312d4908ff59280926fe43f7136342f2aaff7793ecf42d7f5da7d76b92ec655b40b4d87a67a5cdf027ad4e5334ce757bea0d960a4ae.jpg",
+      "image_aspect_ratio": 1.77,
+      "collage_image_aspect_ratio": 1.48,
+      "created": "2022-05-29 14:24:43",
+      "created_iso": "2022-05-29T14:24:43+0530",
+      "valid": true,
+      "trend": "",
+      "popular": false,
+      "has_mrp": true,
+      "is_added_to_wishlist": false,
+      "assured_details": {
+        "is_assured": true,
+        "message": "Best quality products from trusted suppliers."
+      },
+      "mall_verified": false,
+      "shipping_charges_adjustment": 68,
+      "story_images": [],
+      "text_image": "https://images.meesho.com/images/catalogs/34640021/sharetext/dynamic/bad7f466dab43214f89148a72479ba00.jpg",
+      "catalog_reviews_summary": {
+        "rating_count_map": {
+          "1": 662,
+          "2": 396,
+          "3": 900,
+          "4": 1677,
+          "5": 4246
+        },
+        "average_rating": 4.1,
+        "absolute_average_rating": 5,
+        "average_rating_str": "",
+        "rating_scale": 5,
+        "review_count": 1318,
+        "rating_count": 7881
+      },
+      "shipping": { "charges": 0, "discount": 70 },
+      "shipping_2": { "charges": 0, "discount": 70 },
+      "tags": [],
+      "gray_tags": [],
+      "has_same_price_products": true,
+      "product_images": [
+        {
+          "id": 118681536,
+          "url": "https://images.meesho.com/images/products/118681536/i8bf2_512.jpg"
+        },
+        {
+          "id": 118681533,
+          "url": "https://images.meesho.com/images/products/118681533/cidsd_512.jpg"
+        },
+        {
+          "id": 118681534,
+          "url": "https://images.meesho.com/images/products/118681534/qku0g_512.jpg"
+        },
+        {
+          "id": 118681535,
+          "url": "https://images.meesho.com/images/products/118681535/7ixcz_512.jpg"
+        }
+      ],
+      "activated": "2022-05-29 20:08:38",
+      "activated_iso": "2022-05-29T20:08:38+0530",
+      "num_shares": "0 Shares",
+      "margin": { "enabled": false },
+      "price_type_id": "premium_return_price",
+      "consumer_share_text": "Shop now on Meesho!\nhttps://www.meesho.com/s/p/1ynr9c?utm_source=s",
+      "images": [
+        "https://images.meesho.com/images/products/118681536/i8bf2_512.jpg"
+      ],
+      "product_id": "1ynr9c",
+      "slug": "classic-elegant-women-tops-tunics",
+      "session_id": "ctx_1_uid_24a0ed39-7617-4f98-8ce3-015a228c15ed_clpid_4582_t_1677002255126",
+      "original_product_id": 118681536,
+      "catalogId": 34640021
+    },
+    {
+      "id": 70868260,
+      "name": "Fancy Fashionable Women Tops & Tunics",
+      "category_id": 1020,
+      "sub_sub_category_name": "Tops & Tunics",
+      "min_catalog_price": 190,
+      "min_product_price": 190,
+      "description": "Fancy Fashionable Women Tops & Tunics",
+      "full_details": "Fabric: Crepe\nSleeve Length: Three-Quarter Sleeves\nPattern: Printed\nNet Quantity (N): 1\nSizes:\nS, XL, L, M\nDispatch: 2-2 Days",
+      "share_text": "Catalog Name:*Fancy Fashionable Women Tops & Tunics*\nFabric: Crepe\nSleeve Length: Three-Quarter Sleeves\nPattern: Printed\nNet Quantity (N): 1\nSizes:\nS, M, L, XL\nDispatch: 2 Days\n\n*Proof of Safe Delivery! Click to know on Safety Standards of Delivery Partners- https://ltl.sh/y_nZrAV3",
+      "hot": false,
+      "type": "catalog",
+      "pre_booking": false,
+      "priority": 0,
+      "num_suppliers": 1,
+      "num_designs": 1,
+      "image": "https://images.meesho.com/images/catalogs/70868260/cover/1/2/2696ee62988b62503f409951a4889ee57dde7bc469b1a92560d4493d06cad70c336245e58f60906258dc00b04ea05938db3b664ebe0cb20ce18abf06d89b437b_512.jpg",
+      "collage_image": "https://images.meesho.com/images/catalogs/70868260/collages/1/1/2696ee62988b62503f409951a4889ee57dde7bc469b1a92560d4493d06cad70c336245e58f60906258dc00b04ea05938db3b664ebe0cb20ce18abf06d89b437b.jpg",
+      "image_aspect_ratio": 1.77,
+      "collage_image_aspect_ratio": 1.48,
+      "created": "2023-02-11 14:18:52",
+      "created_iso": "2023-02-11T14:18:52+0530",
+      "valid": true,
+      "trend": "",
+      "popular": false,
+      "has_mrp": true,
+      "is_added_to_wishlist": false,
+      "assured_details": {
+        "is_assured": false,
+        "message": "Best quality products from trusted suppliers."
+      },
+      "mall_verified": false,
+      "shipping_charges_adjustment": 60,
+      "story_images": [],
+      "text_image": "https://images.meesho.com/images/catalogs/70868260/sharetext/dynamic/c785d2abf5a5a791ad5a9fc489862531.jpg",
+      "supplier_reviews_summary": {
+        "rating_count_map": { "1": 35, "2": 15, "3": 24, "4": 24, "5": 66 },
+        "average_rating": 3.4,
+        "absolute_average_rating": 3,
+        "average_rating_str": "",
+        "rating_scale": 5,
+        "review_count": 27,
+        "rating_count": 164
+      },
+      "shipping": { "charges": 0, "discount": 70 },
+      "shipping_2": { "charges": 0, "discount": 70 },
+      "tags": [{ "name": "NEXT DAY DISPATCH" }],
+      "gray_tags": [],
+      "value_prop_tag": { "name": "NEXT DAY DISPATCH" },
+      "ad": { "active": true, "tag": "Ad" },
+      "has_same_price_products": true,
+      "product_images": [
+        {
+          "id": 236548657,
+          "url": "https://images.meesho.com/images/products/236548657/srb7n_512.jpg"
+        }
+      ],
+      "activated": "2023-02-11 14:23:54",
+      "activated_iso": "2023-02-11T14:23:54+0530",
+      "num_shares": "0 Shares",
+      "margin": { "enabled": false },
+      "price_type_id": "premium_return_price",
+      "consumer_share_text": "Shop now on Meesho!\nhttps://www.meesho.com/s/p/3wu241?utm_source=s",
+      "images": [
+        "https://images.meesho.com/images/products/236548657/srb7n_512.jpg"
+      ],
+      "product_id": "3wu241",
+      "slug": "fancy-fashionable-women-tops-tunics",
+      "isAdProduct": true,
+      "session_id": "ctx_1_uid_24a0ed39-7617-4f98-8ce3-015a228c15ed_clpid_4582_t_1677002255126",
+      "original_product_id": 236548657,
+      "catalogId": 70868260
+    },
+    {
+      "id": 19238396,
+      "name": "Pretty Latest Women Tops & Tunics",
+      "category_id": 1020,
+      "sub_sub_category_name": "Tops & Tunics",
+      "min_catalog_price": 177,
+      "min_product_price": 177,
+      "max_product_discount": 10,
+      "original_price": 196,
+      "description": "Pretty Latest Women Tops & Tunics",
+      "full_details": "Fabric: Acrylic\nSleeve Length: Long Sleeves\nPattern: Solid\nMultipack: 1\nSizes:\nS (Bust Size: 15 in, Length Size: 16 in) \nXS (Bust Size: 15 in, Length Size: 16 in) \nL (Bust Size: 16 in, Length Size: 18 in) \nM (Bust Size: 16 in, Length Size: 17 in) \n",
+      "share_text": "Catalog Name:*Pretty Latest Women Tops & Tunics*\nFabric: Acrylic\nSleeve Length: Long Sleeves\nPattern: Solid\nNet Quantity (N): 1\nSizes:\nXS (Bust Size: 15 in, Length Size: 16 in) \nS (Bust Size: 15 in, Length Size: 16 in) \nM (Bust Size: 16 in, Length Size: 17 in) \nL (Bust Size: 16 in, Length Size: 18 in) \n\nDispatch: 2 Days\n\n*Proof of Safe Delivery! Click to know on Safety Standards of Delivery Partners- https://ltl.sh/y_nZrAV3",
+      "hot": false,
+      "type": "catalog",
+      "pre_booking": false,
+      "priority": 0,
+      "num_suppliers": 1,
+      "num_designs": 8,
+      "image": "https://images.meesho.com/images/catalogs/19238396/cover/1/2/4e92334de2232d6046d08311bcc42c0eb748df53efba434c799c5922a37cb9f07b49ed473a5b9b098bef658d0b74b6f71cc649d07725343bf4e8d80cfcc10c8e_512.jpg",
+      "collage_image": "https://images.meesho.com/images/catalogs/19238396/collages/1/1/4e92334de2232d6046d08311bcc42c0eb748df53efba434c799c5922a37cb9f07b49ed473a5b9b098bef658d0b74b6f71cc649d07725343bf4e8d80cfcc10c8e.jpg",
+      "image_aspect_ratio": 1.77,
+      "collage_image_aspect_ratio": 1.48,
+      "created": "2022-01-07 19:04:21",
+      "created_iso": "2022-01-07T19:04:21+0530",
+      "valid": true,
+      "trend": "",
+      "popular": false,
+      "has_mrp": true,
+      "is_added_to_wishlist": false,
+      "assured_details": {
+        "is_assured": false,
+        "message": "Best quality products from trusted suppliers."
+      },
+      "mall_verified": false,
+      "shipping_charges_adjustment": 60,
+      "story_images": [],
+      "text_image": "https://images.meesho.com/images/catalogs/19238396/sharetext/dynamic/83024fb59ebd5293abc71cc6589f4b78.jpg",
+      "catalog_reviews_summary": {
+        "rating_count_map": {
+          "1": 909,
+          "2": 495,
+          "3": 801,
+          "4": 963,
+          "5": 3179
+        },
+        "average_rating": 3.8,
+        "absolute_average_rating": 4,
+        "average_rating_str": "",
+        "rating_scale": 5,
+        "review_count": 880,
+        "rating_count": 6347
+      },
+      "shipping": { "charges": 0, "discount": 70 },
+      "shipping_2": { "charges": 0, "discount": 70 },
+      "tags": [],
+      "gray_tags": [],
+      "deal": {
+        "id": 0,
+        "bg_color": "#F64976",
+        "logo_text": "Daily Deals",
+        "name": "",
+        "start_time": 1676968500,
+        "end_time": 1677054599,
+        "server_time": 1677002294,
+        "icon_image": "https://images.meesho.com/images/marketing/1657272929894.png",
+        "text_color": "#F64976",
+        "deal_price": {
+          "price": 177,
+          "shipping": { "charges": 0, "discount": 70 },
+          "shipping_2": { "charges": 0, "discount": 70 },
+          "discount": { "type": "percent", "amount": 10 },
+          "original_price": 196
+        },
+        "original_price": {
+          "price": 190,
+          "shipping": { "charges": 0, "discount": 70 },
+          "shipping_2": { "charges": 0, "discount": 70 }
+        }
+      },
+      "has_same_price_products": true,
+      "product_images": [
+        {
+          "id": 70515827,
+          "url": "https://images.meesho.com/images/products/70515827/nstrd_512.jpg"
+        },
+        {
+          "id": 70515822,
+          "url": "https://images.meesho.com/images/products/70515822/pxudv_512.jpg"
+        },
+        {
+          "id": 70515824,
+          "url": "https://images.meesho.com/images/products/70515824/gc6uu_512.jpg"
+        },
+        {
+          "id": 70515825,
+          "url": "https://images.meesho.com/images/products/70515825/pchid_512.jpg"
+        },
+        {
+          "id": 70515828,
+          "url": "https://images.meesho.com/images/products/70515828/tvryf_512.jpg"
+        },
+        {
+          "id": 70515821,
+          "url": "https://images.meesho.com/images/products/70515821/ufaqe_512.jpg"
+        },
+        {
+          "id": 70515823,
+          "url": "https://images.meesho.com/images/products/70515823/z5kbr_512.jpg"
+        },
+        {
+          "id": 70515826,
+          "url": "https://images.meesho.com/images/products/70515826/3ztbl_512.jpg"
+        }
+      ],
+      "activated": "2022-01-08 03:08:47",
+      "activated_iso": "2022-01-08T03:08:47+0530",
+      "num_shares": "0 Shares",
+      "margin": { "enabled": false },
+      "price_type_id": "premium_return_price",
+      "consumer_share_text": "Shop now on Meesho!\nhttps://www.meesho.com/s/p/15zecz?utm_source=s",
+      "images": [
+        "https://images.meesho.com/images/products/70515827/nstrd_512.jpg"
+      ],
+      "product_id": "15zecz",
+      "slug": "pretty-latest-women-tops-tunics",
+      "session_id": "ctx_1_uid_24a0ed39-7617-4f98-8ce3-015a228c15ed_clpid_4582_t_1677002255126",
+      "original_product_id": 70515827,
+      "catalogId": 19238396
+    },
+    {
+      "id": 56915996,
+      "name": "Urbane Fashionista Women Tops & Tunics",
+      "category_id": 1020,
+      "sub_sub_category_name": "Tops & Tunics",
+      "min_catalog_price": 256,
+      "min_product_price": 256,
+      "description": "Urbane Fashionista Women Tops & Tunics",
+      "full_details": "Fabric: Rayon\nSleeve Length: Three-Quarter Sleeves\nPattern: Embroidered\nNet Quantity (N): 1\nSizes:\nS, XL, XS, L, M, XXL\nDispatch: 2-2 Days",
+      "share_text": "Catalog Name:*Urbane Fashionista Women Tops & Tunics*\nFabric: Rayon\nSleeve Length: Three-Quarter Sleeves\nPattern: Embroidered\nNet Quantity (N): 1\nSizes:\nXS, S, M, L, XL, XXL\nDispatch: 1 Day\n\n*Proof of Safe Delivery! Click to know on Safety Standards of Delivery Partners- https://ltl.sh/y_nZrAV3",
+      "hot": false,
+      "type": "catalog",
+      "pre_booking": false,
+      "priority": 0,
+      "num_suppliers": 1,
+      "num_designs": 5,
+      "image": "https://images.meesho.com/images/catalogs/56915996/cover/1/2/226e2f9c3205b4af4579cc8c41a7c9ce0b33a37a5cacf33701c35537e0b3d7962e0fa497a8b3af8f93ad55a172519274e5201b076b2cbe0b851e2e2fe19442ba_512.jpg",
+      "collage_image": "https://images.meesho.com/images/catalogs/56915996/collages/1/1/226e2f9c3205b4af4579cc8c41a7c9ce0b33a37a5cacf33701c35537e0b3d7962e0fa497a8b3af8f93ad55a172519274e5201b076b2cbe0b851e2e2fe19442ba.jpg",
+      "image_aspect_ratio": 1.77,
+      "collage_image_aspect_ratio": 1.48,
+      "created": "2022-11-06 08:45:07",
+      "created_iso": "2022-11-06T08:45:07+0530",
+      "valid": true,
+      "trend": "",
+      "popular": false,
+      "has_mrp": true,
+      "is_added_to_wishlist": false,
+      "assured_details": {
+        "is_assured": true,
+        "message": "Best quality products from trusted suppliers."
+      },
+      "mall_verified": false,
+      "shipping_charges_adjustment": 61,
+      "story_images": [],
+      "text_image": "https://images.meesho.com/images/catalogs/56915996/sharetext/dynamic/b2edb14b26fda7ba618d6bb732dce441.jpg",
+      "catalog_reviews_summary": {
+        "rating_count_map": { "1": 60, "2": 43, "3": 114, "4": 184, "5": 473 },
+        "average_rating": 4.1,
+        "absolute_average_rating": 5,
+        "average_rating_str": "",
+        "rating_scale": 5,
+        "review_count": 78,
+        "rating_count": 874
+      },
+      "shipping": { "charges": 0, "discount": 70 },
+      "shipping_2": { "charges": 0, "discount": 70 },
+      "tags": [{ "name": "NEXT DAY DISPATCH" }],
+      "gray_tags": [],
+      "value_prop_tag": { "name": "NEXT DAY DISPATCH" },
+      "has_same_price_products": true,
+      "product_images": [
+        {
+          "id": 187199839,
+          "url": "https://images.meesho.com/images/products/187199839/hs5zv_512.jpg"
+        },
+        {
+          "id": 187199840,
+          "url": "https://images.meesho.com/images/products/187199840/okrjj_512.jpg"
+        },
+        {
+          "id": 187199841,
+          "url": "https://images.meesho.com/images/products/187199841/thb4a_512.jpg"
+        },
+        {
+          "id": 187199843,
+          "url": "https://images.meesho.com/images/products/187199843/8e609_512.jpg"
+        },
+        {
+          "id": 187199844,
+          "url": "https://images.meesho.com/images/products/187199844/ebnut_512.jpg"
+        }
+      ],
+      "activated": "2022-11-06 14:05:22",
+      "activated_iso": "2022-11-06T14:05:22+0530",
+      "num_shares": "0 Shares",
+      "margin": { "enabled": false },
+      "price_type_id": "premium_return_price",
+      "consumer_share_text": "Shop now on Meesho!\nhttps://www.meesho.com/s/p/33gcbj?utm_source=s",
+      "images": [
+        "https://images.meesho.com/images/products/187199839/hs5zv_512.jpg"
+      ],
+      "product_id": "33gcbj",
+      "slug": "urbane-fashionista-women-tops-tunics",
+      "session_id": "ctx_1_uid_24a0ed39-7617-4f98-8ce3-015a228c15ed_clpid_4582_t_1677002255126",
+      "original_product_id": 187199839,
+      "catalogId": 56915996
+    },
+    {
+      "id": 2500552,
+      "name": "Trendy Fabulous Women Tops & Tunics",
+      "category_id": 1020,
+      "sub_sub_category_name": "Tops & Tunics",
+      "min_catalog_price": 261,
+      "min_product_price": 261,
+      "description": "Trendy Fabulous Women Tops & Tunics",
+      "full_details": "Fabric: Crepe\nSleeve Length: Three-Quarter Sleeves\nPattern: Printed\nMultipack: Variable (Product Dependent)\nSizes:\nS, XL, L, XXL, M\nDispatch: 2-3 Days",
+      "share_text": "Catalog Name:*Trendy Fabulous Women Tops & Tunics*\nFabric: Crepe\nSleeve Length: Three-Quarter Sleeves\nPattern: Printed\nNet Quantity (N): 2\nSizes:\nS, M, L, XL, XXL\nDispatch: 2 Days\n\n*Proof of Safe Delivery! Click to know on Safety Standards of Delivery Partners- https://ltl.sh/y_nZrAV3",
+      "hot": false,
+      "type": "catalog",
+      "pre_booking": false,
+      "priority": 0,
+      "num_suppliers": 1,
+      "num_designs": 2,
+      "image": "https://images.meesho.com/images/catalogs/2500552/cover/1/2/f0c49558cb70fb9704e628ae023ada440a0918bd55430bb673092dc6e057c9ae94820165fd2b99c4aa85e0e238ebac3b252d5adba54d926a845ee3eb5298bbda_512.jpg",
+      "collage_image": "https://images.meesho.com/images/catalogs/2500552/collages/1/1/f0c49558cb70fb9704e628ae023ada440a0918bd55430bb673092dc6e057c9ae94820165fd2b99c4aa85e0e238ebac3b252d5adba54d926a845ee3eb5298bbda.jpg",
+      "image_aspect_ratio": 1.77,
+      "collage_image_aspect_ratio": 1.48,
+      "created": "2020-12-03 16:29:20",
+      "created_iso": "2020-12-03T16:29:20+0530",
+      "valid": true,
+      "trend": "",
+      "popular": false,
+      "has_mrp": true,
+      "is_added_to_wishlist": false,
+      "assured_details": {
+        "is_assured": false,
+        "message": "Best quality products from trusted suppliers."
+      },
+      "mall_verified": false,
+      "shipping_charges_adjustment": 61,
+      "story_images": [],
+      "text_image": "https://images.meesho.com/images/catalogs/2500552/sharetext/dynamic/cc316b4c81c5aecd24a5babfe81e4c6d.jpg",
+      "catalog_reviews_summary": {
+        "rating_count_map": { "1": 9, "2": 5, "3": 6, "4": 11, "5": 18 },
+        "average_rating": 3.5,
+        "absolute_average_rating": 4,
+        "average_rating_str": "",
+        "rating_scale": 5,
+        "review_count": 15,
+        "rating_count": 49
+      },
+      "shipping": { "charges": 0, "discount": 70 },
+      "shipping_2": { "charges": 0, "discount": 70 },
+      "tags": [],
+      "gray_tags": [],
+      "ad": { "active": true, "tag": "Ad" },
+      "has_same_price_products": true,
+      "product_images": [
+        {
+          "id": 12870623,
+          "url": "https://images.meesho.com/images/products/12870623/08a95_512.jpg"
+        },
+        {
+          "id": 12870625,
+          "url": "https://images.meesho.com/images/products/12870625/54251_512.jpg"
+        }
+      ],
+      "activated": "2020-12-03 19:06:54",
+      "activated_iso": "2020-12-03T19:06:54+0530",
+      "num_shares": "0 Shares",
+      "margin": { "enabled": false },
+      "price_type_id": "premium_return_price",
+      "consumer_share_text": "Shop now on Meesho!\nhttps://www.meesho.com/s/p/7nv1b?utm_source=s",
+      "images": [
+        "https://images.meesho.com/images/products/12870623/08a95_512.jpg"
+      ],
+      "product_id": "7nv1b",
+      "slug": "trendy-fabulous-women-tops-tunics",
+      "isAdProduct": true,
+      "session_id": "ctx_1_uid_24a0ed39-7617-4f98-8ce3-015a228c15ed_clpid_4582_t_1677002255126",
+      "original_product_id": 12870623,
+      "catalogId": 2500552
+    },
+    {
+      "id": 22280147,
+      "name": "Classic Partywear Women Tops & Tunics",
+      "category_id": 1020,
+      "sub_sub_category_name": "Tops & Tunics",
+      "min_catalog_price": 363,
+      "min_product_price": 363,
+      "description": "Classic Partywear Women Tops & Tunics",
+      "full_details": "Fabric: Georgette\nSizes:\nS, M",
+      "share_text": "Catalog Name:*Classic Partywear Women Tops & Tunics*\nFabric: Georgette\nSleeve Length: Long Sleeves\nPattern: Printed\nNet Quantity (N): 1\nSizes:\nS, M, L, XL, XXL\nDispatch: 1 Day\n\n*Proof of Safe Delivery! Click to know on Safety Standards of Delivery Partners- https://ltl.sh/y_nZrAV3",
+      "hot": false,
+      "type": "catalog",
+      "pre_booking": false,
+      "priority": 0,
+      "num_suppliers": 1,
+      "num_designs": 1,
+      "image": "https://images.meesho.com/images/catalogs/22280147/cover/1/2/55444c8698e276108a720e57574c13aa01b67379bff5cfe7288cc5448c026d0ac1ed02be796b65096cca77aedeff176e1ae81c22774323610baf9b5f6af75052_512.jpg",
+      "collage_image": "https://images.meesho.com/images/catalogs/22280147/collages/1/1/55444c8698e276108a720e57574c13aa01b67379bff5cfe7288cc5448c026d0ac1ed02be796b65096cca77aedeff176e1ae81c22774323610baf9b5f6af75052.jpg",
+      "image_aspect_ratio": 1.77,
+      "collage_image_aspect_ratio": 1.48,
+      "created": "2022-02-17 16:27:57",
+      "created_iso": "2022-02-17T16:27:57+0530",
+      "valid": true,
+      "trend": "",
+      "popular": false,
+      "has_mrp": true,
+      "is_added_to_wishlist": false,
+      "assured_details": {
+        "is_assured": false,
+        "message": "Best quality products from trusted suppliers."
+      },
+      "mall_verified": false,
+      "shipping_charges_adjustment": 68,
+      "story_images": [],
+      "text_image": "https://images.meesho.com/images/catalogs/22280147/sharetext/dynamic/e12f97f6c8a826d94280234e18be531d.jpg",
+      "catalog_reviews_summary": {
+        "rating_count_map": {
+          "1": 1056,
+          "2": 682,
+          "3": 1342,
+          "4": 2336,
+          "5": 6343
+        },
+        "average_rating": 4,
+        "absolute_average_rating": 5,
+        "average_rating_str": "",
+        "rating_scale": 5,
+        "review_count": 2055,
+        "rating_count": 11759
+      },
+      "shipping": { "charges": 0, "discount": 70 },
+      "shipping_2": { "charges": 0, "discount": 70 },
+      "tags": [{ "name": "NEXT DAY DISPATCH" }],
+      "gray_tags": [],
+      "value_prop_tag": { "name": "NEXT DAY DISPATCH" },
+      "has_same_price_products": true,
+      "product_images": [
+        {
+          "id": 79431388,
+          "url": "https://images.meesho.com/images/products/79431388/tv3hn_512.jpg"
+        }
+      ],
+      "activated": "2022-02-17 22:25:15",
+      "activated_iso": "2022-02-17T22:25:15+0530",
+      "num_shares": "0 Shares",
+      "margin": { "enabled": false },
+      "price_type_id": "premium_return_price",
+      "consumer_share_text": "Shop now on Meesho!\nhttps://www.meesho.com/s/p/1bahng?utm_source=s",
+      "images": [
+        "https://images.meesho.com/images/products/79431388/tv3hn_512.jpg"
+      ],
+      "product_id": "1bahng",
+      "slug": "classic-partywear-women-tops-tunics",
+      "session_id": "ctx_1_uid_24a0ed39-7617-4f98-8ce3-015a228c15ed_clpid_4582_t_1677002255126",
+      "original_product_id": 79431388,
+      "catalogId": 22280147
+    },
+    {
+      "id": 23492625,
+      "name": "Stylish Fashionista Women Tops & Tunics",
+      "category_id": 1020,
+      "sub_sub_category_name": "Tops & Tunics",
+      "min_catalog_price": 206,
+      "min_product_price": 206,
+      "description": "Stylish Fashionista Women Tops & Tunics",
+      "full_details": "Fabric: Crepe\nSizes:\nS (Bust Size: 18 in) \nXL (Bust Size: 21 in) \nL (Bust Size: 20 in) \nM (Bust Size: 19 in) \n",
+      "share_text": "Catalog Name:*Stylish Fashionista Women Tops & Tunics*\nFabric: Crepe\nSleeve Length: Long Sleeves\nPattern: Printed\nNet Quantity (N): 1\nSizes:\nS (Bust Size: 18 in) \nM (Bust Size: 19 in) \nL (Bust Size: 20 in) \nXL (Bust Size: 21 in) \n\nDispatch: 1 Day\n\n*Proof of Safe Delivery! Click to know on Safety Standards of Delivery Partners- https://ltl.sh/y_nZrAV3",
+      "hot": false,
+      "type": "catalog",
+      "pre_booking": false,
+      "priority": 0,
+      "num_suppliers": 1,
+      "num_designs": 2,
+      "image": "https://images.meesho.com/images/catalogs/23492625/cover/1/2/8cf7732a3215a21fd79ef3d79b2210222baa6cdbefc4b0a7f5dd4c8364b4d81e940ff533616e5d3350de16b62bcc456be8bc7260d8a1b5608119c394b4d08538_512.jpg",
+      "collage_image": "https://images.meesho.com/images/catalogs/23492625/collages/1/1/8cf7732a3215a21fd79ef3d79b2210222baa6cdbefc4b0a7f5dd4c8364b4d81e940ff533616e5d3350de16b62bcc456be8bc7260d8a1b5608119c394b4d08538.jpg",
+      "image_aspect_ratio": 1.77,
+      "collage_image_aspect_ratio": 1.48,
+      "created": "2022-03-01 12:05:11",
+      "created_iso": "2022-03-01T12:05:11+0530",
+      "valid": true,
+      "trend": "",
+      "popular": false,
+      "has_mrp": true,
+      "is_added_to_wishlist": false,
+      "assured_details": {
+        "is_assured": false,
+        "message": "Best quality products from trusted suppliers."
+      },
+      "mall_verified": false,
+      "shipping_charges_adjustment": 60,
+      "story_images": [],
+      "text_image": "https://images.meesho.com/images/catalogs/23492625/sharetext/dynamic/86b2284a617e2d9bd3a1f7725ce3b17f.jpg",
+      "catalog_reviews_summary": {
+        "rating_count_map": {
+          "1": 2639,
+          "2": 1432,
+          "3": 2314,
+          "4": 2973,
+          "5": 8000
+        },
+        "average_rating": 3.7,
+        "absolute_average_rating": 4,
+        "average_rating_str": "",
+        "rating_scale": 5,
+        "review_count": 2786,
+        "rating_count": 17358
+      },
+      "shipping": { "charges": 0, "discount": 70 },
+      "shipping_2": { "charges": 0, "discount": 70 },
+      "tags": [{ "name": "NEXT DAY DISPATCH" }],
+      "gray_tags": [],
+      "value_prop_tag": { "name": "NEXT DAY DISPATCH" },
+      "has_same_price_products": true,
+      "product_images": [
+        {
+          "id": 83046210,
+          "url": "https://images.meesho.com/images/products/83046210/1q3ft_512.jpg"
+        },
+        {
+          "id": 83046212,
+          "url": "https://images.meesho.com/images/products/83046212/h55vq_512.jpg"
+        }
+      ],
+      "activated": "2022-03-01 18:35:26",
+      "activated_iso": "2022-03-01T18:35:26+0530",
+      "num_shares": "0 Shares",
+      "margin": { "enabled": false },
+      "price_type_id": "premium_return_price",
+      "consumer_share_text": "Shop now on Meesho!\nhttps://www.meesho.com/s/p/1dfyv6?utm_source=s",
+      "images": [
+        "https://images.meesho.com/images/products/83046210/1q3ft_512.jpg"
+      ],
+      "product_id": "1dfyv6",
+      "slug": "stylish-fashionista-women-tops-tunics",
+      "session_id": "ctx_1_uid_24a0ed39-7617-4f98-8ce3-015a228c15ed_clpid_4582_t_1677002255126",
+      "original_product_id": 83046210,
+      "catalogId": 23492625
+    },
+    {
+      "id": 2501243,
+      "name": "Stylish Designer Women Tops & Tunics",
+      "category_id": 1020,
+      "sub_sub_category_name": "Tops & Tunics",
+      "min_catalog_price": 258,
+      "min_product_price": 258,
+      "description": "Stylish Designer Women Tops & Tunics",
+      "full_details": "Fabric: Crepe\nSleeve Length: Three-Quarter Sleeves\nPattern: Printed\nMultipack: 2\nSizes:\nS, XL, L, XXL, M\nDispatch: 2-3 Days",
+      "share_text": "Catalog Name:*Stylish Designer Women Tops & Tunics*\nFabric: Crepe\nSleeve Length: Three-Quarter Sleeves\nPattern: Printed\nNet Quantity (N): 2\nSizes:\nS, M, L, XL, XXL\nDispatch: 2 Days\n\n*Proof of Safe Delivery! Click to know on Safety Standards of Delivery Partners- https://ltl.sh/y_nZrAV3",
+      "hot": false,
+      "type": "catalog",
+      "pre_booking": false,
+      "priority": 0,
+      "num_suppliers": 1,
+      "num_designs": 6,
+      "image": "https://images.meesho.com/images/catalogs/2501243/cover/1/2/3afaeeddd352db32fcd02fd2e062d159a7bba519fc8209e5c4d0e584acb7d8ae56101e17120e285a00a12e07e576595643e7af8df312ccf3278d538c2700bd53_512.jpg",
+      "collage_image": "https://images.meesho.com/images/catalogs/2501243/collages/1/1/3afaeeddd352db32fcd02fd2e062d159a7bba519fc8209e5c4d0e584acb7d8ae56101e17120e285a00a12e07e576595643e7af8df312ccf3278d538c2700bd53.jpg",
+      "image_aspect_ratio": 1.77,
+      "collage_image_aspect_ratio": 1.48,
+      "created": "2020-12-03 16:52:13",
+      "created_iso": "2020-12-03T16:52:13+0530",
+      "valid": true,
+      "trend": "",
+      "popular": false,
+      "has_mrp": true,
+      "is_added_to_wishlist": false,
+      "assured_details": {
+        "is_assured": false,
+        "message": "Best quality products from trusted suppliers."
+      },
+      "mall_verified": false,
+      "shipping_charges_adjustment": 61,
+      "story_images": [],
+      "text_image": "https://images.meesho.com/images/catalogs/2501243/sharetext/dynamic/94a19f89e97ab65b344b54b2f8a5f15f.jpg",
+      "catalog_reviews_summary": {
+        "rating_count_map": {
+          "1": 140,
+          "2": 108,
+          "3": 147,
+          "4": 164,
+          "5": 406
+        },
+        "average_rating": 3.6,
+        "absolute_average_rating": 4,
+        "average_rating_str": "",
+        "rating_scale": 5,
+        "review_count": 242,
+        "rating_count": 965
+      },
+      "shipping": { "charges": 0, "discount": 70 },
+      "shipping_2": { "charges": 0, "discount": 70 },
+      "tags": [],
+      "gray_tags": [],
+      "ad": { "active": true, "tag": "Ad" },
+      "has_same_price_products": true,
+      "product_images": [
+        {
+          "id": 12873461,
+          "url": "https://images.meesho.com/images/products/12873461/65fa5_512.jpg"
+        },
+        {
+          "id": 12873270,
+          "url": "https://images.meesho.com/images/products/12873270/1bc5e_512.jpg"
+        },
+        {
+          "id": 12873272,
+          "url": "https://images.meesho.com/images/products/12873272/b7a3f_512.jpg"
+        },
+        {
+          "id": 12873267,
+          "url": "https://images.meesho.com/images/products/12873267/d4411_512.jpg"
+        },
+        {
+          "id": 12873277,
+          "url": "https://images.meesho.com/images/products/12873277/0fc78_512.jpg"
+        },
+        {
+          "id": 12873280,
+          "url": "https://images.meesho.com/images/products/12873280/753d7_512.jpg"
+        }
+      ],
+      "activated": "2020-12-03 19:06:54",
+      "activated_iso": "2020-12-03T19:06:54+0530",
+      "num_shares": "0 Shares",
+      "margin": { "enabled": false },
+      "price_type_id": "premium_return_price",
+      "consumer_share_text": "Shop now on Meesho!\nhttps://www.meesho.com/s/p/7nx85?utm_source=s",
+      "images": [
+        "https://images.meesho.com/images/products/12873461/65fa5_512.jpg"
+      ],
+      "product_id": "7nx85",
+      "slug": "stylish-designer-women-tops-tunics",
+      "isAdProduct": true,
+      "session_id": "ctx_1_uid_24a0ed39-7617-4f98-8ce3-015a228c15ed_clpid_4582_t_1677002255126",
+      "original_product_id": 12873461,
+      "catalogId": 2501243
+    },
+    {
+      "id": 18376389,
+      "name": "Stylish Elegant Women Tops & Tunics",
+      "category_id": 1020,
+      "sub_sub_category_name": "Tops & Tunics",
+      "min_catalog_price": 229,
+      "min_product_price": 229,
+      "description": "Stylish Elegant Women Tops & Tunics",
+      "full_details": "Fabric: Crepe\nSleeve Length: Three-Quarter Sleeves\nPattern: Printed\nMultipack: 2\nSizes:\nS, XL, XS, L, M",
+      "share_text": "Catalog Name:*Stylish Elegant Women Tops & Tunics*\nFabric: Crepe\nSleeve Length: Three-Quarter Sleeves\nPattern: Product Dependent\nNet Quantity (N): 2\nSizes:\nXS, S, M, L, XL, XXL\nDispatch: 2 Days\n\n*Proof of Safe Delivery! Click to know on Safety Standards of Delivery Partners- https://ltl.sh/y_nZrAV3",
+      "hot": false,
+      "type": "catalog",
+      "pre_booking": false,
+      "priority": 0,
+      "num_suppliers": 1,
+      "num_designs": 6,
+      "image": "https://images.meesho.com/images/catalogs/18376389/cover/1/2/44a623ac755ccab7b5c2c912d1688f81931bb60a3767a70089abd9c63e307f5a330e947c7e12cdaaa6793bf769d24ca3640a07556cc0262024478223f9e7e20e_512.jpg",
+      "collage_image": "https://images.meesho.com/images/catalogs/18376389/collages/1/1/44a623ac755ccab7b5c2c912d1688f81931bb60a3767a70089abd9c63e307f5a330e947c7e12cdaaa6793bf769d24ca3640a07556cc0262024478223f9e7e20e.jpg",
+      "image_aspect_ratio": 1.77,
+      "collage_image_aspect_ratio": 1.48,
+      "created": "2021-12-26 14:25:36",
+      "created_iso": "2021-12-26T14:25:36+0530",
+      "valid": true,
+      "trend": "",
+      "popular": false,
+      "has_mrp": true,
+      "is_added_to_wishlist": false,
+      "assured_details": {
+        "is_assured": false,
+        "message": "Best quality products from trusted suppliers."
+      },
+      "mall_verified": false,
+      "shipping_charges_adjustment": 61,
+      "story_images": [],
+      "text_image": "https://images.meesho.com/images/catalogs/18376389/sharetext/dynamic/553ed8d891eea8b8fe9b8e318be1edc5.jpg",
+      "catalog_reviews_summary": {
+        "rating_count_map": {
+          "1": 472,
+          "2": 309,
+          "3": 526,
+          "4": 586,
+          "5": 1434
+        },
+        "average_rating": 3.7,
+        "absolute_average_rating": 4,
+        "average_rating_str": "",
+        "rating_scale": 5,
+        "review_count": 478,
+        "rating_count": 3327
+      },
+      "shipping": { "charges": 0, "discount": 70 },
+      "shipping_2": { "charges": 0, "discount": 70 },
+      "tags": [],
+      "gray_tags": [],
+      "has_same_price_products": true,
+      "product_images": [
+        {
+          "id": 68041213,
+          "url": "https://images.meesho.com/images/products/68041213/1xvfq_512.jpg"
+        },
+        {
+          "id": 68041212,
+          "url": "https://images.meesho.com/images/products/68041212/nvlog_512.jpg"
+        },
+        {
+          "id": 68041210,
+          "url": "https://images.meesho.com/images/products/68041210/okhfi_512.jpg"
+        },
+        {
+          "id": 68041214,
+          "url": "https://images.meesho.com/images/products/68041214/hwf2t_512.jpg"
+        },
+        {
+          "id": 68041215,
+          "url": "https://images.meesho.com/images/products/68041215/kjqhb_512.jpg"
+        },
+        {
+          "id": 68041211,
+          "url": "https://images.meesho.com/images/products/68041211/4fo6l_512.jpg"
+        }
+      ],
+      "activated": "2021-12-26 20:08:58",
+      "activated_iso": "2021-12-26T20:08:58+0530",
+      "num_shares": "0 Shares",
+      "margin": { "enabled": false },
+      "price_type_id": "premium_return_price",
+      "consumer_share_text": "Shop now on Meesho!\nhttps://www.meesho.com/s/p/14icxp?utm_source=s",
+      "images": [
+        "https://images.meesho.com/images/products/68041213/1xvfq_512.jpg"
+      ],
+      "product_id": "14icxp",
+      "slug": "stylish-elegant-women-tops-tunics",
+      "session_id": "ctx_1_uid_24a0ed39-7617-4f98-8ce3-015a228c15ed_clpid_4582_t_1677002255126",
+      "original_product_id": 68041213,
+      "catalogId": 18376389
+    },
+    {
+      "id": 3924763,
+      "name": "Urbane Fabulous Women Tops & Tunics",
+      "category_id": 1020,
+      "sub_sub_category_name": "Tops & Tunics",
+      "min_catalog_price": 173,
+      "min_product_price": 173,
+      "description": "Urbane Fabulous Women Tops & Tunics",
+      "full_details": "Fabric: Cotton Blend\nSleeve Length: Long Sleeves\nPattern: Solid\nMultipack: 1\nSizes:\nS (Bust Size: 34 in, Length Size: 16 in) \nXL (Bust Size: 40 in, Length Size: 16 in) \nL (Bust Size: 38 in, Length Size: 16 in) \nM (Bust Size: 36 in, Length Size: 16 in) \n\nDispatch: 2-3 Days",
+      "share_text": "Catalog Name:*Urbane Fabulous Women Tops & Tunics*\nFabric: Cotton Blend\nSleeve Length: Long Sleeves\nPattern: Solid\nNet Quantity (N): 1\nSizes:\nS (Bust Size: 34 in, Length Size: 16 in) \nM (Bust Size: 36 in, Length Size: 16 in) \nL (Bust Size: 38 in, Length Size: 16 in) \nXL (Bust Size: 40 in, Length Size: 16 in) \n\nDispatch: 1 Day\n\n*Proof of Safe Delivery! Click to know on Safety Standards of Delivery Partners- https://ltl.sh/y_nZrAV3",
+      "hot": false,
+      "type": "catalog",
+      "pre_booking": false,
+      "priority": 0,
+      "num_suppliers": 1,
+      "num_designs": 4,
+      "image": "https://images.meesho.com/images/catalogs/3924763/cover/1/2/a792c2f8032ae4e71458ce6fc7d403c24a5964911c67b5793a9a2f3c6c7033c0f7d7032850ce6809aed112e397b273a4a5710f1c8e162b9f61cf0501445124a1_512.jpg",
+      "collage_image": "https://images.meesho.com/images/catalogs/3924763/collages/1/1/a792c2f8032ae4e71458ce6fc7d403c24a5964911c67b5793a9a2f3c6c7033c0f7d7032850ce6809aed112e397b273a4a5710f1c8e162b9f61cf0501445124a1.jpg",
+      "image_aspect_ratio": 1.77,
+      "collage_image_aspect_ratio": 1.48,
+      "created": "2021-02-25 16:40:51",
+      "created_iso": "2021-02-25T16:40:51+0530",
+      "valid": true,
+      "trend": "",
+      "popular": false,
+      "has_mrp": true,
+      "is_added_to_wishlist": false,
+      "assured_details": {
+        "is_assured": false,
+        "message": "Best quality products from trusted suppliers."
+      },
+      "mall_verified": false,
+      "shipping_charges_adjustment": 60,
+      "story_images": [],
+      "text_image": "https://images.meesho.com/images/catalogs/3924763/sharetext/dynamic/49e9dd3adc295b5e055d76e538e6c85a.jpg",
+      "catalog_reviews_summary": {
+        "rating_count_map": {
+          "1": 1299,
+          "2": 946,
+          "3": 1845,
+          "4": 2441,
+          "5": 5581
+        },
+        "average_rating": 3.8,
+        "absolute_average_rating": 4,
+        "average_rating_str": "",
+        "rating_scale": 5,
+        "review_count": 1951,
+        "rating_count": 12112
+      },
+      "shipping": { "charges": 0, "discount": 70 },
+      "shipping_2": { "charges": 0, "discount": 70 },
+      "tags": [{ "name": "NEXT DAY DISPATCH" }],
+      "gray_tags": [],
+      "value_prop_tag": { "name": "NEXT DAY DISPATCH" },
+      "has_same_price_products": true,
+      "product_images": [
+        {
+          "id": 19123430,
+          "url": "https://images.meesho.com/images/products/19123430/317e8_512.jpg"
+        },
+        {
+          "id": 19123429,
+          "url": "https://images.meesho.com/images/products/19123429/e74f6_512.jpg"
+        },
+        {
+          "id": 19123437,
+          "url": "https://images.meesho.com/images/products/19123437/z3bs6_512.jpg"
+        },
+        {
+          "id": 19123436,
+          "url": "https://images.meesho.com/images/products/19123436/32c59_512.jpg"
+        }
+      ],
+      "activated": "2021-12-05 15:00:00",
+      "activated_iso": "2021-12-05T15:00:00+0530",
+      "num_shares": "0 Shares",
+      "margin": { "enabled": false },
+      "price_type_id": "premium_return_price",
+      "consumer_share_text": "Shop now on Meesho!\nhttps://www.meesho.com/s/p/bdvqe?utm_source=s",
+      "images": [
+        "https://images.meesho.com/images/products/19123430/317e8_512.jpg"
+      ],
+      "product_id": "bdvqe",
+      "slug": "urbane-fabulous-women-tops-tunics",
+      "session_id": "ctx_1_uid_24a0ed39-7617-4f98-8ce3-015a228c15ed_clpid_4582_t_1677002255126",
+      "original_product_id": 19123430,
+      "catalogId": 3924763
+    },
+    {
+      "id": 51440430,
+      "name": "Urbane Glamorous Women Tops & Tunics",
+      "category_id": 1020,
+      "sub_sub_category_name": "Tops & Tunics",
+      "min_catalog_price": 277,
+      "min_product_price": 277,
+      "description": "Urbane Glamorous Women Tops & Tunics",
+      "full_details": "Fabric: Polyester\nSleeve Length: Variable (Product Dependent)\nPattern: Solid\nNet Quantity (N): 1\nSizes:\nS (Bust Size: 34 in, Length Size: 16 in) \nXL (Bust Size: 40 in, Length Size: 17 in) \nL (Bust Size: 38 in, Length Size: 17 in) \nM (Bust Size: 36 in, Length Size: 16 in) \n\nDispatch: 2-2 Days",
+      "share_text": "Catalog Name:*Urbane Glamorous Women Tops & Tunics*\nFabric: Polyester\nSleeve Length: Long Sleeves\nPattern: Striped\nNet Quantity (N): 1\nSizes:\nS (Bust Size: 34 in, Length Size: 16 in) \nM (Bust Size: 36 in, Length Size: 16 in) \nL (Bust Size: 38 in, Length Size: 17 in) \nXL (Bust Size: 40 in, Length Size: 17 in) \n\nDispatch: 2 Days\n\n*Proof of Safe Delivery! Click to know on Safety Standards of Delivery Partners- https://ltl.sh/y_nZrAV3",
+      "hot": false,
+      "type": "catalog",
+      "pre_booking": false,
+      "priority": 0,
+      "num_suppliers": 1,
+      "num_designs": 4,
+      "image": "https://images.meesho.com/images/catalogs/51440430/cover/1/2/fadfc7d0ab1eaaa66021ae4e309fa402f893126182d67983b08dadc7af2e7053909c3be1d5844c2cdf7a5b06e6c8eda6c4b346d47d99e6add46bb6cc90439738_512.jpg",
+      "collage_image": "https://images.meesho.com/images/catalogs/51440430/collages/1/1/fadfc7d0ab1eaaa66021ae4e309fa402f893126182d67983b08dadc7af2e7053909c3be1d5844c2cdf7a5b06e6c8eda6c4b346d47d99e6add46bb6cc90439738.jpg",
+      "image_aspect_ratio": 1.77,
+      "collage_image_aspect_ratio": 1.48,
+      "created": "2022-09-22 14:08:19",
+      "created_iso": "2022-09-22T14:08:19+0530",
+      "valid": true,
+      "trend": "",
+      "popular": false,
+      "has_mrp": true,
+      "is_added_to_wishlist": false,
+      "assured_details": {
+        "is_assured": false,
+        "message": "Best quality products from trusted suppliers."
+      },
+      "mall_verified": false,
+      "shipping_charges_adjustment": 68,
+      "story_images": [],
+      "text_image": "https://images.meesho.com/images/catalogs/51440430/sharetext/dynamic/6c5e490e52bdae2f305bedd3a2f80929.jpg",
+      "supplier_reviews_summary": {
+        "rating_count_map": { "1": 3, "2": 0, "3": 7, "4": 14, "5": 60 },
+        "average_rating": 4.5,
+        "absolute_average_rating": 5,
+        "average_rating_str": "",
+        "rating_scale": 5,
+        "review_count": 8,
+        "rating_count": 84
+      },
+      "shipping": { "charges": 0, "discount": 70 },
+      "shipping_2": { "charges": 0, "discount": 70 },
+      "tags": [],
+      "gray_tags": [],
+      "ad": { "active": true, "tag": "Ad" },
+      "has_same_price_products": true,
+      "product_images": [
+        {
+          "id": 169481303,
+          "url": "https://images.meesho.com/images/products/169481303/zgxjg_512.jpg"
+        },
+        {
+          "id": 169481304,
+          "url": "https://images.meesho.com/images/products/169481304/sz1pc_512.jpg"
+        },
+        {
+          "id": 169481305,
+          "url": "https://images.meesho.com/images/products/169481305/b4bvo_512.jpg"
+        },
+        {
+          "id": 169481306,
+          "url": "https://images.meesho.com/images/products/169481306/ssso5_512.jpg"
+        }
+      ],
+      "activated": "2022-09-22 20:05:58",
+      "activated_iso": "2022-09-22T20:05:58+0530",
+      "num_shares": "0 Shares",
+      "margin": { "enabled": false },
+      "price_type_id": "premium_return_price",
+      "consumer_share_text": "Shop now on Meesho!\nhttps://www.meesho.com/s/p/2swklz?utm_source=s",
+      "images": [
+        "https://images.meesho.com/images/products/169481303/zgxjg_512.jpg"
+      ],
+      "product_id": "2swklz",
+      "slug": "urbane-glamorous-women-tops-tunics",
+      "isAdProduct": true,
+      "session_id": "ctx_1_uid_24a0ed39-7617-4f98-8ce3-015a228c15ed_clpid_4582_t_1677002255126",
+      "original_product_id": 169481303,
+      "catalogId": 51440430
+    },
+    {
+      "id": 29396739,
+      "name": "Classic Glamorous Women  & Tunics",
+      "category_id": 1020,
+      "sub_sub_category_name": "Tops & Tunics",
+      "min_catalog_price": 196,
+      "min_product_price": 196,
+      "description": "Classic Glamorous Women  & Tunics",
+      "full_details": "Fabric: Polyester Sleeve Length: Three-Quarter Sleeves Pattern: Solid Net Quantity (N): 1 Sizes: S (Bust Size: 34 in, Length Size: 23 in)  XL (Bust Size: 40 in, Length Size: 23 in)  XS (Bust Size: 32 in, Length Size: 23 in)  L (Bust Size: 38 in, Length Size: 23 in)  M (Bust Size: 36 in, Length Size: 23 in)   Dispatch: 2-3 Days",
+      "share_text": "Catalog Name:*Classic Glamorous Women  & Tunics*\nFabric: Polyester\nSleeve Length: Product Dependent\nPattern: Solid\nNet Quantity (N): 1\nSizes:\nXS (Bust Size: 32 in, Length Size: 23 in) \nS (Bust Size: 34 in, Length Size: 23 in) \nM (Bust Size: 36 in, Length Size: 23 in) \nL (Bust Size: 38 in, Length Size: 23 in) \nXL (Bust Size: 40 in, Length Size: 23 in) \n\nDispatch: 1 Day\n\n*Proof of Safe Delivery! Click to know on Safety Standards of Delivery Partners- https://ltl.sh/y_nZrAV3",
+      "hot": false,
+      "type": "catalog",
+      "pre_booking": false,
+      "priority": 0,
+      "num_suppliers": 1,
+      "num_designs": 11,
+      "image": "https://images.meesho.com/images/catalogs/29396739/cover/1/2/b376b5aec01e4f67b441f1efc79e186840fe841c38b9b192c278c168086e22e43af2b1cc2b712458a90deb8bf6fbb4674eeaa558e25a5916cedd6d8a2f9447d4_512.jpg",
+      "collage_image": "https://images.meesho.com/images/catalogs/29396739/collages/1/1/b376b5aec01e4f67b441f1efc79e186840fe841c38b9b192c278c168086e22e43af2b1cc2b712458a90deb8bf6fbb4674eeaa558e25a5916cedd6d8a2f9447d4.jpg",
+      "image_aspect_ratio": 1.77,
+      "collage_image_aspect_ratio": 1.48,
+      "created": "2022-04-16 18:36:00",
+      "created_iso": "2022-04-16T18:36:00+0530",
+      "valid": true,
+      "trend": "",
+      "popular": false,
+      "has_mrp": true,
+      "is_added_to_wishlist": false,
+      "assured_details": {
+        "is_assured": false,
+        "message": "Best quality products from trusted suppliers."
+      },
+      "mall_verified": false,
+      "shipping_charges_adjustment": 60,
+      "story_images": [],
+      "text_image": "https://images.meesho.com/images/catalogs/29396739/sharetext/dynamic/8cbbe37c6ae0fbacac9990a011d1d7da.jpg",
+      "catalog_reviews_summary": {
+        "rating_count_map": {
+          "1": 460,
+          "2": 358,
+          "3": 803,
+          "4": 1394,
+          "5": 2859
+        },
+        "average_rating": 4,
+        "absolute_average_rating": 5,
+        "average_rating_str": "",
+        "rating_scale": 5,
+        "review_count": 964,
+        "rating_count": 5874
+      },
+      "shipping": { "charges": 0, "discount": 70 },
+      "shipping_2": { "charges": 0, "discount": 70 },
+      "tags": [{ "name": "NEXT DAY DISPATCH" }],
+      "gray_tags": [],
+      "value_prop_tag": { "name": "NEXT DAY DISPATCH" },
+      "has_same_price_products": true,
+      "product_images": [
+        {
+          "id": 102039087,
+          "url": "https://images.meesho.com/images/products/102039087/vdiat_512.jpg"
+        },
+        {
+          "id": 102039092,
+          "url": "https://images.meesho.com/images/products/102039092/min7u_512.jpg"
+        },
+        {
+          "id": 102039086,
+          "url": "https://images.meesho.com/images/products/102039086/81gu7_512.jpg"
+        },
+        {
+          "id": 102039088,
+          "url": "https://images.meesho.com/images/products/102039088/4xcuj_512.jpg"
+        },
+        {
+          "id": 102039094,
+          "url": "https://images.meesho.com/images/products/102039094/szawi_512.jpg"
+        },
+        {
+          "id": 102039091,
+          "url": "https://images.meesho.com/images/products/102039091/3uffi_512.jpg"
+        },
+        {
+          "id": 102039085,
+          "url": "https://images.meesho.com/images/products/102039085/asipb_512.jpg"
+        },
+        {
+          "id": 102039095,
+          "url": "https://images.meesho.com/images/products/102039095/rlorv_512.jpg"
+        },
+        {
+          "id": 102039090,
+          "url": "https://images.meesho.com/images/products/102039090/xw5kz_512.jpg"
+        },
+        {
+          "id": 102039093,
+          "url": "https://images.meesho.com/images/products/102039093/pntmo_512.jpg"
+        },
+        {
+          "id": 102039089,
+          "url": "https://images.meesho.com/images/products/102039089/h7pq8_512.jpg"
+        }
+      ],
+      "activated": "2022-04-17 00:09:01",
+      "activated_iso": "2022-04-17T00:09:01+0530",
+      "num_shares": "0 Shares",
+      "margin": { "enabled": false },
+      "price_type_id": "premium_return_price",
+      "consumer_share_text": "Shop now on Meesho!\nhttps://www.meesho.com/s/p/1or1v3?utm_source=s",
+      "images": [
+        "https://images.meesho.com/images/products/102039087/vdiat_512.jpg"
+      ],
+      "product_id": "1or1v3",
+      "slug": "classic-glamorous-women-tunics",
+      "session_id": "ctx_1_uid_24a0ed39-7617-4f98-8ce3-015a228c15ed_clpid_4582_t_1677002255126",
+      "original_product_id": 102039087,
+      "catalogId": 29396739
+    },
+    {
+      "id": 51818076,
+      "name": "Comfy Fashionable Women Tops & Tunics",
+      "category_id": 1020,
+      "sub_sub_category_name": "Tops & Tunics",
+      "min_catalog_price": 287,
+      "min_product_price": 287,
+      "description": "Comfy Fashionable Women Tops & Tunics",
+      "full_details": "Fabric: Georgette\nSizes:\nS, XL, L, M\nDispatch: 2-2 Days",
+      "share_text": "Catalog Name:*Comfy Fashionable Women Tops & Tunics*\nFabric: Georgette\nSleeve Length: Product Dependent\nPattern: Printed\nSizes:\nS, M, L, XL\nDispatch: 2 Days\n\n*Proof of Safe Delivery! Click to know on Safety Standards of Delivery Partners- https://ltl.sh/y_nZrAV3",
+      "hot": false,
+      "type": "catalog",
+      "pre_booking": false,
+      "priority": 0,
+      "num_suppliers": 1,
+      "num_designs": 6,
+      "image": "https://images.meesho.com/images/catalogs/51818076/cover/1/2/033a5cdefab1f4171c1c614d1deb50ae31ab0812378cb4a1016b9f826f3ce68ca28ff5e81b810eb9ca7422929266e281ee0deec1597f6a66759806fc7d20f13f_512.jpg",
+      "collage_image": "https://images.meesho.com/images/catalogs/51818076/collages/1/1/033a5cdefab1f4171c1c614d1deb50ae31ab0812378cb4a1016b9f826f3ce68ca28ff5e81b810eb9ca7422929266e281ee0deec1597f6a66759806fc7d20f13f.jpg",
+      "image_aspect_ratio": 1.77,
+      "collage_image_aspect_ratio": 1.48,
+      "created": "2022-09-24 20:38:15",
+      "created_iso": "2022-09-24T20:38:15+0530",
+      "valid": true,
+      "trend": "",
+      "popular": false,
+      "has_mrp": true,
+      "is_added_to_wishlist": false,
+      "assured_details": {
+        "is_assured": false,
+        "message": "Best quality products from trusted suppliers."
+      },
+      "mall_verified": false,
+      "shipping_charges_adjustment": 68,
+      "story_images": [],
+      "text_image": "https://images.meesho.com/images/catalogs/51818076/sharetext/dynamic/cffa0456f01699bd76f94c69325e020b.jpg",
+      "catalog_reviews_summary": {
+        "rating_count_map": { "1": 153, "2": 62, "3": 67, "4": 88, "5": 456 },
+        "average_rating": 3.8,
+        "absolute_average_rating": 4,
+        "average_rating_str": "",
+        "rating_scale": 5,
+        "review_count": 52,
+        "rating_count": 826
+      },
+      "shipping": { "charges": 0, "discount": 70 },
+      "shipping_2": { "charges": 0, "discount": 70 },
+      "tags": [],
+      "gray_tags": [],
+      "has_same_price_products": true,
+      "product_images": [
+        {
+          "id": 170556560,
+          "url": "https://images.meesho.com/images/products/170556560/q9eyq_512.jpg"
+        },
+        {
+          "id": 170556561,
+          "url": "https://images.meesho.com/images/products/170556561/ptxxq_512.jpg"
+        },
+        {
+          "id": 170556563,
+          "url": "https://images.meesho.com/images/products/170556563/v7sln_512.jpg"
+        },
+        {
+          "id": 170556564,
+          "url": "https://images.meesho.com/images/products/170556564/cjbfk_512.jpg"
+        },
+        {
+          "id": 170556565,
+          "url": "https://images.meesho.com/images/products/170556565/wazmr_512.jpg"
+        },
+        {
+          "id": 170556566,
+          "url": "https://images.meesho.com/images/products/170556566/cswye_512.jpg"
+        }
+      ],
+      "activated": "2022-09-25 02:05:52",
+      "activated_iso": "2022-09-25T02:05:52+0530",
+      "num_shares": "0 Shares",
+      "margin": { "enabled": false },
+      "price_type_id": "premium_return_price",
+      "consumer_share_text": "Shop now on Meesho!\nhttps://www.meesho.com/s/p/2tjma8?utm_source=s",
+      "images": [
+        "https://images.meesho.com/images/products/170556560/q9eyq_512.jpg"
+      ],
+      "product_id": "2tjma8",
+      "slug": "comfy-fashionable-women-tops-tunics",
+      "session_id": "ctx_1_uid_24a0ed39-7617-4f98-8ce3-015a228c15ed_clpid_4582_t_1677002255126",
+      "original_product_id": 170556560,
+      "catalogId": 51818076
+    }
+  ],
+  "widget_groups": [],
+  "header_widget_groups": [],
+  "subscribed": false,
+  "cursor": "eyJxd2VzdF9vZmZzZXQiOjAsInF3ZXN0X2N1cnNvciI6bnVsbCwib2ZzX2N1cnNvciI6IntcIm9mZnNldFwiOjgwLFwidmVyc2lvblwiOjE2NzcwMDIyMjl9IiwidmVyc2lvbiI6MiwiZXNfY3Vyc29yIjpudWxsLCJmZWVkX29mZnNldCI6MTIwLCJvZmZzZXQiOjEyMCwiZHNfY3Vyc29yIjpudWxsLCJoYXNfbmV4dF9kc19jYXRhbG9nIjpmYWxzZSwiZGRfc2Vzc2lvbl9pZCI6ImN0eF8xX3VpZF8yNGEwZWQzOS03NjE3LTRmOTgtOGNlMy0wMTVhMjI4YzE1ZWRfY2xwaWRfNDU4Ml90XzE2NzcwMDIyNTUxMjYiLCJhZF9jdXJzb3IiOiJleUpqWVhSaGJHOW5YMmxrSWpvMU1UUTBNRFF6TUN3aVkyRjBZV3h2WjE5cFpIZ2lPalE1TENKbVpXVmtYM1JoWW14bElqb2lZMnh3WDJOdmJHeGxZM1JwYjI1ZmJtVjNYekV6TnpBMUlpd2ljMjkxY21ObElqb2lSRVZHUVZWTVZDSXNJblZ6WlhKZllYSnRYMk52Ym1acFp5STZleUoxYzJWeVNXUWlPaUl5TkdFd1pXUXpPUzAzTmpFM0xUUm1PVGd0T0dObE15MHdNVFZoTWpJNFl6RTFaV1FpTENKaGNtMUpaQ0k2SW1SbFptRjFiSFFpTENKeVpXRnNSWE4wWVhSbElqb2lZMnh3SWl3aVoyOXZaRzVsYzNOWFpXbG5hSFFpT2pBdU5pd2lZM0JqVjJWcFoyaDBJam93TGpJc0ltTnZkVzUwY25raU9pSkpUaUo5ZlE9PSIsImxhc3RfYWRfc2xvdCI6MTE4LCJoYXNfbmV4dF9hZF9zbG90Ijp0cnVlLCJoYXNfbmV4dF9hZF9jYXRhbG9nIjp0cnVlLCJjYXRhbG9nX3JhbmtpbmdfZXhwIjoiTk9ORSIsImludGVybmF0aW9uYWxfc2hpcHBpbmciOnsiZW5hYmxlZCI6ZmFsc2V9LCJzaW1pbGFyX3Byb2R1Y3RzIjp7ImluX3N0b2NrIjpmYWxzZX0sImNfYXVkX2V4Ijp7ImVuYWJsZWQiOmZhbHNlLCJ2YSI6W119LCJleGNsdWRlX2NhdGFsb2dfaWRzIjpbXSwic2xvdF9jb25maWdfdmFyX2lkIjoiIiwiaXNfc2xvdF9jb25maWdfZW5hYmxlZCI6ZmFsc2UsInVzZXJfY29ob3J0IjpudWxsLCJzZl9yb3V0ZV90eXBlIjoiZmEifQ==",
+  "id": 4582,
+  "session_id": "ctx_1_uid_24a0ed39-7617-4f98-8ce3-015a228c15ed_clpid_4582_t_1677002255126",
+  "count": 10000
+}
