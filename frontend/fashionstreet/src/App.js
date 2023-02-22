@@ -1,10 +1,11 @@
 import "./App.css";
-import Navbar from "./Components/ragini/Navbar";
-
+import Header from "./Components/ragini/Header";
+import Routes from "./Pages/Routes";
 function App() {
   return (
     <div className="App">
-      <Navbar />
+      <Header />
+      {/* <Routes /> */}
     </div>
   );
 }
