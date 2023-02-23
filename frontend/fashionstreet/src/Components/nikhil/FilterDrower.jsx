@@ -23,7 +23,7 @@ import {
 import React from "react";
 import RangeSliderComp from "./RangeSlider";
 
-export default function Filter() {
+export default function Filter({ handleFilters }) {
   const filters = [
     { title: "categeory", subtitles: ["men", "women", "boys", "girls"] },
     { title: "brand", subtitles: ["AMIRI", "VERSACE", "BALENCIAGA", "MARNI"] },
@@ -33,14 +33,14 @@ export default function Filter() {
   const price = { title: "price", subtitles: [0, 499, 999, 1599, 1999] };
 
   const handleClick = (main, sub) => {
-    console.log(main, sub);
+    handleFilters({ main, sub });
   };
 
   return (
     <>
       <Stack position="absolute" top={0} h={"100vh"} p="10px" textAlign="left">
         <Text>categeories {">"} mens</Text>
-        <Accordion defaultIndex={[0]} allowMultiple minW={"200px"}>
+        <Accordion defaultIndex={[0]} allowMultiple>
           <Input placeholder="search for products" />
           {filters.map((main) => (
             <AccordionItem key={main.title}>
@@ -124,7 +124,7 @@ export function FilterDrower() {
 
 export function Sort() {
   const handleSort = (e) => {
-    console.log(e.target.value);
+    console.log(e.target.value, e.target.label);
   };
   return (
     <>
@@ -135,10 +135,10 @@ export function Sort() {
         onChange={handleSort}
       >
         <option value={"all"}>SORT</option>
-        <option value={{ name: "name", asc: "asc" }}>A to Z</option>
-        <option value={["name", "desc"]}>Z to A</option>
-        <option value={["price", "asc"]}>Price Low to High</option>
-        <option value={["price", "desc"]}>Price High to Low </option>
+        <option value="asc">A to Z</option>
+        <option value="desc">Z to A</option>
+        <option value="asc">Price Low to High</option>
+        <option value="desc">Price High to Low </option>
       </Select>
     </>
   );
