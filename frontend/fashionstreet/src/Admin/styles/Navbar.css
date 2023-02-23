@@ -1,11 +1,23 @@
-.nav-right{
-    display: flex;
-    gap:20px;
-    
+.nav-main {
+  background-color: white;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
-@media screen and (max-width:544px) {
-    .Search-field{
-        display: none;
-    }
+.nav-right {
+  display: flex;
+  gap: 20px;
+}
 
+.drawwer-button {
+  display: none;
+}
+.Search-input::placeholder {
+  color: grey;
+}
+@media screen and (max-width: 544px) {
+  .Search-field {
+    display: none;
+  }
+  .drawwer-button {
+    display: block;
+  }
 }

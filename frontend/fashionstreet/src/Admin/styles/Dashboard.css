@@ -1,0 +1,9 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.dashboard-main{
+    padding: 10px;
+    background-color:  #E5E5E5;
+    width:100vw
+}
