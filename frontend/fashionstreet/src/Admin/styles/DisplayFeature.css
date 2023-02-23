@@ -1,0 +1,39 @@
+.main-box {
+  /* width: 261px;
+  height: 105px; */
+  border: 1px solid red;
+  background-color: white;
+  border-radius: 5px;
+  text-align: left;
+  padding: 15px;
+}
+.vector {
+    position: relative;
+    left: 50%;
+    /* right: 71.75%; */
+    bottom: 50%;
+    /* bottom: 79.94%; */
+  height: 13.52px;
+}
+.perc-second{
+    position: relative;
+    left: 56%;
+    bottom: 56%;
+    font-size: 15px;
+}
+
+.double-vector{
+    position: relative;
+    left: 80%;
+    bottom: 140%;
+}
+
+@media screen  and (max-width:480px){
+    .main-box{
+        /* width: 100px;
+        height: 100px; */
+    }
+    .perc-second{
+        font-size: 8px;
+    }
+}
