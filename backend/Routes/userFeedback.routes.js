@@ -5,17 +5,18 @@ const {
 const {
   getAllUserFeedback,
 } = require("../Controllers/User_FeedBack/getAllUserFeedback.controller");
+const { adminVerify } = require("../Middlewares/Users/adminVerify.middleware");
+const { verifyToken } = require("../Middlewares/Users/verifyToken.middleware");
 
 const userFeedbackRouter = express.Router();
 
 /**
  * * User Feedback Routes
- * ! Middleware Add
  */
 
-userFeedbackRouter.get("/all", getAllUserFeedback);
+userFeedbackRouter.get("/all", [verifyToken, adminVerify], getAllUserFeedback);
 
-userFeedbackRouter.post("/", addUserFeedback);
+userFeedbackRouter.post("/", verifyToken, addUserFeedback);
 
 module.exports = {
   userFeedbackRouter,

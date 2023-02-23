@@ -2,7 +2,10 @@ const mongoose = require("mongoose");
 
 const userFeedbackSchema = mongoose.Schema({
   feedBack: String,
-  userId: String,
+  userId: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: "user",
+  },
 });
 
 const UserFeedbackModel = mongoose.model("userfeedback", userFeedbackSchema);

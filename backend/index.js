@@ -15,8 +15,6 @@ app.use(cors());
 
 /**
  * * Routes Middlewares
- * TODO: Should uncomment this whenever you create Route
- * ? Give there definite positions whenever you create Route
  */
 app.use("/users", userRouter);
 app.use("/products", productsRouter);
