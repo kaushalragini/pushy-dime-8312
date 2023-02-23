@@ -12,7 +12,11 @@ const getCartProducts = async (req, res) => {
       "productsId",
       ["brand", "product_name", "price", "img", "type", "category"]
     );
-    res.send(data);
+    res.send({
+      status: "success",
+      count: data.length,
+      data,
+    });
   } catch (err) {
     res.status(500).json({ msg: err.message });
   }

@@ -21,7 +21,7 @@ const productsRouter = express.Router();
 /**
  * *Products Routes
  */
-productsRouter.get("/all", verifyToken, getAllProducts);
+productsRouter.get("/all", getAllProducts);
 
 productsRouter.get("/:id", verifyToken, getSingleProducts);
 
