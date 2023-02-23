@@ -20,10 +20,15 @@ import axios from "axios";
 import { useEffect } from "react";
 import { useState } from "react";
 import Filter, { FilterDrower, Sort } from "./FilterDrower";
+import Pagination from "./Pagination";
 
-async function getData() {
+export const baseURL = "http://localhost:8080";
+
+async function getData({ page, sort, order }) {
   try {
-    let res = await axios.get(`http://localhost:8080/clothing?_limit=24`);
+    let res = await axios.get(
+      `${baseURL}/products?_limit=8&_page=${page}&_sort=${sort}&_order=${order}`
+    );
     let data = res.data;
     return data;
   } catch (error) {
@@ -33,15 +38,30 @@ async function getData() {
 
 export default function Products() {
   const [data, setData] = useState([]);
+  const [filterData, setFilterData] = useState({
+    page: 1,
+    sort: "",
+    order: "",
+  });
+
   useEffect(() => {
-    getData().then((res) => setData(res));
-  }, []);
+    getData(filterData).then((res) => setData(res));
+  }, [filterData]);
+
+  const handlePage = (page) => {
+    setFilterData({ ...filterData, page });
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  };
+
+  const handleFilters = ({}) => {
+    console.log("filter");
+  };
 
   return (
     <Stack>
-      <Heading position={""}>Products</Heading>
       <Stack position="relative">
-        <Text fontWeight={"bold"}>MENS</Text>
+        <Heading>MEN</Heading>
         <Grid
           gridTemplateColumns={{
             base: "repeat(2,1fr)",
@@ -53,12 +73,15 @@ export default function Products() {
         >
           <Hide below="lg">
             <GridItem rowSpan={50000} colSpan={1}>
-              <Filter />
+              <Filter handleFilters={handleFilters} filterData={filterData} />
             </GridItem>
           </Hide>
           <Show below="lg">
             <Box position={"absolute"} top="0px" left="20px" zIndex={100}>
-              <FilterDrower />
+              <FilterDrower
+                handleFilters={handleFilters}
+                filterData={filterData}
+              />
             </Box>
           </Show>
           <Box position={"absolute"} top="0" right="0px" zIndex={100}>
@@ -123,9 +146,7 @@ export default function Products() {
           ))}
         </Grid>
       </Stack>
-      <Text>
-        {">"} 1 2 3 4 {">"}
-      </Text>
+      <Pagination handlePage={handlePage} page={filterData.page} />
     </Stack>
   );
 }
