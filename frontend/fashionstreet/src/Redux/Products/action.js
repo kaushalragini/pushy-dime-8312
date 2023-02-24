@@ -1,22 +1,31 @@
 import axios from "axios";
-import { router } from "json-server";
-import { baseURL } from "../../Components/nikhil/Products";
 import { FILTER_PRODUCTS, GET_PRODUCTS, SORT_PRODUCTS } from "./actionTypes";
 
-export const get_products =
-  ({ page, max, min, sort, order, categeory, subcategeory }) =>
-  async (dispatch) => {
-    let res = await axios.get(
-      `${baseURL}/products?page=${page}&max=${max}&min=${min}&sort=${sort}&order=${order}&categeory=${categeory}&subcategeory=${subcategeory}`
-    );
-    dispatch({ type: GET_PRODUCTS, payload: res.data });
-  };
+const baseURL = process.env.REACT_APP_URL;
 
-export const filter_products =
-  ({ categeory, subcategeory }) =>
+export const get_products =
+  ({ page, brand, q, sort, min, max }) =>
   async (dispatch) => {
-    let res = await axios.get(`${baseURL}/filter${categeory}/${subcategeory}`);
-    dispatch({ type: GET_PRODUCTS, payload: res.data });
+    console.log(page);
+    let res = await axios({
+      method: "GET",
+      baseURL,
+      url: "products/all",
+      params: {
+        page,
+        brand,
+        q,
+        sort,
+        price_gte: min,
+        price_lte: max,
+        limit: 8,
+      },
+    });
+    dispatch({
+      type: GET_PRODUCTS,
+      payload: res.data.data,
+      params: { page, brand, q, sort, min, max },
+    });
   };
 
 // router.get("/filter", async (req, res) => {
@@ -50,17 +59,3 @@ export const filter_products =
 //     res.send("error in filtering");
 //   }
 // });
-
-export const sort_products =
-  ({ categeory, subcategeory }) =>
-  async (dispatch) => {
-    let res = await axios.get(`${baseURL}/sort${categeory}/${subcategeory}`);
-    dispatch({ type: GET_PRODUCTS, payload: res.data });
-  };
-
-export const range_products =
-  ({ min, max }) =>
-  async (dispatch) => {
-    let res = await axios.get(`${baseURL}/price?min=${min}&max=${max}`);
-    dispatch({ type: GET_PRODUCTS, payload: res.data });
-  };

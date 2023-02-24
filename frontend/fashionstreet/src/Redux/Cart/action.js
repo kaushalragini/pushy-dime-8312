@@ -5,7 +5,7 @@ import {
   GET_CART,
   UPDATE_CART,
 } from "./actionTypes";
-import { baseURL } from "../../Components/nikhil/Products";
+const baseURL = process.env.REACT_APP_URL
 
 export const get_cart = () => async (dispatch) => {
   let res = await axios.get(`${baseURL}/cart`);
@@ -30,6 +30,6 @@ export const update_cart =
   };
 
 export const delete_from_cart = (id) => async (dispatch) => {
-  let res = await axios.delete(`${baseURL}/cart/${id}`);
+    let res = await axios.delete(`${baseURL}/cart/${id}`);
   dispatch({ type: DELETE_FROM_CART, payload: id });
 };

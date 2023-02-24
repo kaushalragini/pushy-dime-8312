@@ -1,10 +1,14 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
+
 import AdminHomePage from "../Admin/Pages/AdminHomePage";
-//import AdminProducts from "../Admin/Pages/AdminProducts";
+
+
+// import AdminProducts from "../Admin/Pages/AdminProducts";
 import Home from "./Home";
-// import Products from "../Components/nikhil/Products";
-// import SingleProduct from "../Components/nikhil/SingleProduct";
+import Products from "../Components/nikhil/Products";
+import SingleProduct from "../Components/nikhil/SingleProduct";
+
 
 const Routing = () => {
   return (
@@ -16,6 +20,7 @@ const Routing = () => {
       <Route path="/kid-fashion" />
       <Route path="/" />
       <Route path="/admin" element={<AdminHomePage/>}/>
+
       {/* <Route path="/admin/products" element={<AdminProducts />} /> */}
 
       {/* <Route path="/products" element={<Products />} /> */}
@@ -25,3 +30,4 @@ const Routing = () => {
 };
 
 export default Routing;
+
