@@ -26,7 +26,10 @@ const Home = () => {
         
         red="TRY IT OUT"
         url={compare}
-      />
+      /> 
+
+
+      {/* ++++++ YAHA SE ++++ */}
       <Box textAlign={"center"} mt="100px">
         <Heading fontWeight={500}>500+ PREMIUM PARTNERS</Heading>
         <Text color="gray.600" mt="20px">
@@ -116,17 +119,26 @@ const Home = () => {
         </GridItem>
       </Grid>
 
-      <Hero2  
-        head="Locate Any Product"
-        head2="In One Second"
-        text="Simply copy any product url and search it on"
-        text1="Upstyle.Our patented technology helps you"
-        text2="easily locate it on Upstyle and compare"
-        text3="across 500+ partner stores."
-        red="TRY IT OUT"
-        url="https://cdn.modesens.com/static/img/20221231bg2_en.png"
-     />
-    </Box>
+
+{/* =======================================3rd============================================================================== */}
+      <Grid templateColumns='repeat(2, 1fr)' bg="#CCD1D1" mt="100px">
+
+<GridItem w='100%' h='500px' ml={{sm:"0px",md:"50px",lg:"100px"}}>
+  <Heading fontSize={{sm:"15px",md:"30px",lg:"30px"}} fontWeight={450} mt={"200px"}>Compare 500+ Stores</Heading>
+  <Heading fontSize={{sm:"15px",md:"30px",lg:"30px"}} fontWeight={450}>In One Place</Heading>
+  <Text color="gray.700" mt={"20px"} fontSize={"18px"}>Upstyle allows you to compare prices and</Text>
+  <Text color="gray.700"  fontSize={"18px"}>availability across hundreds of stores and</Text>
+  <Text color="gray.700"  fontSize={"18px"}>thousands of brands</Text>
+  {/* <Text color="gray.700"  fontSize={"18px"}>{text3}</Text> */}
+  <Text color="red" mt={"20px"} textDecoration="underline">TRY IT OUT</Text>
+</GridItem>
+<GridItem  h='500px' mt={100} mr="100px">
+  <Image src={compare} 
+   h="400px"
+   />
+</GridItem>
+</Grid>
+</Box>
 
   );
 };
