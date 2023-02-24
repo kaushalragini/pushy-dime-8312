@@ -32,7 +32,7 @@ export default function SingleProduct() {
   };
 
   return (
-    <Container maxW={"1200px"} textAlign={"justify"}>
+    <Container maxW={"1400px"} textAlign={"justify"}>
       <Text fontSize={"10px"}>
         MODESENS / DESIGNERS / MARNI / MEN / CLOTHING / ACTIVEWEAR / TOPS
       </Text>

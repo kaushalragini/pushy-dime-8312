@@ -1,40 +1,22 @@
 // import * as types from "./product.types";
 
-import {
-  FILTER_PRODUCTS,
-  GET_PRODUCTS,
-  PAGINATE_PRODUCTS,
-  SORT_PRODUCTS,
-} from "./actionTypes";
+import { GET_PRODUCTS } from "./actionTypes";
 
 const initialState = {
   PRODUCTS: [],
+  params: {},
 };
 
-export const ProductReducer = (state = initialState, { type, payload }) => {
+export const ProductReducer = (
+  state = initialState,
+  { type, payload, params }
+) => {
   switch (type) {
     case GET_PRODUCTS: {
       return {
         ...state,
         PRODUCTS: payload,
-      };
-    }
-    case FILTER_PRODUCTS: {
-      return {
-        ...state,
-        PRODUCTS: payload,
-      };
-    }
-    case SORT_PRODUCTS: {
-      return {
-        ...state,
-        PRODUCTS: payload,
-      };
-    }
-    case PAGINATE_PRODUCTS: {
-      return {
-        ...state,
-        PRODUCTS: payload,
+        params,
       };
     }
     default:
