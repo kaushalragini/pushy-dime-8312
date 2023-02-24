@@ -1,16 +1,17 @@
-import { Heading } from "@chakra-ui/react";
-import "./App.css";
-import CartDrower from "./Components/nikhil/CartDrower";
-import Products from "./Components/nikhil/Products";
-import SingleProduct from "./Components/nikhil/SingleProduct";
-import Header from "./Components/ragini/Header";
-import Routes from "./Pages/Routes";
 
+
+import Routing from "./Pages/Routes";
+import Navbar from "./Components/ragini/Navbar"
+import Home from "./Pages/Home";
+import Header from "./Components/ragini/Header";
+import Signup from "./Components/devarshi/Signup/Signup";
 function App() {
   return (
     <div className="App">
-      <Header />
-      {/* <Routes /> */}
+      {/* <Navbar/> */}
+      {/* <Header/> 
+       <Routing />  */}
+      
     </div>
   );
 }
