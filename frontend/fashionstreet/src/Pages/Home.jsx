@@ -1,11 +1,13 @@
-import React from 'react'
-import { CaptionCarousel } from "../Components/ragini/CaptionCarousel.jsx"
+import React from "react";
+import Header from "../Components/ragini/Header";
+// import { CaptionCarousel } from "../Components/ragini/CaptionCarousel.jsx";
 const Home = () => {
-    return (
-        <div>
-            <CaptionCarousel />
-        </div>
-    )
-}
+  return (
+    <div>
+      {/* <CaptionCarousel /> */}
+      <Header />
+    </div>
+  );
+};
 
-export default Home
+export default Home;

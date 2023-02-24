@@ -1,0 +1,29 @@
+
+.border{
+    border: 2px solid red;
+}
+
+
+.enable{
+    border: 1px solid black;
+    outline: linen;
+}
+
+.dis{
+    border: 0px solid black;
+    outline-width: 0px;
+    color: rgb(24, 11, 160);
+    font-weight: bold;
+}
+.dis::target-text{
+    color: black;
+    outline: none
+}
+
+.dis:focus{
+    outline: 0;
+}
+
+input::target-text{
+    color: aqua;
+}
