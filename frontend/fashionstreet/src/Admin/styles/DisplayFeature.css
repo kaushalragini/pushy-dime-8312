@@ -1,39 +1,41 @@
-.main-box {
-  /* width: 261px;
-  height: 105px; */
+.main-box-window {
+  
+    width: 251px;
+  height: 150px;
   border: 1px solid red;
   background-color: white;
   border-radius: 5px;
   text-align: left;
   padding: 15px;
+  box-shadow: rgba(204, 204, 204, 0.15);
 }
 .vector {
     position: relative;
-    left: 50%;
+    left: 105px;
     /* right: 71.75%; */
-    bottom: 50%;
+    bottom: 27px;
     /* bottom: 79.94%; */
   height: 13.52px;
 }
 .perc-second{
     position: relative;
-    left: 56%;
-    bottom: 56%;
+    left: 115px;
+    /* bottom: 75%; */
+    bottom: 35px;
     font-size: 15px;
 }
 
 .double-vector{
     position: relative;
-    left: 80%;
-    bottom: 140%;
+    left: 145px;
+    bottom: 90px;
 }
 
 @media screen  and (max-width:480px){
-    .main-box{
-        /* width: 100px;
-        height: 100px; */
+
+    .main-box-window{
+        width:220px;
+        height: 150px;
     }
-    .perc-second{
-        font-size: 8px;
-    }
+
 }
