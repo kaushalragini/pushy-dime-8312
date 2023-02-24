@@ -1,4 +1,3 @@
-
 import {
   Box,
   Grid,
@@ -128,6 +127,7 @@ const Home = () => {
         url="https://cdn.modesens.com/static/img/20221231bg2_en.png"
      />
     </Box>
+
   );
 };
 

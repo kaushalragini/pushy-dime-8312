@@ -1,8 +1,3 @@
-
-import Routing from "./Pages/Routes";
-
-
-
 import Routing from "./Pages/Routes";
 import Navbar from "./Components/ragini/Navbar"
 import Home from "./Pages/Home";
@@ -14,6 +9,7 @@ function App() {
   return (
     <div className="App">
       <Routing />
+
     </div>
   );
 }
