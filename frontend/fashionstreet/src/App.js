@@ -1,16 +1,11 @@
-import { Heading } from "@chakra-ui/react";
-import "./App.css";
-import CartDrower from "./Components/nikhil/CartDrower";
-import Products from "./Components/nikhil/Products";
-import SingleProduct from "./Components/nikhil/SingleProduct";
-import Header from "./Components/ragini/Header";
-import Routes from "./Pages/Routes";
+import Routing from "./Pages/Routes";
 
 function App() {
+  const baseURL = process.env.REACT_APP_URL;
+  console.log(baseURL);
   return (
     <div className="App">
-      <Header />
-      {/* <Routes /> */}
+      <Routing />
     </div>
   );
 }

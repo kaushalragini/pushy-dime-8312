@@ -21,6 +21,7 @@ import { delete_from_cart, get_cart } from "../../Redux/Cart/action";
 import { useDispatch, useSelector } from "react-redux";
 import { ButtonStyle } from "./nikhil.css";
 
+
 export default function CartDrower({ title = "CART" }) {
   // store related logic
   const { CART } = useSelector((store) => store.cartManager);

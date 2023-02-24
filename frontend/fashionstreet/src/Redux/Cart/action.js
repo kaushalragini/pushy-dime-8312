@@ -5,7 +5,7 @@ import {
   GET_CART,
   UPDATE_CART,
 } from "./actionTypes";
-import { baseURL } from "../../Components/nikhil/Products";
+const baseURL = process.env.REACT_APP_URL
 
 export const get_cart = () => async (dispatch) => {
   let res = await axios.get(`${baseURL}/cart`);

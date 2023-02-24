@@ -16,52 +16,24 @@ import {
   Center,
 } from "@chakra-ui/react";
 import React from "react";
-import axios from "axios";
 import { useEffect } from "react";
-import { useState } from "react";
-import Filter, { FilterDrower, Sort } from "./FilterDrower";
-import Pagination from "./Pagination";
-
-export const baseURL = "http://localhost:8080";
-
-async function getData({ page, sort, order }) {
-  try {
-    let res = await axios.get(
-      `${baseURL}/products?_limit=8&_page=${page}&_sort=${sort}&_order=${order}`
-    );
-    let data = res.data;
-    return data;
-  } catch (error) {
-    console.log(error);
-  }
-}
+import Filter, { FilterDrower, Pagination, Sort } from "./FilterDrower";
+import { get_products } from "../../Redux/Products/action";
+import { useDispatch, useSelector } from "react-redux";
+import { ButtonStyle } from "./nikhil.css";
 
 export default function Products() {
-  const [data, setData] = useState([]);
-  const [filterData, setFilterData] = useState({
-    page: 1,
-    sort: "",
-    order: "",
-  });
+  // redux store
+  const { PRODUCTS } = useSelector((store) => store.productsManager);
+  const dispatch = useDispatch();
 
   useEffect(() => {
-    getData(filterData).then((res) => setData(res));
-  }, [filterData]);
-
-  const handlePage = (page) => {
-    setFilterData({ ...filterData, page });
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-  };
-
-  const handleFilters = ({}) => {
-    console.log("filter");
-  };
+    dispatch(get_products({ page: 1 }));
+  }, []);
 
   return (
-    <Stack>
+    <Container maxW={"1500px"}>
       <Stack position="relative">
-        <Heading>MEN</Heading>
         <Grid
           gridTemplateColumns={{
             base: "repeat(2,1fr)",
@@ -73,22 +45,19 @@ export default function Products() {
         >
           <Hide below="lg">
             <GridItem rowSpan={50000} colSpan={1}>
-              <Filter handleFilters={handleFilters} filterData={filterData} />
+              <Filter />
             </GridItem>
           </Hide>
           <Show below="lg">
             <Box position={"absolute"} top="0px" left="20px" zIndex={100}>
-              <FilterDrower
-                handleFilters={handleFilters}
-                filterData={filterData}
-              />
+              <FilterDrower />
             </Box>
           </Show>
           <Box position={"absolute"} top="0" right="0px" zIndex={100}>
             <Sort />
           </Box>
 
-          {data.map((product) => (
+          {PRODUCTS.map((product) => (
             <Stack
               key={product.number}
               justify={"space-between"}
@@ -96,8 +65,9 @@ export default function Products() {
               border={"1px solid #D6D6D6"}
               p="10px 5px"
               position={"relative"}
+              textAlign="center"
             >
-              <Text
+              {/* <Text
                 position={"absolute"}
                 top="0px"
                 right="10px"
@@ -108,7 +78,7 @@ export default function Products() {
                 _hover={{ textShadow: "0px 0px 4px red" }}
               >
                 ♥
-              </Text>
+              </Text> */}
               <VStack as={Link} href="#" h="100%" justify={"space-between"}>
                 <Center h="250px">
                   <Image
@@ -146,7 +116,7 @@ export default function Products() {
           ))}
         </Grid>
       </Stack>
-      <Pagination handlePage={handlePage} page={filterData.page} />
-    </Stack>
+      <Pagination />
+    </Container>
   );
 }

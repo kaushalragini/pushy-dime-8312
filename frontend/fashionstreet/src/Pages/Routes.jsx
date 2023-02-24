@@ -1,12 +1,14 @@
 import React from "react";
-import { Route } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
+// import AdminProducts from "../Admin/Pages/AdminProducts";
+import Home from "./Home";
 import Products from "../Components/nikhil/Products";
 import SingleProduct from "../Components/nikhil/SingleProduct";
 
-const Routes = () => {
+const Routing = () => {
   return (
     <Routes>
-      <Route path="/" element={"home"} />
+      <Route path="/" element={<Home />} />
       <Route path="/men-fashion" element={"menfashion"} />
       <Route path="/women-fashion" element={"womenfashion"} />
       <Route path="/shop-beauty" element={"shopbeauty"} />
@@ -19,4 +21,4 @@ const Routes = () => {
   );
 };
 
-export default Routes;
+export default Routing;
