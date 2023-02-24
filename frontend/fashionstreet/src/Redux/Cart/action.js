@@ -30,6 +30,6 @@ export const update_cart =
   };
 
 export const delete_from_cart = (id) => async (dispatch) => {
-  let res = await axios.delete(`${baseURL}/cart/${id}`);
+    let res = await axios.delete(`${baseURL}/cart/${id}`);
   dispatch({ type: DELETE_FROM_CART, payload: id });
 };
