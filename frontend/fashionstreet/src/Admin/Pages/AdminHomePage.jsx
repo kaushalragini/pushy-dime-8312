@@ -8,7 +8,7 @@ const AdminHomePage = () => {
     <div>
         <Navbar/>
         <Flex>
-            {/* <Sidebar/> */}
+            <Sidebar/>
             <AdminRoute/>
         </Flex>
     </div>

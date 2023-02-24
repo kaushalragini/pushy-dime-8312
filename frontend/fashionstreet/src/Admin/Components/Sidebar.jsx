@@ -10,7 +10,7 @@ import "../styles/Sidebar.css";
 const Sidebar = () => {
   return (
     <div style={{ width: "15rem" }} className="sidebar-main">
-      <Box width={"100%"} bgColor="blue.900">
+      <Box width={"100%"} bgColor="#333840" height={"100vh"} textColor={"#7F8DA1"}>
         <VStack display={"inline-block"}>
           <Flex padding={"10px"}>
             <RxDoubleArrowUp size={"50px"} />
