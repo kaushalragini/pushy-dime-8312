@@ -1,0 +1,75 @@
+
+*{
+	box-sizing: border-box;
+}
+
+.table{
+	width: 100%;
+	border-collapse: collapse;
+    font-weight: 500;
+}
+
+.table td,.table th{
+  padding:12px 15px;
+  border:1px solid #ddd;
+  text-align: center;
+  font-size:16px;
+}
+
+.table th{
+	background-color: hsla(283, 64%, 47%, 0.838);
+	color:#ffffff;
+}
+
+.table tbody tr:nth-child(even){
+	background-color: hsla(283, 73%, 78%, 0.598);
+}
+
+.table tbody tr:nth-child(odd){
+	background-color: #ffff;
+}
+
+/*responsive*/
+
+@media(max-width: 700px){
+	.table thead{
+		display: none;
+	}
+
+	.table, .table tbody, .table tr, .table td{
+		display: block;
+		width: 100%;
+	}
+	.table tr{
+		margin-bottom:25px;
+	}
+	.table td{
+        margin-right: 0;
+		text-align: right;
+		padding-left: 50%;
+		text-align: right;
+		position: relative;
+	}
+	.table td::before{
+		content: attr(data-label);
+		position: absolute;
+		left:0;
+		width: 50%;
+		padding-left:15px;
+		font-size:15px;
+		font-weight: bold;
+		text-align: left;
+	}
+
+    /* table-row:last-child{
+        height: 540px;
+    } */
+    
+}
+
+
+
+
+
+
+
