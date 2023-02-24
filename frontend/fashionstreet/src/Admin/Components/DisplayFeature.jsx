@@ -5,7 +5,7 @@ import "../styles/DisplayFeature.css";
 const DisplayFeature = ({name,perOne,img1,perTwo,img2}) => {
   return (
     <div>
-      <Box className="main-box">
+      <Box className="main-box-window">
         <Text className="name" color={"gray.300"}>{name}</Text>
         <Heading className="perc-first" fontSize={"30px"}>{perOne}</Heading>
         <img src={img1} alt="vector" className="vector" />

@@ -119,6 +119,7 @@ const Home = () => {
         </GridItem>
       </Grid>
 
+
 {/* =======================================3rd============================================================================== */}
       <Grid templateColumns='repeat(2, 1fr)' bg="#CCD1D1" mt="100px">
 
@@ -138,7 +139,9 @@ const Home = () => {
 </GridItem>
 </Grid>
 </Box>
+
   );
 };
 
 export default Home;
+
