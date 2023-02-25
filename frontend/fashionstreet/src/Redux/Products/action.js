@@ -20,7 +20,6 @@ export const get_products =
         limit: 8,
       },
     });
-    console.log(res.data);
     dispatch({
       type: GET_PRODUCTS,
       payload: res.data.data,
@@ -29,14 +28,18 @@ export const get_products =
   };
 
 export const get_single_product = (id) => async (dispatch) => {
+  let token = localStorage.getItem("token");
   let res = await axios({
     method: "GET",
     baseURL,
     url: `products/${id}`,
+    headers: {
+      Authorization: token,
+    },
   });
-  console.log(res);
   dispatch({
     type: GET_PRODUCTS,
-    payload: res.data.data,
+    payload: [res.data],
+    params: {},
   });
 };

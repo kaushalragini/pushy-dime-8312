@@ -96,7 +96,7 @@ export function NavDrawer() {
   return (
     <div>
       <HStack justify={"space-between"} w="100%">
-        <Heading ref={btnRef} colorScheme="teal" onClick={onOpen}>
+        <Heading as={Link} ref={btnRef} colorScheme="teal" onClick={onOpen}>
           =
         </Heading>
         <Drawer
@@ -114,7 +114,7 @@ export function NavDrawer() {
             </DrawerHeader>
 
             <DrawerBody>
-              <VStack justify={"space-evenly"} gap="20px">
+              <Stack justify={"space-evenly"} gap="20px">
                 {LINKS.map((main) => (
                   <div key={main.title}>
                     <Popover key={main.title} trigger="hover">
@@ -132,7 +132,7 @@ export function NavDrawer() {
                   </div>
                 ))}
                 <Link href="#">SHOP ALL</Link>
-              </VStack>
+              </Stack>
               <Image
                 src="https://cdn.modesens.com/umedia/1713864s?w=800"
                 position={"absolute"}

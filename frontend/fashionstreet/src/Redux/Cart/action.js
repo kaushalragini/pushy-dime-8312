@@ -5,17 +5,26 @@ import {
   GET_CART,
   UPDATE_CART,
 } from "./actionTypes";
-const baseURL = process.env.REACT_APP_URL
+const baseURL = process.env.REACT_APP_URL;
+let token = localStorage.getItem("token");
 
 export const get_cart = () => async (dispatch) => {
-  let res = await axios.get(`${baseURL}/cart`);
-  dispatch({ type: GET_CART, payload: res.data });
+  let res = await axios.get(`${baseURL}/cart`, {
+    headers: {
+      Authorization: token,
+    },
+  });
+  console.log(res);
+  dispatch({ type: GET_CART, payload: res.data.data });
 };
 
 export const add_to_cart = (product) => async (dispatch) => {
   try {
-    let res = await axios.post(`${baseURL}/cart`, product);
-    console.log(res);
+    let res = await axios.post(`${baseURL}/cart`, product, {
+      headers: {
+        Authorization: token,
+      },
+    });
     dispatch({ type: ADD_TO_CART, payload: res.data });
   } catch (err) {
     console.log(err.response.data);
@@ -31,6 +40,6 @@ export const update_cart =
   };
 
 export const delete_from_cart = (id) => async (dispatch) => {
-    let res = await axios.delete(`${baseURL}/cart/${id}`);
+  let res = await axios.delete(`${baseURL}/cart/${id}`);
   dispatch({ type: DELETE_FROM_CART, payload: id });
 };

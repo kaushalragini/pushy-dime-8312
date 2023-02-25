@@ -34,6 +34,9 @@ export default function CartDrower({ title = "CART" }) {
     dispatch(get_cart());
   }, []);
 
+
+  // console.log(CART);
+
   return (
     <>
       <button onClick={onOpen}>{title}</button>
@@ -50,58 +53,62 @@ export default function CartDrower({ title = "CART" }) {
           <Divider />
           <DrawerBody>
             <VStack>
-              {CART.map((product) => (
-                <Box
-                  key={product.id}
-                  h="120px"
-                  w="100%"
-                  // p="10px"
-                  position={"relative"}
-                >
-                  <button
-                    style={{
-                      position: "absolute",
-                      right: 0,
-                      top: 0,
-                      fontSize: "16px",
-                      color: "#c53030",
-                      fontWeight: "bold",
-                    }}
-                    onClick={() => {
-                      dispatch(delete_from_cart(product.id));
-                    }}
+              {!CART.length ? (
+                <Text>CART IS EMPTY</Text>
+              ) : (
+                CART.map((product) => (
+                  <Box
+                    key={product._id}
+                    h="120px"
+                    w="100%"
+                    // p="10px"
+                    position={"relative"}
                   >
-                    x
-                  </button>
-                  <HStack justify={"space-between"} h="100%" p="10px">
-                    <Image src={product.img} h="100%" objectFit={""} />
-                    <Stack w="60%" h="100%" justify={"space-between"}>
-                      <Text fontWeight={"bold"}>{product.product_name}</Text>
+                    <button
+                      style={{
+                        position: "absolute",
+                        right: 0,
+                        top: 0,
+                        fontSize: "16px",
+                        color: "#c53030",
+                        fontWeight: "bold",
+                      }}
+                      onClick={() => {
+                        dispatch(delete_from_cart(product.id));
+                      }}
+                    >
+                      x
+                    </button>
+                    <HStack justify={"space-between"} h="100%" p="10px">
+                      <Image src={product.img} h="100%" objectFit={""} />
+                      <Stack w="60%" h="100%" justify={"space-between"}>
+                        <Text fontWeight={"bold"}>{product.product_name}</Text>
 
-                      <Text fontSize="20px">{product.title}</Text>
-                      <Text>Size : {product.size}</Text>
-                      <Text>
-                        Price : ₹{" "}
-                        <span style={{ color: "green", fontWeight: "bold" }}>
-                          {product.price}
-                        </span>
-                      </Text>
-                      <HStack w="100%" justify={"space-between"}>
-                        <Button {...ButtonStyle} size="sm">
-                          -
-                        </Button>
-                        <Button {...ButtonStyle} size="sm" w="70%">
-                          0
-                        </Button>
-                        <Button {...ButtonStyle} size="sm">
-                          +
-                        </Button>
-                      </HStack>
-                    </Stack>
-                  </HStack>
-                  <Divider mt="5px" border={"1px solid"} />
-                </Box>
-              ))}
+                        <Text fontSize="20px">{product.title}</Text>
+                        <Text>Size : {product.size}</Text>
+                        <Text>
+                          Price : ₹{" "}
+                          <span style={{ color: "green", fontWeight: "bold" }}>
+                            {product.price}
+                          </span>
+                        </Text>
+                        <HStack w="100%" justify={"space-between"}>
+                          <Button {...ButtonStyle} size="sm">
+                            -
+                          </Button>
+                          <Button {...ButtonStyle} size="sm" w="70%">
+                            0
+                          </Button>
+                          <Button {...ButtonStyle} size="sm">
+                            +
+                          </Button>
+                        </HStack>
+                      </Stack>
+                    </HStack>
+                    <Divider mt="5px" border={"1px solid"} />
+                  </Box>
+                ))
+              )}
             </VStack>
           </DrawerBody>
           <DrawerFooter justifyContent={"space-between"}>

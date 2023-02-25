@@ -279,7 +279,6 @@ export function SearchDrower() {
                 X
               </Button>
             </HStack>
-
             {params.q &&
               PRODUCTS.map((el) => (
                 <div key={el._id}>
@@ -297,11 +296,11 @@ export function SearchDrower() {
               ))}
           </DrawerBody>
 
-          {/* <DrawerFooter>
-            <Button variant="outline" mr={3} onClick={onClose}>
+          <DrawerFooter>
+            {/* <Button variant="outline" mr={3} onClick={onClose}>
               CLOSE
-            </Button>
-          </DrawerFooter> */}
+            </Button> */}
+          </DrawerFooter>
         </DrawerContent>
       </Drawer>
     </div>
