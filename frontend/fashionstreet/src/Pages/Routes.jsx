@@ -5,9 +5,9 @@ import AdminHomePage from "../Admin/Pages/AdminHomePage";
 import Home from "./Home";
 import Products from "../Components/nikhil/Products";
 import SingleProduct from "../Components/nikhil/SingleProduct";
-
+import AdminUsers from "../Admin/Pages/AdminUsers";
+import AdminOrderedProducts from "../Admin/Pages/AdminOrderedProducts";
 import Signup from "../Components/devarshi/Signup/Signup"
-
 import Navbar from "../Components/nikhil/Navbar";
 import Checkout from "../Components/nikhil/CheckoutComp/Checkout";
 
@@ -18,7 +18,12 @@ const Routing = () => {
       <Routes>
         <Route path="/" element={<Home />} />
 
-        <Route path="/admin/products" element={<AdminProducts />} />
+          // * Faizal
+            <Route path="/admin/products" element={<AdminProducts />} />
+            <Route path="/admin/users" element={<AdminUsers />} />
+            <Route path="/admin/orders" element={<AdminOrderedProducts />} />
+         // * Faizal
+        
 
         <Route path="/admin" element={<AdminHomePage />} />
 
