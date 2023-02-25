@@ -22,6 +22,9 @@ import {
   Checkbox,
   Flex,
   HStack,
+  Divider,
+  Link,
+  Badge,
 } from "@chakra-ui/react";
 import React from "react";
 import { useEffect } from "react";
@@ -29,86 +32,47 @@ import { useState } from "react";
 import { get_products } from "../../Redux/Products/action";
 import RangeSliderComp from "./RangeSlider";
 import { useDispatch, useSelector } from "react-redux";
+import { ButtonStyle } from "./nikhil.css";
+import { FaBeer } from "react-icons/fa";
+import { Search2Icon } from "@chakra-ui/icons";
 
 export default function Filter() {
-  const filters = [
-    { title: "categeory", subtitles: ["men", "women", "boys", "girls"] },
-    { title: "brand", subtitles: ["AMIRI", "VERSACE", "BALENCIAGA", "MARNI"] },
-    { title: "size", subtitles: ["SM", "MD", "LG", "XL"] },
-    {
-      title: "price",
-      subtitles: [
-        [0, " - ", 299],
-        [300, " - ", 599],
-        [600, " - ", 899],
-        [900, " - ", 1199],
-        [1200, " - ", 1599],
-      ],
-    },
-  ];
-
+  const dispatch = useDispatch();
   const { params } = useSelector((store) => store.productsManager);
 
   const handleClick = (main, sub) => {
     if (main === "brand") {
       dispatch(get_products({ ...params, page: 1, brand: sub }));
-    } else if (main === "categeory") {
-      dispatch(get_products({ ...params, page: 1, brand: sub }));
-    } else if (main === "size") {
-      dispatch(get_products({ ...params, page: 1, brand: sub }));
+    } else if (main === "category") {
+      dispatch(get_products({ ...params, page: 1, category: sub }));
+    } else if (main === "gender") {
+      dispatch(get_products({ ...params, page: 1, gender: sub }));
     } else if (main === "price") {
       dispatch(get_products({ ...params, page: 1, min: sub[0], max: sub[2] }));
     }
   };
 
-  const dispatch = useDispatch();
-
   return (
     <>
-      <Stack
-        position="absolute"
-        top={0}
-        h={"100vh"}
-        w="250px"
-        p="10px"
-        textAlign="left"
-      >
-        <Stack p="15px">
+      <Stack w="100%" p="10px" textAlign="left">
+        <Stack p="15px" position={"relative"}>
           <Heading size={"md"}>FILTERS</Heading>
-          <Text
-            hidden={!params.brand}
-            border="1px solid"
-            position={"relative"}
-            p="5px"
+          <button
+            style={{ position: "absolute", right: "15px" }}
+            onClick={() => dispatch(get_products({}))}
           >
-            {params.brand}
-            <button
-              style={{ position: "absolute", right: "10px" }}
-              onClick={() =>
-                dispatch(get_products({ ...params, brand: undefined }))
-              }
-            >
-              X
-            </button>
-          </Text>
-          <Text
-            hidden={!params.min}
-            border="1px solid"
-            position={"relative"}
-            p="5px"
-          >
-            ${params.min} - ${params.max}
-            <button
-              style={{ position: "absolute", right: "10px" }}
-              onClick={() =>
-                dispatch(
-                  get_products({ ...params, min: undefined, max: undefined })
-                )
-              }
-            >
-              X
-            </button>
-          </Text>
+            Reset
+          </button>
+          <Box border={"1px solid #d6d6d6"}>
+            {params.brand && <p>BRAND: {params.brand}</p>}
+            {params.category && <p>CATEGORY: {params.category}</p>}
+            {params.max && (
+              <p>
+                PRICE: Rs.{params.min} to Rs.{params.max}
+              </p>
+            )}
+            {params.gender && <p>GENDER: {params.gender}</p>}
+          </Box>
         </Stack>
         <Accordion defaultIndex={[0]} allowMultiple>
           {filters.map((main) => (
@@ -144,8 +108,14 @@ export function FilterDrower() {
   return (
     <div>
       <button ref={btnRef} colorScheme="teal" onClick={onOpen}>
-        {/* <AiTwotoneFilter size={"30"} /> */}
-        <Text fontWeight={"bold"}> FILTER</Text>
+        <Text
+          fontWeight={"bold"}
+          border={"1px solid #D6D6D6"}
+          w="80px"
+          bgColor={"white"}
+        >
+          FILTER
+        </Text>
       </button>
       <Drawer
         isOpen={isOpen}
@@ -180,7 +150,7 @@ export function Sort() {
   const { params } = useSelector((store) => store.productsManager);
 
   return (
-    <>
+    <Box border={"1px solid #D6D6D6"} w="80px" bgColor={"white"}>
       <Select
         textAlign={"right"}
         variant="unstyled"
@@ -193,7 +163,7 @@ export function Sort() {
         <option value="price">Price Low to High</option>
         <option value="-price">Price High to Low </option>
       </Select>
-    </>
+    </Box>
   );
 }
 
@@ -208,7 +178,13 @@ export function Pagination() {
   };
 
   return (
-    <HStack gap={"20px"} justify={"center"} fontSize="20px" p="10px">
+    <HStack
+      gap={"20px"}
+      justify={"center"}
+      fontSize="20px"
+      p="10px"
+      border={"1px solid #D6D6D6"}
+    >
       <button
         onClick={() => handlePage(-1)}
         hidden={page === 1}
@@ -229,3 +205,83 @@ export function Pagination() {
     </HStack>
   );
 }
+
+export function SearchDrower() {
+  const { isOpen, onOpen, onClose } = useDisclosure();
+  const btnRef = React.useRef();
+
+  const dispatch = useDispatch();
+  const { params, PRODUCTS } = useSelector((store) => store.productsManager);
+
+  const handleSearch = (e) => {
+    dispatch(get_products({ q: e.target.value }));
+  };
+
+  return (
+    <div>
+      <button ref={btnRef} colorScheme="teal" onClick={onOpen}>
+        <Search2Icon boxSize="20px" />
+      </button>
+      <Drawer
+        isOpen={isOpen}
+        placement="top"
+        onClose={onClose}
+        finalFocusRef={btnRef}
+      >
+        <DrawerOverlay />
+        <DrawerContent>
+          <DrawerBody>
+            <DrawerHeader textAlign={"center"}>SEARCH</DrawerHeader>
+            <HStack>
+              <Input border={"1px solid"} onChange={handleSearch} />
+              <Button
+                {...ButtonStyle}
+                onClick={() => dispatch(get_products({ q: undefined }))}
+              >
+                X
+              </Button>
+            </HStack>
+            {params.q &&
+              PRODUCTS.map((el) => (
+                <div key={el._id}>
+                  <Divider />
+                  <br />
+                  <HStack
+                    as={Link}
+                    target="_blank"
+                    href={`/products/${el._id}`}
+                    justify="space-between"
+                  >
+                    <Text>{el.product_name}</Text>
+                    <Text>{el.brand}</Text>
+                  </HStack>
+                </div>
+              ))}
+          </DrawerBody>
+
+          <DrawerFooter>
+            {/* <Button variant="outline" mr={3} onClick={onClose}>
+              CLOSE
+            </Button> */}
+          </DrawerFooter>
+        </DrawerContent>
+      </Drawer>
+    </div>
+  );
+}
+
+export const filters = [
+  { title: "category", subtitles: ["Shoes", "Clothing"] },
+  { title: "brand", subtitles: ["AMIRI", "VERSACE", "BALENCIAGA", "MARNI"] },
+  { title: "gender", subtitles: ["Men", "Women"] },
+  {
+    title: "price",
+    subtitles: [
+      [0, " - ", 299],
+      [300, " - ", 599],
+      [600, " - ", 899],
+      [900, " - ", 1199],
+      [1200, " - ", 1599],
+    ],
+  },
+];

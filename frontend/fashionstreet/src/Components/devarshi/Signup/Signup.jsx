@@ -58,7 +58,7 @@ const Signup = () => {
         email,
         password
     }
-    fetch("http://localhost:8080/users/register",{
+    fetch("https://inquisitive-dove-leg-warmers.cyclic.app/users/register",{
         method:"POST",
         body:JSON.stringify(payload),
         headers:{
