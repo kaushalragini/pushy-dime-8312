@@ -14,7 +14,6 @@ export const get_cart = () => async (dispatch) => {
       Authorization: token,
     },
   });
-  console.log(res);
   dispatch({ type: GET_CART, payload: res.data.data });
 };
 
@@ -25,6 +24,7 @@ export const add_to_cart = (product) => async (dispatch) => {
         Authorization: token,
       },
     });
+
     dispatch({ type: ADD_TO_CART, payload: res.data });
   } catch (err) {
     console.log(err.response.data);
@@ -34,7 +34,6 @@ export const add_to_cart = (product) => async (dispatch) => {
 export const update_cart =
   ({ id, a }) =>
   async (dispatch) => {
-    console.log(id, a);
     let res = await axios.patch(`${baseURL}/cart/${id}`, { count: a });
     dispatch({ type: UPDATE_CART, payload: res.data });
   };

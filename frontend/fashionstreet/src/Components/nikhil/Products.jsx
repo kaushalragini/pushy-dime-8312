@@ -4,7 +4,6 @@ import {
   HStack,
   Stack,
   Text,
-  Link,
   Image,
   Heading,
   Box,
@@ -22,6 +21,7 @@ import Filter, { FilterDrower, Pagination, Sort } from "./FilterDrower";
 import { get_products, get_single_product } from "../../Redux/Products/action";
 import { useDispatch, useSelector } from "react-redux";
 import { ButtonStyle } from "./nikhil.css";
+import { Link } from "react-router-dom";
 
 export default function Products() {
   // redux store
@@ -47,7 +47,6 @@ export default function Products() {
               <FilterDrower />
             </Box>
           </Show>
-          MEN
           <Box position={"absolute"} top="0px" right="0">
             <Sort />
           </Box>
@@ -92,7 +91,7 @@ export default function Products() {
               <VStack
                 as={Link}
                 target="_blank"
-                href={`/products/${product._id}`}
+                to={`/products/${product._id}`}
                 h="100%"
                 justify={"space-between"}
               >

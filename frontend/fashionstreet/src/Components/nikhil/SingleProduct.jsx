@@ -8,7 +8,6 @@ import {
   Heading,
   HStack,
   Image,
-  Link,
   Stack,
   Text,
 } from "@chakra-ui/react";
@@ -18,7 +17,7 @@ import { MyCarausel } from "./MyCarausel";
 import { add_to_cart } from "../../Redux/Cart/action";
 import { useDispatch, useSelector } from "react-redux";
 import { ButtonStyle } from "./nikhil.css";
-import { NavLink, useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { get_single_product } from "../../Redux/Products/action";
 
 export default function SingleProduct() {
@@ -33,6 +32,8 @@ export default function SingleProduct() {
   const { PRODUCTS } = useSelector((store) => store.productsManager);
 
   const data = PRODUCTS[0];
+
+  console.log(data);
 
   useEffect(() => {
     dispatch(get_single_product(params.id));
@@ -53,7 +54,7 @@ export default function SingleProduct() {
           <MyCarausel data={data} />
         </Stack>
         <Stack {...Style} justify="space-between">
-          <Heading>{data.product_name}</Heading>
+          <Heading size={"md"}>{data.product_name}</Heading>
           <Text color={"red.700"} fontWeight="bold">
             {data.brand}
           </Text>
@@ -65,7 +66,9 @@ export default function SingleProduct() {
           <Button
             {...ButtonStyle}
             onClick={() =>
-              dispatch(add_to_cart({ ...data, quantity: 1, size: "SM" }))
+              dispatch(
+                add_to_cart({ productsId: data._id, quantity: 10, size: "xxxl" })
+              )
             }
           >
             ADD TO CART
@@ -76,12 +79,12 @@ export default function SingleProduct() {
           <Text>
             UPSTYLE Concierge helps you shop 500+ stores in one place. A premium
             benefit exclusively reserved for Silver and above members.
-            <Link href="#">Learn More</Link>
+            <Link to="#">Learn More</Link>
           </Text>
         </Stack>
         <Stack {...Style} justify="center" align={"center"}>
           <Text>Available exclusively for Silver and above members.</Text>
-          <Link href="#">TRY SILVER</Link>
+          <Link to="#">TRY SILVER</Link>
         </Stack>
       </Flex>
       <SetAlert />

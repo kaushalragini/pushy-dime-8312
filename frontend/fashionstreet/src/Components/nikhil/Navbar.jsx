@@ -1,3 +1,4 @@
+import { HamburgerIcon } from "@chakra-ui/icons";
 import {
   Popover,
   PopoverTrigger,
@@ -10,7 +11,6 @@ import {
   Flex,
   VStack,
   Stack,
-  Link,
   Image,
   Hide,
   Show,
@@ -26,11 +26,14 @@ import React from "react";
 import CartDrower from "./CartDrower";
 import { SearchDrower } from "./FilterDrower";
 import { ButtonStyle } from "./nikhil.css";
-
-// import { TOP_COLLECTION } from "./TopCollections";
-// import SearchDrower from "./SearchDrower";
+import { Link } from "react-router-dom";
+import { get_products } from "../../Redux/Products/action";
+import { useDispatch, useSelector } from "react-redux";
 
 export default function Navbar() {
+  const { params } = useSelector((store) => store.productsManager);
+  const dispatch = useDispatch();
+
   return (
     <HStack
       justify={"space-between"}
@@ -45,7 +48,7 @@ export default function Navbar() {
     >
       <Show above="lg">
         <Box p="5px">
-          <Heading as={Link} href="/" fontFamily="mono">
+          <Heading as={Link} to="/" fontFamily="mono">
             UpStyle
           </Heading>
         </Box>
@@ -58,22 +61,31 @@ export default function Navbar() {
                   <Link href="#">{main.title.toUpperCase()}</Link>
                 </PopoverTrigger>
                 <PopoverContent p="20px" w="200px">
-                  {main.brands.map((brands) => (
-                    <Link href="#" key={brands}>
-                      {brands}
+                  {main.brands.map((brand) => (
+                    <Link
+                      to={`/products`}
+                      key={brand}
+                      onClick={() => dispatch(get_products({ brand }))}
+                    >
+                      {brand}
                     </Link>
                   ))}
                 </PopoverContent>
               </Popover>
             </div>
           ))}
-          <Link href="#">SHOP ALL</Link>
+          <Link to={`/products`} onClick={() => dispatch(get_products({}))}>
+            SHOP ALL
+          </Link>
         </HStack>
 
-        <HStack justify={"right"}>
-          {/* <SearchDrower /> */}
-          <SearchDrower />
-          <CartDrower />
+        <HStack justify={"right"} gap="12px">
+          <Box>
+            <SearchDrower />
+          </Box>
+          <Box>
+            <CartDrower />
+          </Box>
         </HStack>
       </Show>
 
@@ -97,7 +109,7 @@ export function NavDrawer() {
     <div>
       <HStack justify={"space-between"} w="100%">
         <Heading as={Link} ref={btnRef} colorScheme="teal" onClick={onOpen}>
-          =
+          <HamburgerIcon boxSize={"20px"} />
         </Heading>
         <Drawer
           isOpen={isOpen}

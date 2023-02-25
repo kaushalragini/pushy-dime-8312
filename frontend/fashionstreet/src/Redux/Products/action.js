@@ -4,8 +4,9 @@ import { FILTER_PRODUCTS, GET_PRODUCTS, SORT_PRODUCTS } from "./actionTypes";
 const baseURL = process.env.REACT_APP_URL;
 
 export const get_products =
-  ({ page, brand, q, sort, min, max }) =>
+  ({ page = 1, brand, q, sort, min, max, category, gender }) =>
   async (dispatch) => {
+    console.log(category);
     let res = await axios({
       method: "GET",
       baseURL,
@@ -18,12 +19,14 @@ export const get_products =
         price_gte: min,
         price_lte: max,
         limit: 8,
+        category,
+        gender,
       },
     });
     dispatch({
       type: GET_PRODUCTS,
       payload: res.data.data,
-      params: { page, brand, q, sort, min, max },
+      params: { page, brand, q, sort, min, max, category, gender },
     });
   };
 
