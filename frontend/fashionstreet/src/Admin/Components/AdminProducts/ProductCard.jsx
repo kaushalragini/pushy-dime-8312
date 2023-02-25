@@ -1,37 +1,30 @@
-import { Box, Button, Flex, Image, Input, useToast } from "@chakra-ui/react";
-import React, { useState } from "react";
+import { Box, Button, Flex, Image, Input } from "@chakra-ui/react";
+import React, { useEffect, useState } from "react";
 import "./ProductCard.css";
 import axios from "axios";
+import { useDispatch, useSelector } from "react-redux";
+import {
+  deleteProducts,
+  updateProducts,
+} from "../../../Redux/AdminProducts/AdminProducts.actions";
+import useToastCompo from "../../../CustomHook/useToast";
+import ProductsRating from "./ProductsRating";
 //* Css
 
 const ProductCard = ({ product }) => {
   const [update, setUpdate] = useState(false);
   const [prodData, setProdData] = useState({});
-  const toast = useToast();
+  const dispatch = useDispatch();
+  const { Toast } = useToastCompo();
 
-  const updateData = async () => {
-    console.log(prodData);
-    let token = localStorage.getItem("token");
-
-    try {
-      const res = await axios.post(`${process.env.REACT_APP_URL}/products`, {
-        method: "post",
-        data: JSON.stringify(),
-        headers: {
-          Authorization: `${token}`,
-        },
-      });
-    } catch (err) {
-      toast({
-        title: `${err?.response?.data?.msg}`,
-        status: "error",
-        position: "top",
-        isClosable: true,
-      });
-      console.error(err);
-    }
+  const updateData = () => {
+    dispatch(updateProducts(prodData, Toast, product._id));
+    setUpdate(false);
   };
-  setUpdate(false);
+
+  const deleteData = () => {
+    dispatch(deleteProducts(Toast, product._id));
+  };
 
   return (
     <div>
@@ -52,18 +45,24 @@ const ProductCard = ({ product }) => {
             </Button>
           </Box>
           <Box>
-            <Button colorScheme="red">Delete</Button>
+            <Button onClick={deleteData} colorScheme="red">
+              Delete
+            </Button>
           </Box>
         </Flex>
       </Box>
       <Flex
-        className="border"
         flexDirection={{ lg: "row", md: "row", sm: "column", base: "column" }}
       >
         <Box>
-          <Image src={product.img} alt={product.img} />
+          <Image
+            border="1px"
+            borderColor="gray.200"
+            src={product.img}
+            alt={product.img}
+          />
         </Box>
-        <Box className="border">
+        <Box>
           <Input
             placeholder="Brand Name"
             value={update ? prodData.brand : product.brand}
@@ -199,25 +198,17 @@ const ProductCard = ({ product }) => {
             type="text"
           />
         </Box>
+        <Box
+          padding="10px"
+          border="1px"
+          borderColor="gray.200"
+          w={{ lg: "100%", md: "100%", sm: "100%", base: "100%" }}
+        >
+          <ProductsRating product={product} />
+        </Box>
       </Flex>
     </div>
   );
 };
 
 export default ProductCard;
-
-// brand: "",
-//     category: "",
-//     description: "",
-//     designer: "",
-//     detail_page_url: "",
-//     gender: "",
-//     home: "",
-//     img: "",
-//     mrp: 0,
-//     number: "",
-//     price: 0,
-//     product_name: "",
-//     rating: 0,
-//     "sub-category": "",
-//     type: "",

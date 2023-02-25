@@ -1,49 +1,45 @@
 import {
-  ADD_PRODUCTS,
-  DELETE_PRODUCTS,
-  ERROR_PRODUCTS,
-  GET_ALL_PRODUCTS,
-  LOADING_PRODUCTS,
-  RESET_PRODUCTS,
-  UPDATE_PRODUCTS,
-} from "./AdminProducts.types";
+  ADD_FEEDBACK,
+  ERROR_FEEDBACK,
+  GET_ALL_FEEDBACK,
+  LOADING_FEEDBACK,
+  RESET_FEEDBACK,
+} from "./Feedback.types";
 
 const initialState = {
-  products: [],
+  feedback: [],
   loading: false,
   error: false,
 };
 
-export const adminProductsReducer = (state = initialState, action) => {
+export const feedbackReducer = (state = initialState, action) => {
   switch (action.type) {
-    case LOADING_PRODUCTS: {
+    case LOADING_FEEDBACK: {
       return {
         ...state,
         loading: true,
         error: false,
       };
     }
-    case ERROR_PRODUCTS: {
+    case ERROR_FEEDBACK: {
       return {
         ...state,
         error: true,
         loading: false,
       };
     }
-    case GET_ALL_PRODUCTS: {
+    case GET_ALL_FEEDBACK: {
       return {
         ...state,
-        products: action.payload,
+        feedback: action.payload,
         loading: false,
         error: false,
       };
     }
-    case ADD_PRODUCTS:
-    case UPDATE_PRODUCTS:
-    case DELETE_PRODUCTS: {
+    case ADD_FEEDBACK: {
       return { ...state };
     }
-    case RESET_PRODUCTS: {
+    case RESET_FEEDBACK: {
       return initialState;
     }
     default: {

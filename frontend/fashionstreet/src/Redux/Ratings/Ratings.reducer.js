@@ -1,49 +1,49 @@
 import {
-  ADD_PRODUCTS,
-  DELETE_PRODUCTS,
-  ERROR_PRODUCTS,
-  GET_ALL_PRODUCTS,
-  LOADING_PRODUCTS,
-  RESET_PRODUCTS,
-  UPDATE_PRODUCTS,
-} from "./AdminProducts.types";
+  ADD_RATINGS,
+  DELETE_RATINGS,
+  ERROR_RATINGS,
+  GET_ALL_RATINGS,
+  LOADING_RATINGS,
+  RESET_RATINGS,
+  UPDATE_RATINGS,
+} from "./Ratings.types";
 
 const initialState = {
-  products: [],
+  ratings: [],
   loading: false,
   error: false,
 };
 
-export const adminProductsReducer = (state = initialState, action) => {
+export const ratingsReducer = (state = initialState, action) => {
   switch (action.type) {
-    case LOADING_PRODUCTS: {
+    case LOADING_RATINGS: {
       return {
         ...state,
         loading: true,
         error: false,
       };
     }
-    case ERROR_PRODUCTS: {
+    case ERROR_RATINGS: {
       return {
         ...state,
         error: true,
         loading: false,
       };
     }
-    case GET_ALL_PRODUCTS: {
+    case GET_ALL_RATINGS: {
       return {
         ...state,
-        products: action.payload,
+        ratings: action.payload,
         loading: false,
         error: false,
       };
     }
-    case ADD_PRODUCTS:
-    case UPDATE_PRODUCTS:
-    case DELETE_PRODUCTS: {
+    case ADD_RATINGS:
+    case UPDATE_RATINGS:
+    case DELETE_RATINGS: {
       return { ...state };
     }
-    case RESET_PRODUCTS: {
+    case RESET_RATINGS: {
       return initialState;
     }
     default: {

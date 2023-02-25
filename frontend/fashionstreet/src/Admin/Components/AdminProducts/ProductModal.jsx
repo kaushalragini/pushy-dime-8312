@@ -10,13 +10,13 @@ import {
   useDisclosure,
 } from "@chakra-ui/react";
 
-function ProductModal({ children, title = "Modal", size }) {
+function ProductModal({ children, title = "Modal", size, btnText = "More.." }) {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
     <>
       <Button onClick={onOpen} variant="outline" colorScheme="purple">
-        {"More .."}
+        {btnText}
       </Button>
       <Modal size={size} onClose={onClose} isOpen={isOpen}>
         <ModalOverlay bg="rgba(226, 177, 226, 0.477)  " />

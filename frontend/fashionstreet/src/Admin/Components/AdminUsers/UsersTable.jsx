@@ -1,22 +1,24 @@
 import { Button, Image, Skeleton, useDisclosure } from "@chakra-ui/react";
 import React, { useRef } from "react";
-import ProductCard from "./ProductCard";
-import ProductModal from "./ProductModal";
-import "./ProductsTable.css";
+import ProductCard from "../AdminProducts/ProductCard";
+import ProductModal from "../AdminProducts/ProductModal";
 
-const ProductsTable = ({
-  products,
+import "../AdminProducts/ProductsTable.css";
+import UserCard from "./UserCard";
+
+const UserssTable = ({
+  users,
   disableImg = false,
   modal = "More..",
-  heading = ["Name", "Brand", "Price", "More.."],
-  requiredFields = ["product_name", "brand", "price", ""],
+  heading = ["Name", "Email", "Address", "Gender", "More.."],
+  requiredFields = ["name", "email", "address", "gender", "More"],
 }) => {
   return (
     <Skeleton
       startColor="purple.100"
       endColor="purple.300"
       height="600px"
-      isLoaded={products.length}
+      isLoaded={users?.length}
     >
       <div>
         {" "}
@@ -30,29 +32,28 @@ const ProductsTable = ({
             </tr>
           </thead>
           <tbody>
-            {products?.map((prod, index) => {
+            {/* //* mapping to get */}
+            {users?.map((user, index) => {
               return (
-                <tr className="table-row" key={prod._id}>
+                <tr className="table-row" key={user._id}>
                   {disableImg ? (
                     ""
                   ) : (
                     <td data-label="Image">
-                      <Image w="30px" src={prod.img} alt={prod.img} />
+                      <Image w="30px" src={user.img} alt={user.img} />
                     </td>
                   )}
                   {heading.map((el, i) => {
                     return (
                       <td data-label={el} key={el}>
                         {el === "Price" ? "₹ " : ""}
-                        {products[index][requiredFields[i]] ? (
-                          products[index][requiredFields[i]]
+                        {users[index][requiredFields[i]] ||
+                        requiredFields[i] !== "More" ? (
+                          users[index][requiredFields[i]]
                         ) : (
                           <>
-                            <ProductModal
-                              title={"Product Details"}
-                              size={"full"}
-                            >
-                              <ProductCard product={prod} />
+                            <ProductModal title={"User Details"} size={"lg"}>
+                              <UserCard user={user} />
                             </ProductModal>
                           </>
                         )}
@@ -69,4 +70,4 @@ const ProductsTable = ({
   );
 };
 
-export default ProductsTable;
+export default UserssTable;
