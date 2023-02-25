@@ -1,4 +1,4 @@
-import {  Heading, SimpleGrid } from "@chakra-ui/react";
+import {  Flex, Heading, SimpleGrid } from "@chakra-ui/react";
 import React from "react";
 import DisplayFeature from "../Components/DisplayFeature";
 import "../styles/Dashboard.css";
@@ -10,6 +10,7 @@ import bag from "../images/bag.png";
 import earn from "../images/earning.png";
 import SalesChart from "../Components/Chart";
 import LatestOrder from "../Components/LatestOrder";
+import TrendingItem from "../Components/TrendingItem";
 const Dashboard = () => {
   return (
     <div className="dashboard-main">
@@ -51,7 +52,10 @@ const Dashboard = () => {
           />
       </SimpleGrid>
       <SalesChart/>
+      <Flex  wrap="wrap" justifyContent={"space-between"}>
       <LatestOrder/>
+      <TrendingItem/>
+      </Flex>
     </div>
   );
 };
