@@ -21,7 +21,6 @@ import { delete_from_cart, get_cart } from "../../Redux/Cart/action";
 import { useDispatch, useSelector } from "react-redux";
 import { ButtonStyle } from "./nikhil.css";
 
-
 export default function CartDrower({ title = "CART" }) {
   // store related logic
   const { CART } = useSelector((store) => store.cartManager);
@@ -43,7 +42,6 @@ export default function CartDrower({ title = "CART" }) {
         placement="right"
         onClose={onClose}
         finalFocusRef={btnRef}
-        size="md"
       >
         <DrawerOverlay />
         <DrawerContent>
@@ -67,7 +65,7 @@ export default function CartDrower({ title = "CART" }) {
                       top: 0,
                       fontSize: "16px",
                       color: "#c53030",
-                      fontWeight:"bold"
+                      fontWeight: "bold",
                     }}
                     onClick={() => {
                       dispatch(delete_from_cart(product.id));
@@ -84,7 +82,7 @@ export default function CartDrower({ title = "CART" }) {
                       <Text>Size : {product.size}</Text>
                       <Text>
                         Price : ₹{" "}
-                        <span style={{ color: "green", fontWeight:"bold" }}>
+                        <span style={{ color: "green", fontWeight: "bold" }}>
                           {product.price}
                         </span>
                       </Text>

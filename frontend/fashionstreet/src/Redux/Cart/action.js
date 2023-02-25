@@ -15,6 +15,7 @@ export const get_cart = () => async (dispatch) => {
 export const add_to_cart = (product) => async (dispatch) => {
   try {
     let res = await axios.post(`${baseURL}/cart`, product);
+    console.log(res);
     dispatch({ type: ADD_TO_CART, payload: res.data });
   } catch (err) {
     console.log(err.response.data);

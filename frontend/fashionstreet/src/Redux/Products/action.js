@@ -6,11 +6,10 @@ const baseURL = process.env.REACT_APP_URL;
 export const get_products =
   ({ page, brand, q, sort, min, max }) =>
   async (dispatch) => {
-    console.log(page);
     let res = await axios({
       method: "GET",
       baseURL,
-      url: "products/all",
+      url: `products/all`,
       params: {
         page,
         brand,
@@ -21,6 +20,7 @@ export const get_products =
         limit: 8,
       },
     });
+    console.log(res.data);
     dispatch({
       type: GET_PRODUCTS,
       payload: res.data.data,
@@ -28,34 +28,15 @@ export const get_products =
     });
   };
 
-// router.get("/filter", async (req, res) => {
-//   const [categeory, subcategeory] = req.params.query;
-//   try {
-//     const filtered = await ProductModel.find({ categeory, subcategeory });
-//     res.send(filtered);
-//   } catch (error) {
-//     res.send("error in filtering");
-//   }
-// });
-
-// router.get("/sort", async (req, res) => {
-//   const [sort, order] = req.params.query;
-//   try {
-//     const sorted = await ProductModel.find({ sort, order });
-//     res.send(sorted);
-//   } catch (error) {
-//     res.send("error in filtering");
-//   }
-// });
-
-// router.get("/range", async (req, res) => {
-//   const [min, max] = req.params.query;
-//   try {
-//     const ranged = await ProductModel.find({
-//       $and: [{ price: { $gt: min } }, { price: { $lt: max } }],
-//     });
-//     res.send(ranged);
-//   } catch (error) {
-//     res.send("error in filtering");
-//   }
-// });
+export const get_single_product = (id) => async (dispatch) => {
+  let res = await axios({
+    method: "GET",
+    baseURL,
+    url: `products/${id}`,
+  });
+  console.log(res);
+  dispatch({
+    type: GET_PRODUCTS,
+    payload: res.data.data,
+  });
+};

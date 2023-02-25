@@ -14,11 +14,12 @@ import {
   Show,
   Divider,
   Center,
+  Skeleton,
 } from "@chakra-ui/react";
 import React from "react";
 import { useEffect } from "react";
 import Filter, { FilterDrower, Pagination, Sort } from "./FilterDrower";
-import { get_products } from "../../Redux/Products/action";
+import { get_products, get_single_product } from "../../Redux/Products/action";
 import { useDispatch, useSelector } from "react-redux";
 import { ButtonStyle } from "./nikhil.css";
 
@@ -32,8 +33,25 @@ export default function Products() {
   }, []);
 
   return (
-    <Container maxW={"1500px"}>
-      <Stack position="relative">
+    <>
+      <Stack>
+        <Box
+          // border={"1px solid"}
+          textAlign="center"
+          position="sticky"
+          top="53px"
+          zIndex={"100"}
+        >
+          <Show below="lg">
+            <Box position={"absolute"} top="0px" left="0">
+              <FilterDrower />
+            </Box>
+          </Show>
+          MEN
+          <Box position={"absolute"} top="0px" right="0">
+            <Sort />
+          </Box>
+        </Box>
         <Grid
           gridTemplateColumns={{
             base: "repeat(2,1fr)",
@@ -44,22 +62,14 @@ export default function Products() {
           }}
         >
           <Hide below="lg">
-            <GridItem rowSpan={50000} colSpan={1}>
+            <GridItem rowSpan={50000} colSpan={1} border={"1px solid #D6D6D6"}>
               <Filter />
             </GridItem>
           </Hide>
-          <Show below="lg">
-            <Box position={"absolute"} top="0px" left="20px" zIndex={100}>
-              <FilterDrower />
-            </Box>
-          </Show>
-          <Box position={"absolute"} top="0" right="0px" zIndex={100}>
-            <Sort />
-          </Box>
 
           {PRODUCTS.map((product) => (
             <Stack
-              key={product.number}
+              key={product._id}
               justify={"space-between"}
               align="center"
               border={"1px solid #D6D6D6"}
@@ -79,7 +89,13 @@ export default function Products() {
               >
                 ♥
               </Text> */}
-              <VStack as={Link} href="#" h="100%" justify={"space-between"}>
+              <VStack
+                as={Link}
+                target="_blank"
+                href={`/products/${product._id}`}
+                h="100%"
+                justify={"space-between"}
+              >
                 <Center h="250px">
                   <Image
                     src={product.img || "/favicon.ico"}
@@ -117,6 +133,6 @@ export default function Products() {
         </Grid>
       </Stack>
       <Pagination />
-    </Container>
+    </>
   );
 }

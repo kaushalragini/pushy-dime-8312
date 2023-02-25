@@ -22,6 +22,8 @@ import {
   Checkbox,
   Flex,
   HStack,
+  Link,
+  Divider,
 } from "@chakra-ui/react";
 import React from "react";
 import { useEffect } from "react";
@@ -29,6 +31,7 @@ import { useState } from "react";
 import { get_products } from "../../Redux/Products/action";
 import RangeSliderComp from "./RangeSlider";
 import { useDispatch, useSelector } from "react-redux";
+import { ButtonStyle } from "./nikhil.css";
 
 export default function Filter() {
   const filters = [
@@ -47,6 +50,7 @@ export default function Filter() {
     },
   ];
 
+  const dispatch = useDispatch();
   const { params } = useSelector((store) => store.productsManager);
 
   const handleClick = (main, sub) => {
@@ -61,17 +65,15 @@ export default function Filter() {
     }
   };
 
-  const dispatch = useDispatch();
-
   return (
     <>
       <Stack
-        position="absolute"
-        top={0}
-        h={"100vh"}
-        w="250px"
+        // position="fixed"
+        // h={"90%"}
+        w="100%"
         p="10px"
         textAlign="left"
+        // border={"1px solid #D6D6D6"}
       >
         <Stack p="15px">
           <Heading size={"md"}>FILTERS</Heading>
@@ -144,8 +146,14 @@ export function FilterDrower() {
   return (
     <div>
       <button ref={btnRef} colorScheme="teal" onClick={onOpen}>
-        {/* <AiTwotoneFilter size={"30"} /> */}
-        <Text fontWeight={"bold"}> FILTER</Text>
+        <Text
+          fontWeight={"bold"}
+          border={"1px solid #D6D6D6"}
+          w="80px"
+          bgColor={"white"}
+        >
+          FILTER
+        </Text>
       </button>
       <Drawer
         isOpen={isOpen}
@@ -180,7 +188,7 @@ export function Sort() {
   const { params } = useSelector((store) => store.productsManager);
 
   return (
-    <>
+    <Box border={"1px solid #D6D6D6"} w="80px" bgColor={"white"}>
       <Select
         textAlign={"right"}
         variant="unstyled"
@@ -193,7 +201,7 @@ export function Sort() {
         <option value="price">Price Low to High</option>
         <option value="-price">Price High to Low </option>
       </Select>
-    </>
+    </Box>
   );
 }
 
@@ -208,7 +216,13 @@ export function Pagination() {
   };
 
   return (
-    <HStack gap={"20px"} justify={"center"} fontSize="20px" p="10px">
+    <HStack
+      gap={"20px"}
+      justify={"center"}
+      fontSize="20px"
+      p="10px"
+      border={"1px solid #D6D6D6"}
+    >
       <button
         onClick={() => handlePage(-1)}
         hidden={page === 1}
@@ -227,5 +241,69 @@ export function Pagination() {
         {">>"}
       </button>
     </HStack>
+  );
+}
+
+export function SearchDrower() {
+  const { isOpen, onOpen, onClose } = useDisclosure();
+  const btnRef = React.useRef();
+
+  const dispatch = useDispatch();
+  const { params, PRODUCTS } = useSelector((store) => store.productsManager);
+
+  const handleSearch = (e) => {
+    dispatch(get_products({ q: e.target.value }));
+  };
+
+  return (
+    <div>
+      <button ref={btnRef} colorScheme="teal" onClick={onOpen}>
+        SEARCH
+      </button>
+      <Drawer
+        isOpen={isOpen}
+        placement="top"
+        onClose={onClose}
+        finalFocusRef={btnRef}
+      >
+        <DrawerOverlay />
+        <DrawerContent>
+          <DrawerBody>
+            <DrawerHeader textAlign={"center"}>SEARCH</DrawerHeader>
+            <HStack>
+              <Input border={"1px solid"} onChange={handleSearch} />
+              <Button
+                {...ButtonStyle}
+                onClick={() => dispatch(get_products({ q: undefined }))}
+              >
+                X
+              </Button>
+            </HStack>
+
+            {params.q &&
+              PRODUCTS.map((el) => (
+                <div key={el._id}>
+                  <Divider />
+                  <br />
+                  <HStack
+                    as={Link}
+                    href={`/products/${el._id}`}
+                    justify="space-between"
+                  >
+                    <Text>{el.product_name}</Text>
+                    <Text>{el.brand}</Text>
+                  </HStack>
+                </div>
+              ))}
+          </DrawerBody>
+
+          {/* <DrawerFooter>
+            <Button variant="outline" mr={3} onClick={onClose}>
+              CLOSE
+            </Button>
+          </DrawerFooter> */}
+        </DrawerContent>
+      </Drawer>
+    </div>
   );
 }
