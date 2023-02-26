@@ -3,24 +3,19 @@ import React from "react";
 import AddProductForm from "../Components/AdminProducts/AddProductForm";
 import ProductModal from "../Components/AdminProducts/ProductModal";
 import ProductsCompo from "../Components/AdminProducts/ProductsCompo";
+import Navbar from "../Components/Navbar";
+import Sidebar from "../Components/Sidebar";
 
 const AdminProducts = () => {
   return (
     <div>
-      <Box border="1px" borderColor="red" h="60px" bgColor="blue.200"></Box>
+      <Navbar />
       <Flex>
-        <Box
-          border="1px"
-          borderColor="red"
-          h="100vh"
-          w={{ lg: "20%", md: "25%", sm: "30%", base: "0%" }}
-          bgColor="red.200"
-        ></Box>
-        <Box
-          border="1px"
-          borderColor="red"
-          w={{ lg: "80%", md: "75%", sm: "70%", base: "100%" }}
-        >
+        <Sidebar
+          color={"hsla(283, 64%, 47%, 0.538)"}
+          textColor={"blackAlpha.800"}
+        />
+        <Box mt="20px" w={{ lg: "80%", md: "75%", sm: "70%", base: "100%" }}>
           <Box>
             <ProductModal
               title={"Add New Products"}

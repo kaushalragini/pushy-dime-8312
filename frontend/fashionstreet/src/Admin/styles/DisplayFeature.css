@@ -1,41 +1,29 @@
 .main-box-window {
-  
-    width: 251px;
-  height: 150px;
-  border: 1px solid red;
+  margin-top: 20px;
+  width: 251px;
   background-color: white;
   border-radius: 5px;
   text-align: left;
-  padding: 15px;
-  box-shadow: rgba(204, 204, 204, 0.15);
-}
-.vector {
-    position: relative;
-    left: 105px;
-    /* right: 71.75%; */
-    bottom: 27px;
-    /* bottom: 79.94%; */
-  height: 13.52px;
-}
-.perc-second{
-    position: relative;
-    left: 115px;
-    /* bottom: 75%; */
-    bottom: 35px;
-    font-size: 15px;
+  padding: 25px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.double-vector{
-    position: relative;
-    left: 145px;
-    bottom: 90px;
+
+.vectorBox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+
+
+
 
 @media screen  and (max-width:480px){
-
     .main-box-window{
-        width:220px;
-        height: 150px;
+        padding: 15px;
     }
 
 }

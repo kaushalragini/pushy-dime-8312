@@ -181,6 +181,7 @@ input[type="radio"]:checked {
 @media only screen and (max-width: 500px) {
   .mainbox {
     grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0px;
   }
   .contacticons {
     padding: 0;

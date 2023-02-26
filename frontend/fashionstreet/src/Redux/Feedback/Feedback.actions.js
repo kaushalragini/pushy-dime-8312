@@ -8,9 +8,15 @@ import {
 
 //* GET
 export const getFeedback = (Toast, disableToast) => (dispatch) => {
+  let token = localStorage.getItem("token");
   dispatch({ type: LOADING_FEEDBACK });
-  axios
-    .get(`${process.env.REACT_APP_URL}/user/feedback`)
+  axios({
+    method: "get",
+    url: `${process.env.REACT_APP_URL}/user/feedback/all`,
+    headers: {
+      Authorization: `${token}`,
+    },
+  })
     .then((res) => {
       console.log(res);
       dispatch({ type: GET_ALL_FEEDBACK, payload: res?.data?.data });

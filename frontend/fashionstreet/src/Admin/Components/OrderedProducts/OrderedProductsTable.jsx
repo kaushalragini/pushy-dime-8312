@@ -14,6 +14,7 @@ const OrderedProductsTable = ({
     "Order From",
     "Size",
     "Quantity",
+    "Price",
     "Status",
   ],
   requiredFields = [
@@ -22,6 +23,7 @@ const OrderedProductsTable = ({
     "name",
     "size",
     "quantity",
+    "price",
     "status",
   ],
 }) => {
@@ -58,6 +60,7 @@ const OrderedProductsTable = ({
                         alt={order?.productsId?.img}
                       />
                     </td>
+                    //* handles data based upon the products Table heading
                   )}
                   {heading.map((el, i) => {
                     return (
@@ -73,6 +76,8 @@ const OrderedProductsTable = ({
                           >
                             <OrderedProductsCard order={order} />
                           </ProductModal>
+                        ) : el === "Price" ? (
+                          `₹${order?.productsId?.price}`
                         ) : (
                           order[requiredFields[i]]
                         )}

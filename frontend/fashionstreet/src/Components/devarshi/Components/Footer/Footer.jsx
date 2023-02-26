@@ -1,9 +1,9 @@
 import { React, useState } from "react";
 import style from "./footer.module.css";
 
-import { BsApple } from 'react-icons/bs'
- import { DiAndroid } from 'react-icons/di'
- import {MdExtension} from 'react-icons/md'
+import { BsApple } from "react-icons/bs";
+import { DiAndroid } from "react-icons/di";
+import { MdExtension } from "react-icons/md";
 export const Footer = () => {
   const [formData, setformData] = useState({
     email: "",
@@ -14,7 +14,7 @@ export const Footer = () => {
     setformData({
       ...formData({ ...formData, [e.target.id]: e.target.value }),
     });
-    console.log("Hello")
+    console.log("Hello");
   };
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -71,25 +71,19 @@ export const Footer = () => {
         <div className={style.connect}>
           <h3>CONNECT WITH US</h3>
           <div>
-          
-          
-            
             <a href="https://play.google.com/store/apps/details?id=com.modesens.androidapp&hl=en_IN&gl=US">
               {" "}
-              
             </a>
             <br />
           </div>
           <div>
-          <BsApple fontSize={"30px"}/>
-          <DiAndroid fontSize={"30px"}/>
-          <MdExtension fontSize={"30px"}/>
+            <BsApple fontSize={"30px"} />
+            <DiAndroid fontSize={"30px"} />
+            <MdExtension fontSize={"30px"} />
             <a
               href="https://microsoftedge.microsoft.com/addons/detail/modesens-shopping-assista/bpmcdjmehcbmbedbhmmipkcccmhigamj"
               style={{ marginTop: "10px" }}
-            >
-              
-            </a>
+            ></a>
             <br />
           </div>
         </div>
@@ -168,7 +162,7 @@ export const Footer = () => {
             alt="k"
             className={style.print1}
           />
-          <img
+          {/* <img
             src="https://cdn.modesens.com/static/img/footer-wb.svg"
             alt="l"
             className={style.print1}
@@ -177,7 +171,7 @@ export const Footer = () => {
             src="https://cdn.modesens.com/static/img/footer-wx.svg"
             alt="j"
             className={style.print1}
-          />
+          /> */}
         </div>
       </div>
     </div>
