@@ -4,7 +4,6 @@ import {
   HStack,
   Stack,
   Text,
-  Link,
   Image,
   Heading,
   Box,
@@ -14,13 +13,16 @@ import {
   Show,
   Divider,
   Center,
+  Skeleton,
 } from "@chakra-ui/react";
 import React from "react";
 import { useEffect } from "react";
 import Filter, { FilterDrower, Pagination, Sort } from "./FilterDrower";
-import { get_products } from "../../Redux/Products/action";
+import { get_products, get_single_product } from "../../Redux/Products/action";
 import { useDispatch, useSelector } from "react-redux";
 import { ButtonStyle } from "./nikhil.css";
+import { Link } from "react-router-dom";
+import Loading from "./Loading";
 
 export default function Products() {
   // redux store
@@ -32,8 +34,24 @@ export default function Products() {
   }, []);
 
   return (
-    <Container maxW={"1500px"}>
-      <Stack position="relative">
+    <>
+      <Stack>
+        <Box
+          // border={"1px solid"}
+          textAlign="center"
+          position="sticky"
+          top="53px"
+          zIndex={"100"}
+        >
+          <Show below="lg">
+            <Box position={"absolute"} top="0px" left="0">
+              <FilterDrower />
+            </Box>
+          </Show>
+          <Box position={"absolute"} top="0px" right="0">
+            <Sort />
+          </Box>
+        </Box>
         <Grid
           gridTemplateColumns={{
             base: "repeat(2,1fr)",
@@ -44,79 +62,68 @@ export default function Products() {
           }}
         >
           <Hide below="lg">
-            <GridItem rowSpan={50000} colSpan={1}>
+            <GridItem rowSpan={50000} colSpan={1} border={"1px solid #D6D6D6"}>
               <Filter />
             </GridItem>
           </Hide>
-          <Show below="lg">
-            <Box position={"absolute"} top="0px" left="20px" zIndex={100}>
-              <FilterDrower />
-            </Box>
-          </Show>
-          <Box position={"absolute"} top="0" right="0px" zIndex={100}>
-            <Sort />
-          </Box>
 
-          {PRODUCTS.map((product) => (
-            <Stack
-              key={product.number}
-              justify={"space-between"}
-              align="center"
-              border={"1px solid #D6D6D6"}
-              p="10px 5px"
-              position={"relative"}
-              textAlign="center"
-            >
-              {/* <Text
-                position={"absolute"}
-                top="0px"
-                right="10px"
-                color={"white"}
-                fontSize="30px"
-                textShadow={"0px 0px 3px black"}
-                cursor="pointer"
-                _hover={{ textShadow: "0px 0px 4px red" }}
+          {!PRODUCTS.length ? (
+            <Loading />
+          ) : (
+            PRODUCTS.map((product) => (
+              <Stack
+                key={product._id}
+                justify={"space-between"}
+                align="center"
+                border={"1px solid #D6D6D6"}
+                p="10px 5px"
+                position={"relative"}
+                textAlign="center"
               >
-                ♥
-              </Text> */}
-              <VStack as={Link} href="#" h="100%" justify={"space-between"}>
-                <Center h="250px">
-                  <Image
-                    src={product.img || "/favicon.ico"}
-                    alt={product.product_name}
-                    h="100%"
-                  />
-                </Center>
-
-                <Box
-                  overflow={"hidden !important"}
-                  display={"inline-block"}
-                  whiteSpace="nowrap"
-                  textOverflow={"ellipsis"}
-                  w={{ base: "170px" }}
+                <VStack
+                  as={Link}
+                  to={`/products/${product._id}`}
+                  h="100%"
+                  justify={"space-between"}
                 >
-                  <Text
-                    fontSize={"lg"}
-                    fontWeight="bold"
+                  <Center h="250px">
+                    <Image
+                      src={product.img || "/favicon.ico"}
+                      alt={product.product_name}
+                      h="100%"
+                    />
+                  </Center>
+
+                  <Box
                     overflow={"hidden !important"}
+                    display={"inline-block"}
+                    whiteSpace="nowrap"
                     textOverflow={"ellipsis"}
+                    w={{ base: "170px" }}
                   >
-                    {product.brand}
-                  </Text>
-                  <Text
-                    overflow={"hidden !important"}
-                    textOverflow={"ellipsis"}
-                  >
-                    {product.product_name}
-                  </Text>
-                </Box>
-                <Text fontWeight="bold">${product.price}</Text>
-              </VStack>
-            </Stack>
-          ))}
+                    <Text
+                      fontSize={"lg"}
+                      fontWeight="bold"
+                      overflow={"hidden !important"}
+                      textOverflow={"ellipsis"}
+                    >
+                      {product.brand}
+                    </Text>
+                    <Text
+                      overflow={"hidden !important"}
+                      textOverflow={"ellipsis"}
+                    >
+                      {product.product_name}
+                    </Text>
+                  </Box>
+                  <Text fontWeight="bold">${product.price}</Text>
+                </VStack>
+              </Stack>
+            ))
+          )}
         </Grid>
       </Stack>
       <Pagination />
-    </Container>
+    </>
   );
 }

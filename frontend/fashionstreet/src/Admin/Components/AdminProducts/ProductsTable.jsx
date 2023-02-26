@@ -9,10 +9,8 @@ const ProductsTable = ({
   disableImg = false,
   modal = "More..",
   heading = ["Name", "Brand", "Price", "More.."],
-  requiredFilelds = ["product_name", "brand", "price", ""],
+  requiredFields = ["product_name", "brand", "price", ""],
 }) => {
-  const ref = useRef(null);
-  console.log(products);
   return (
     <Skeleton
       startColor="purple.100"
@@ -46,8 +44,8 @@ const ProductsTable = ({
                     return (
                       <td data-label={el} key={el}>
                         {el === "Price" ? "₹ " : ""}
-                        {products[index][requiredFilelds[i]] ? (
-                          products[index][requiredFilelds[i]]
+                        {products[index][requiredFields[i]] ? (
+                          products[index][requiredFields[i]]
                         ) : (
                           <>
                             <ProductModal
