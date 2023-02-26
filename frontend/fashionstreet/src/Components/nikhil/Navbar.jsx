@@ -30,6 +30,8 @@ import { Link } from "react-router-dom";
 import { get_products } from "../../Redux/Products/action";
 import { useDispatch, useSelector } from "react-redux";
 
+const token = localStorage.getItem("token");
+
 export default function Navbar() {
   const { params } = useSelector((store) => store.productsManager);
   const dispatch = useDispatch();
@@ -74,15 +76,21 @@ export default function Navbar() {
               </Popover>
             </div>
           ))}
-          <Link to={`/products`} onClick={() => dispatch(get_products({}))}>
-            SHOP ALL
-          </Link>
+          <Link to={`/order/status`}>ORDERS</Link>
         </HStack>
 
         <HStack justify={"right"} gap="12px">
           <Box>
             <SearchDrower />
           </Box>
+          {!token ? (
+            <Link to="/login">LOGIN</Link>
+          ) : (
+            <Link to="/" onClick={() => localStorage.removeItem("token")}>
+              LOGOUT
+            </Link>
+          )}
+
           <Box>
             <CartDrower />
           </Box>
@@ -105,6 +113,7 @@ export default function Navbar() {
 export function NavDrawer() {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const btnRef = React.useRef();
+  const dispatch = useDispatch();
   return (
     <div>
       <HStack justify={"space-between"} w="100%">
@@ -120,7 +129,7 @@ export function NavDrawer() {
           <DrawerOverlay />
           <DrawerContent>
             <DrawerHeader>
-              <Heading as={Link} href="/" fontFamily="mono">
+              <Heading as={Link} to="/" fontFamily="mono">
                 UpStyle
               </Heading>
             </DrawerHeader>
@@ -134,16 +143,20 @@ export function NavDrawer() {
                         <Link href="#">{main.title.toUpperCase()}</Link>
                       </PopoverTrigger>
                       <PopoverContent p="20px" w="200px">
-                        {main.brands.map((brands) => (
-                          <Link href="#" key={brands}>
-                            {brands}
+                        {main.brands.map((brand) => (
+                          <Link
+                            to="/products"
+                            key={brand}
+                            onClick={() => dispatch(get_products({ brand }))}
+                          >
+                            {brand}
                           </Link>
                         ))}
                       </PopoverContent>
                     </Popover>
                   </div>
                 ))}
-                <Link href="#">SHOP ALL</Link>
+                <Link to={`/order/status`}>ORDERS</Link>
               </Stack>
               <Image
                 src="https://cdn.modesens.com/umedia/1713864s?w=800"
@@ -158,8 +171,13 @@ export function NavDrawer() {
                 <Button {...ButtonStyle}>
                   <CartDrower />
                 </Button>
-                <Button {...ButtonStyle} onClick={onClose}>
-                  ACCOUNT
+                <Button
+                  {...ButtonStyle}
+                  onClick={onClose}
+                  as={Link}
+                  to="/login"
+                >
+                  LOGIN
                 </Button>
               </Stack>
             </DrawerFooter>
