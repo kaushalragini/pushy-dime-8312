@@ -7,27 +7,29 @@ import Products from "../Components/nikhil/Products";
 import SingleProduct from "../Components/nikhil/SingleProduct";
 import AdminUsers from "../Admin/Pages/AdminUsers";
 import AdminOrderedProducts from "../Admin/Pages/AdminOrderedProducts";
-import Signup from "../Components/devarshi/Signup/Signup"
+import Signup from "../Components/devarshi/Signup/Signup";
 import Navbar from "../Components/nikhil/Navbar";
 import Checkout from "../Components/nikhil/CheckoutComp/Checkout";
+import Login from "../Components/devarshi/Login/Login";
+import AdminSignup from "../Components/devarshi/Admin/AdminSignup";
 
 const Routing = () => {
   return (
     <>
       <Navbar />
       <Routes>
-        <Route path="/" element={<Home />} />
-
-          // * Faizal
-            <Route path="/admin/products" element={<AdminProducts />} />
-            <Route path="/admin/users" element={<AdminUsers />} />
-            <Route path="/admin/orders" element={<AdminOrderedProducts />} />
-         // * Faizal
-        
-
+      {/* ============Devarshi========================= */}
+      <Route path="/" element={<Home />} />
+        <Route path="/signup" element={<Signup />} />
+        <Route path="/login" element={<Login />}/>
+       <Route path="/admin/signup" element={<AdminSignup/>}/>
+        {/* // * Faizal */}
+        <Route path="/admin/products" element={<AdminProducts />} />
+        <Route path="/admin/users" element={<AdminUsers />} />
+        <Route path="/admin/orders" element={<AdminOrderedProducts />} />
+        {/* // * Faizal */}
         <Route path="/admin" element={<AdminHomePage />} />
-
-        <Route path="/signup" element={<Signup/>}/>
+       
         <Route path="/products" element={<Products />} />
         <Route path="/products/:id" element={<SingleProduct />} />
         <Route path="/checkout" element={<Checkout />} />
