@@ -1,4 +1,4 @@
-import { Button, Flex, Heading, Text } from '@chakra-ui/react'
+import {  Flex, Heading, Text } from '@chakra-ui/react'
 import React, {useEffect, useState} from 'react'
 import "../styles/LatestOrder.css"
 import DeliveredButton from './DeliveredButton'
@@ -31,7 +31,7 @@ const LatestOrder = () => {
   return (
     <div className='latest-main-box'>
         <Heading fontSize={"18px"} >Latest Order</Heading>
-        {data.map((e,i)=>{
+        {data?.map((e,i)=>{
             if(i===4){
                 return null
             }

@@ -5,6 +5,7 @@ import AdminHomePage from "../Admin/Pages/AdminHomePage";
 import Home from "./Home";
 import Products from "../Components/nikhil/Products";
 import SingleProduct from "../Components/nikhil/SingleProduct";
+import OrderStatus from "../Components/prince/OrderStatus";
 
 
 const Routing = () => {
@@ -15,7 +16,7 @@ const Routing = () => {
       <Route path="/admin/products" element={<AdminProducts />} />
    
       <Route path="/admin" element={<AdminHomePage/>}/>
-
+      <Route path="/order/status" element={<OrderStatus/>}/>
       <Route path="/products" element={<Products />} /> 
       <Route path="/products/:id" element={<SingleProduct />} /> 
     </Routes>

@@ -1,0 +1,47 @@
+.order-main-box{
+
+    padding: 10px;
+}
+.Order-main-table{
+    width: fit-content;
+    display:flex;
+    align-content:center;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-top:60px;
+}
+.order-item-image{
+    width: 100px;
+    border: 1px solid red;
+}
+tr:hover {
+    background-color: rgba(150, 212, 212, 0.4);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+  }
+  
+tr{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.button-order-status:hover{
+    color:white;
+
+    background-color: rgb(214, 94, 94);
+}
+
+@media screen and (max-width:625px) and (min-width:400px) {
+    th:nth-child(3),th:nth-child(5){
+        display: none;
+    }
+    td:nth-child(3),td:nth-child(5){
+        display: none;
+    }
+}
+@media screen and (max-width:399px)  {
+    th:nth-child(3),th:nth-child(4),th:nth-child(5){
+        display: none;
+    }
+    td:nth-child(3),td:nth-child(4),td:nth-child(5){
+        display: none;
+    }
+}
