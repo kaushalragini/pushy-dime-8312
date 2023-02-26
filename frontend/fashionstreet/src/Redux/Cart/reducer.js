@@ -3,15 +3,14 @@
 import {
   ADD_TO_CART,
   DELETE_FROM_CART,
+  EMPTY_CART,
   GET_CART,
   ITEM_EXIST,
   UPDATE_CART,
 } from "./actionTypes";
 
 const initialState = {
-  item_exist: false,
   CART: [],
-  item_deleted: false,
   loading: false,
 };
 
@@ -21,23 +20,18 @@ export const CartReducer = (state = initialState, { type, payload }) => {
       return {
         ...state,
         CART: payload,
+        loading: false,
       };
     }
     case ADD_TO_CART: {
       return {
         ...state,
-        CART: [...state.CART, payload],
-      };
-    }
-    case ITEM_EXIST: {
-      return {
-        ...state,
-        item_exist: true,
+        loading: false,
       };
     }
     case UPDATE_CART: {
       let updated = state.CART.map((el) => {
-        if (el.id == payload.id) {
+        if (el.id === payload.id) {
           return payload;
         }
         return el;
@@ -48,15 +42,16 @@ export const CartReducer = (state = initialState, { type, payload }) => {
       };
     }
     case DELETE_FROM_CART: {
-      let updated = state.CART.filter((el) => {
-        if (el.id !== payload) {
-          return el;
-        }
-      });
+      let filtered = state.CART.filter((el) => el._id !== payload);
       return {
         ...state,
-        CART: updated,
-        item_deleted: true,
+        CART: filtered,
+      };
+    }
+    case EMPTY_CART: {
+      return {
+        ...state,
+        CART: [],
       };
     }
     default:

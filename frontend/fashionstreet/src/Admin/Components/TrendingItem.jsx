@@ -14,7 +14,7 @@ const TrendingItem = () => {
       const token = localStorage.getItem("token")
       axios({
           method: 'get',
-          url: `${process.env.REACT_APP_URL}/orderedproducts/all`,
+          url: `${process.env.REACT_APP_URL}orderedproducts/all`,
           headers: {
               Authorization: `${token}`
           }
@@ -28,7 +28,7 @@ const TrendingItem = () => {
   return (
     <div className="Trending-main-box">
       <Heading fontSize={"18px"} mb="10px">Top products by unit sold</Heading>
-      {data.map((e,i) => {
+      {data?.map((e,i) => {
         if(i===4){
           return null
         }

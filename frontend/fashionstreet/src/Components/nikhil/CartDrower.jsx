@@ -36,8 +36,6 @@ export default function CartDrower() {
     dispatch(get_cart());
   }, []);
 
-  console.log(CART);
-
   return (
     <>
       <button onClick={onOpen}>CART</button>
@@ -54,65 +52,67 @@ export default function CartDrower() {
           <Divider />
           <DrawerBody>
             <VStack>
-              {!CART.length ? (
-                <Text>CART IS EMPTY</Text>
-              ) : (
-                CART.map((el) => (
-                  <Box key={el.productsId._id} position={"relative"}>
-                    <button
-                      style={{
-                        position: "absolute",
-                        right: 0,
-                        top: 0,
-                        fontSize: "20px",
-                        color: "#c53030",
-                        fontWeight: "bold",
-                      }}
-                      onClick={() => {
-                        dispatch(delete_from_cart(el.productsId._id));
-                      }}
-                    >
-                      x
-                    </button>
-                    <Stack justify={"space-between"} p="10px">
-                      <Link to={`/products/${el.productsId._id}`}>
-                        <Image src={el.productsId.img} />
-                      </Link>
+              {CART?.map((el) => (
+                <Box key={el.productsId._id} position={"relative"}>
+                  <button
+                    style={{
+                      position: "absolute",
+                      right: 0,
+                      top: 0,
+                      fontSize: "20px",
+                      color: "#c53030",
+                      fontWeight: "bold",
+                    }}
+                    onClick={() => {
+                      dispatch(delete_from_cart(el._id));
+                    }}
+                  >
+                    x
+                  </button>
+                  <Stack justify={"space-between"} p="10px">
+                    <Link to={`/products/${el.productsId._id}`}>
+                      <Image src={el.productsId.img} />
+                    </Link>
 
-                      <Stack justify={"space-between"}>
-                        <Text fontWeight={"bold"}>
-                          {el.productsId.product_name}
-                        </Text>
+                    <Stack justify={"space-between"}>
+                      <Text fontWeight={"bold"}>
+                        {el.productsId.product_name}
+                      </Text>
 
-                        <Text fontSize="20px">{el.productsId.title}</Text>
-                        <Text>Size : {el.size}</Text>
-                        <Text>
-                          Price : ₹{" "}
-                          <span style={{ color: "green", fontWeight: "bold" }}>
-                            {el.productsId.price}
-                          </span>
-                        </Text>
-                        <HStack w="100%" justify={"space-between"}>
-                          <Button {...ButtonStyle} size="sm">
-                            -
-                          </Button>
-                          <Button {...ButtonStyle} size="sm" w="70%">
-                            {el.quantity}
-                          </Button>
-                          <Button {...ButtonStyle} size="sm">
-                            +
-                          </Button>
-                        </HStack>
-                      </Stack>
+                      <Text fontSize="20px">{el.productsId.title}</Text>
+                      <Text>Size : {el.size}</Text>
+                      <Text>
+                        Price : ₹{" "}
+                        <span style={{ color: "green", fontWeight: "bold" }}>
+                          {el.productsId.price}
+                        </span>
+                      </Text>
+                      <HStack w="100%" justify={"space-between"}>
+                        <Button {...ButtonStyle} size="sm">
+                          -
+                        </Button>
+                        <Button {...ButtonStyle} size="sm" w="70%">
+                          {el.quantity}
+                        </Button>
+                        <Button {...ButtonStyle} size="sm">
+                          +
+                        </Button>
+                      </HStack>
                     </Stack>
-                    <Divider mt="5px" border={"1px solid"} />
-                  </Box>
-                ))
-              )}
+                  </Stack>
+                  <Divider mt="5px" border={"1px solid"} />
+                </Box>
+              ))}
             </VStack>
           </DrawerBody>
           <DrawerFooter justifyContent={"space-between"}>
-            <Button {...ButtonStyle} w="100%">
+            <Button
+              as={Link}
+              to="/checkout"
+              {...ButtonStyle}
+              w="100%"
+              onClick={onClose}
+            >
               CHECKOUT
             </Button>
           </DrawerFooter>
