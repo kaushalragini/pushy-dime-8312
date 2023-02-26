@@ -10,25 +10,25 @@ const OrderStatus = () => {
   const [data, setData] = useState([]);
   // const {Toast} = useToast
   const token = localStorage.getItem("token");
-  const toast = useToast()
+  const toast = useToast();
   const deleteOrder = (id) => {
     console.log(id);
     axios({
       method: "delete",
-      url: `${process.env.REACT_APP_URL}orderedproducts/${id}`,
+      url: `${process.env.REACT_APP_URL}/orderedproducts/${id}`,
       headers: {
         Authorization: `${token}`,
       },
     })
       .then((res) => {
-        getOrderProducts()
+        getOrderProducts();
         toast({
-          title: 'Product Deleted',
+          title: "Product Deleted",
           description: "We've created your account for you.",
-          status: 'success',
+          status: "success",
           duration: 9000,
           isClosable: true,
-        })
+        });
       })
       .catch((err) => console.log(err));
   };
@@ -41,7 +41,7 @@ const OrderStatus = () => {
   const getOrderProducts = () => {
     axios({
       method: "get",
-      url: `${process.env.REACT_APP_URL}orderedproducts`,
+      url: `${process.env.REACT_APP_URL}/orderedproducts`,
       headers: {
         Authorization: `${token}`,
       },
@@ -59,8 +59,8 @@ const OrderStatus = () => {
       <Heading textAlign={"center"} mb="30px">
         Order Details
       </Heading>
-      <div >
-      <Feedback/>
+      <div>
+        <Feedback />
       </div>
       <div className="Order-main-table">
         <table>
