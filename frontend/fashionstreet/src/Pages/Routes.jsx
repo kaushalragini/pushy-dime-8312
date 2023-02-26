@@ -11,14 +11,19 @@ import AdminOrderedProducts from "../Admin/Pages/AdminOrderedProducts";
 import Signup from "../Components/devarshi/Signup/Signup";
 import Navbar from "../Components/nikhil/Navbar";
 import Checkout from "../Components/nikhil/CheckoutComp/Checkout";
+
+import AdminFeedback from "../Admin/Pages/AdminFeedback";
+
 import Login from "../Components/devarshi/Login/Login";
 import AdminSignup from "../Components/devarshi/Admin/AdminSignup";
 import OrderStatus from "../Components/prince/OrderStatus";
 import AdminHomePage from "../Admin/Pages/AdminHomePage";
+
 const Routing = () => {
   return (
     <>
       <Routes>
+
  <Route path="/order/status" element={
            <>
               <Navbar />
@@ -42,10 +47,13 @@ const Routing = () => {
           }
         />
 
+
         <Route path="/admin/products" element={<AdminProducts />} />
         <Route path="/admin/users" element={<AdminUsers />} />
         <Route path="/admin/orders" element={<AdminOrderedProducts />} />
         <Route path="/admin" element={<AdminHomePage />} />
+          <Route path="/admin/feedback" element={<AdminFeedback />} />
+        
         <Route
           path="/login"
           element={
