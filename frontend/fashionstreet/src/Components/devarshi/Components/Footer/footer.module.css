@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Sunflower&display=swap");
 .main_footer {
   margin-top: 50px;
-  /* font-family: 'Sunflower', sans-serif; */
+  
   padding-left: 20px;
-  padding-right: 20px;
+  padding-right: 20px; 
   margin-bottom: 30px;
 }
 .mainbox {
@@ -14,7 +14,7 @@
   padding: 0 6px;
   text-align: start;
   padding-left: 10px;
-  padding-right: 10px;
+  padding-right: 10px; 
 }
 
 .mainbox h3 {
@@ -27,7 +27,7 @@
 .mainbox a {
   color: rgba(128, 128, 128, 0.828);
   text-decoration: none;
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 500;
 }
 .lowerborder {
@@ -55,8 +55,8 @@
   font-weight: 500;
 }
 .contacticons {
-  padding-left: 20px;
-  padding-right: 40px;
+   padding-left: 20px;
+  padding-right: 40px; 
   display: flex;
   justify-content: space-between;
 }
@@ -71,7 +71,7 @@
 .print {
   width: 36px;
   height: 36px;
-  margin-left: 8px;
+   margin-left: 8px; 
   transition: all 1s;
 }
 .print:hover {
@@ -83,7 +83,7 @@
 .print1 {
   width: 60px;
   height: 60px;
-  margin-right: -14px;
+   margin-right: -14px; 
   transition: all 1s;
   /* transform: scale(1.1); */
 }
@@ -107,7 +107,7 @@
   outline: none;
   border-bottom: 1px solid rgba(0, 0, 0, 0.606);
   margin: auto;
-  margin: 10px 0;
+  margin: 10px 0; 
   height: 30px;
 }
 .email:focus {
@@ -116,7 +116,7 @@
 .inputSubmit {
   background-color: transparent;
   border: 1px solid rgba(0, 0, 0, 0.554);
-  padding: 8px 55px;
+  padding: 8px 55px; 
   margin-top: 10px;
   font-size: 14px;
   text-transform: uppercase;
@@ -134,7 +134,7 @@
   margin-bottom: 20px;
 }
 .connect div {
-  width: 130px;
+   width: 130px; 
   font-size: 11px;
   gap: 8px;
   display: flex;
@@ -146,8 +146,9 @@
 
 ::placeholder {
   font-weight: 600;
-  font-size: 13px;
+  font-size: 10px;
   color: rgba(128, 128, 128, 0.777);
+  
 }
 input[type="radio"] {
   box-sizing: border-box;
@@ -170,7 +171,7 @@ input[type="radio"]:checked {
   color: #333;
   display: flex;
   justify-content: space-between;
-  width: 170px;
+  width: 170px; 
 }
 
 @media only screen and (max-width: 800px) {

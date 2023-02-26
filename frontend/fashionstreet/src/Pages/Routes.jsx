@@ -11,11 +11,14 @@ import Signup from "../Components/devarshi/Signup/Signup";
 import Navbar from "../Components/nikhil/Navbar";
 import Checkout from "../Components/nikhil/CheckoutComp/Checkout";
 import Login from "../Components/devarshi/Login/Login";
+import AdminSignup from "../Components/devarshi/Admin/AdminSignup";
 
 const Routing = () => {
   return (
     <>
       <Routes>
+
+ <Route path="/admin/signup" element={<AdminSignup/>}/>
         <Route
           path="/"
           element={
@@ -75,6 +78,7 @@ const Routing = () => {
             </>
           }
         />
+
       </Routes>
     </>
   );
