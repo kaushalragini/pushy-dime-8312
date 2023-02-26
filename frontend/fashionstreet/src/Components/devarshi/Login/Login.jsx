@@ -1,7 +1,6 @@
 import {
   Box,
   Button,
-  Checkbox,
   Flex,
   FormControl,
   FormLabel,
@@ -317,6 +316,11 @@ const Login = () => {
                 <Link to="/signup">
                   <Text mt="20px" textAlign={"center"}>
                     Don't have an account?Please sign up
+                  </Text>
+                </Link>
+                <Link to="/admin/signup">
+                  <Text mt="20px" textAlign={"center"}>
+                    Want to become admin. Click here!
                   </Text>
                 </Link>
               </Box>

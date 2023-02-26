@@ -4,6 +4,7 @@ import style from "./footer.module.css";
 import { BsApple } from "react-icons/bs";
 import { DiAndroid } from "react-icons/di";
 import { MdExtension } from "react-icons/md";
+import { Link } from "react-router-dom";
 export const Footer = () => {
   const [formData, setformData] = useState({
     email: "",
@@ -85,6 +86,9 @@ export const Footer = () => {
               style={{ marginTop: "10px" }}
             ></a>
             <br />
+            <div style={{ fontWeight: "bolder" }}>
+              <Link to="/admin">Admin</Link>
+            </div>
           </div>
         </div>
         <div className={style.News}>
