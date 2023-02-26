@@ -14,7 +14,7 @@ const TrendingItem = () => {
       const token = localStorage.getItem("token")
       axios({
           method: 'get',
-          url: `${process.env.REACT_APP_URL}/orderedproducts/all`,
+          url: `${process.env.REACT_APP_URL}orderedproducts/all`,
           headers: {
               Authorization: `${token}`
           }

@@ -1,4 +1,4 @@
-import { Button, Flex, Heading, Text } from '@chakra-ui/react'
+import {  Flex, Heading, Text } from '@chakra-ui/react'
 import React, {useEffect, useState} from 'react'
 import "../styles/LatestOrder.css"
 import DeliveredButton from './DeliveredButton'

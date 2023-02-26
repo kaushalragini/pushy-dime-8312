@@ -2,17 +2,31 @@ import { Box, Heading, Text } from "@chakra-ui/react";
 import React from "react";
 import "../styles/DisplayFeature.css";
 
-const DisplayFeature = ({name,perOne,img1,perTwo,img2}) => {
+const DisplayFeature = ({ name, perOne, img1, perTwo, img2 }) => {
   return (
     <div>
       <Box className="main-box-window">
-        <Text className="name" color={"gray.300"}>{name}</Text>
-        <Heading className="perc-first" fontSize={"30px"}>{perOne}</Heading>
-        <img src={img1} alt="vector" className="vector" />
-        <Text className="perc-second" color={"gray.300"} >
-          {perTwo}
-        </Text>
-        <img src={img2} className="double-vector" alt="vectors" />
+        <Box>
+          <Text className="name" color={"gray.500"}>
+            {name}
+          </Text>
+          <Heading
+            size={{ lg: "lg", md: "md", sm: "md", base: "md" }}
+            className="perc-first"
+            fontSize={"30px"}
+          >
+            {perOne}
+          </Heading>
+        </Box>
+        <Box mr="10px" className="vectorBox">
+          <img src={img1} alt="vector" />
+          <Text ml="10px" className="perc-second" color={"gray.400"}>
+            {perTwo}
+          </Text>
+        </Box>
+        <Box>
+          <img src={img2} alt="vectors" />
+        </Box>
       </Box>
     </div>
   );

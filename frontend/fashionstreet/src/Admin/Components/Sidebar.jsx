@@ -6,36 +6,55 @@ import { BsFillTagsFill } from "react-icons/bs";
 import { ImUsers } from "react-icons/im";
 import { MdFeedback } from "react-icons/md";
 import { FaWarehouse } from "react-icons/fa";
+import { Link } from "react-router-dom";
+
 import "../styles/Sidebar.css";
-const Sidebar = () => {
+const Sidebar = ({ color = "#333840", textColor = "#7F8DA1" }) => {
   return (
     <div style={{ width: "15rem" }} className="sidebar-main">
-      <Box width={"100%"} bgColor="#333840" height={"100vh"} textColor={"#7F8DA1"}>
+      <Box
+        width={"100%"}
+        bgColor={color}
+        height={"100vh"}
+        textColor={textColor}
+      >
         <VStack display={"inline-block"}>
           <Flex padding={"10px"}>
             <RxDoubleArrowUp size={"50px"} />
-            <Heading>Upstyle</Heading>
+            <Link to="/">
+              <Heading>Upstyle</Heading>
+            </Link>
           </Flex>
           <div style={{ border: "1px solid #030c33", width: "100%" }}></div>
           <Flex>
             <RiDashboard2Fill className="icons" />
-            <Text>Dashboard</Text>
+            <Link to="/admin">
+              <Text>Dashboard</Text>
+            </Link>
           </Flex>
           <Flex>
             <BsFillTagsFill className="icons" />
-            <Text>Products</Text>
+            <Link to="/admin/products">
+              <Text>Products</Text>
+            </Link>
           </Flex>
           <Flex>
             <ImUsers className="icons" />
-            <Text>Users</Text>
+            <Link to="/admin/users">
+              <Text>Users</Text>
+            </Link>
           </Flex>
           <Flex>
             <MdFeedback className="icons" />
-            <Text>Feedback</Text>
+            <Link to="/admin/feedback">
+              <Text>Feedback</Text>
+            </Link>
           </Flex>
           <Flex>
             <FaWarehouse className="icons" />
-            <Text>Inventory</Text>
+            <Link to="/admin/orders">
+              <Text>Orders</Text>
+            </Link>
           </Flex>
         </VStack>
       </Box>

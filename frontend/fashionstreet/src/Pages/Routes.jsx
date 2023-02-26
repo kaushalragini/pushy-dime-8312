@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { Route, Routes, useParams } from "react-router-dom";
 import AdminProducts from "../Admin/Pages/AdminProducts";
-import AdminHomePage from "../Admin/Pages/AdminHomePage";
+
 import Home from "./Home";
 import Products from "../Components/nikhil/Products";
 import SingleProduct from "../Components/nikhil/SingleProduct";
+
 import AdminUsers from "../Admin/Pages/AdminUsers";
 import AdminOrderedProducts from "../Admin/Pages/AdminOrderedProducts";
 import Signup from "../Components/devarshi/Signup/Signup";
@@ -12,13 +13,25 @@ import Navbar from "../Components/nikhil/Navbar";
 import Checkout from "../Components/nikhil/CheckoutComp/Checkout";
 import Login from "../Components/devarshi/Login/Login";
 import AdminSignup from "../Components/devarshi/Admin/AdminSignup";
-
+import OrderStatus from "../Components/prince/OrderStatus";
+import AdminHomePage from "../Admin/Pages/AdminHomePage";
 const Routing = () => {
   return (
     <>
       <Routes>
-
- <Route path="/admin/signup" element={<AdminSignup/>}/>
+ <Route path="/order/status" element={
+           <>
+              <Navbar />
+              <OrderStatus/>
+            </>
+ }/>
+ <Route path="/admin/signup" element={
+ 
+            <>
+              <Navbar />
+              <AdminSignup/>
+            </>
+ }/>
         <Route
           path="/"
           element={
@@ -81,6 +94,7 @@ const Routing = () => {
 
       </Routes>
     </>
+
   );
 };
 
