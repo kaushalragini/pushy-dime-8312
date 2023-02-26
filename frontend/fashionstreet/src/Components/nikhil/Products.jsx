@@ -22,6 +22,7 @@ import { get_products, get_single_product } from "../../Redux/Products/action";
 import { useDispatch, useSelector } from "react-redux";
 import { ButtonStyle } from "./nikhil.css";
 import { Link } from "react-router-dom";
+import Loading from "./Loading";
 
 export default function Products() {
   // redux store
@@ -66,69 +67,60 @@ export default function Products() {
             </GridItem>
           </Hide>
 
-          {PRODUCTS.map((product) => (
-            <Stack
-              key={product._id}
-              justify={"space-between"}
-              align="center"
-              border={"1px solid #D6D6D6"}
-              p="10px 5px"
-              position={"relative"}
-              textAlign="center"
-            >
-              {/* <Text
-                position={"absolute"}
-                top="0px"
-                right="10px"
-                color={"white"}
-                fontSize="30px"
-                textShadow={"0px 0px 3px black"}
-                cursor="pointer"
-                _hover={{ textShadow: "0px 0px 4px red" }}
-              >
-                ♥
-              </Text> */}
-              <VStack
-                as={Link}
-                target="_blank"
-                to={`/products/${product._id}`}
-                h="100%"
+          {!PRODUCTS.length ? (
+            <Loading />
+          ) : (
+            PRODUCTS.map((product) => (
+              <Stack
+                key={product._id}
                 justify={"space-between"}
+                align="center"
+                border={"1px solid #D6D6D6"}
+                p="10px 5px"
+                position={"relative"}
+                textAlign="center"
               >
-                <Center h="250px">
-                  <Image
-                    src={product.img || "/favicon.ico"}
-                    alt={product.product_name}
-                    h="100%"
-                  />
-                </Center>
-
-                <Box
-                  overflow={"hidden !important"}
-                  display={"inline-block"}
-                  whiteSpace="nowrap"
-                  textOverflow={"ellipsis"}
-                  w={{ base: "170px" }}
+                <VStack
+                  as={Link}
+                  to={`/products/${product._id}`}
+                  h="100%"
+                  justify={"space-between"}
                 >
-                  <Text
-                    fontSize={"lg"}
-                    fontWeight="bold"
+                  <Center h="250px">
+                    <Image
+                      src={product.img || "/favicon.ico"}
+                      alt={product.product_name}
+                      h="100%"
+                    />
+                  </Center>
+
+                  <Box
                     overflow={"hidden !important"}
+                    display={"inline-block"}
+                    whiteSpace="nowrap"
                     textOverflow={"ellipsis"}
+                    w={{ base: "170px" }}
                   >
-                    {product.brand}
-                  </Text>
-                  <Text
-                    overflow={"hidden !important"}
-                    textOverflow={"ellipsis"}
-                  >
-                    {product.product_name}
-                  </Text>
-                </Box>
-                <Text fontWeight="bold">${product.price}</Text>
-              </VStack>
-            </Stack>
-          ))}
+                    <Text
+                      fontSize={"lg"}
+                      fontWeight="bold"
+                      overflow={"hidden !important"}
+                      textOverflow={"ellipsis"}
+                    >
+                      {product.brand}
+                    </Text>
+                    <Text
+                      overflow={"hidden !important"}
+                      textOverflow={"ellipsis"}
+                    >
+                      {product.product_name}
+                    </Text>
+                  </Box>
+                  <Text fontWeight="bold">${product.price}</Text>
+                </VStack>
+              </Stack>
+            ))
+          )}
         </Grid>
       </Stack>
       <Pagination />

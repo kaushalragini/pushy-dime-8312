@@ -1,5 +1,5 @@
-import React from "react";
-import { Route, Routes } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { Route, Routes, useParams } from "react-router-dom";
 import AdminProducts from "../Admin/Pages/AdminProducts";
 import AdminHomePage from "../Admin/Pages/AdminHomePage";
 import Home from "./Home";
@@ -7,30 +7,74 @@ import Products from "../Components/nikhil/Products";
 import SingleProduct from "../Components/nikhil/SingleProduct";
 import AdminUsers from "../Admin/Pages/AdminUsers";
 import AdminOrderedProducts from "../Admin/Pages/AdminOrderedProducts";
-import Signup from "../Components/devarshi/Signup/Signup"
+import Signup from "../Components/devarshi/Signup/Signup";
 import Navbar from "../Components/nikhil/Navbar";
 import Checkout from "../Components/nikhil/CheckoutComp/Checkout";
+import Login from "../Components/devarshi/Login/Login";
 
 const Routing = () => {
   return (
     <>
-      <Navbar />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route
+          path="/"
+          element={
+            <>
+              <Navbar />
+              <Home />
+            </>
+          }
+        />
 
-          // * Faizal
-            <Route path="/admin/products" element={<AdminProducts />} />
-            <Route path="/admin/users" element={<AdminUsers />} />
-            <Route path="/admin/orders" element={<AdminOrderedProducts />} />
-         // * Faizal
-        
-
+        <Route path="/admin/products" element={<AdminProducts />} />
+        <Route path="/admin/users" element={<AdminUsers />} />
+        <Route path="/admin/orders" element={<AdminOrderedProducts />} />
         <Route path="/admin" element={<AdminHomePage />} />
-
-        <Route path="/signup" element={<Signup/>}/>
-        <Route path="/products" element={<Products />} />
-        <Route path="/products/:id" element={<SingleProduct />} />
-        <Route path="/checkout" element={<Checkout />} />
+        <Route
+          path="/login"
+          element={
+            <>
+              <Navbar />
+              <Login />
+            </>
+          }
+        />
+        <Route
+          path="/signup"
+          element={
+            <>
+              <Navbar />
+              <Signup />
+            </>
+          }
+        />
+        <Route
+          path="/products"
+          element={
+            <>
+              <Navbar />
+              <Products />
+            </>
+          }
+        />
+        <Route
+          path="/products/:id"
+          element={
+            <>
+              <Navbar />
+              <SingleProduct />
+            </>
+          }
+        />
+        <Route
+          path="/checkout"
+          element={
+            <>
+              <Navbar />
+              <Checkout />
+            </>
+          }
+        />
       </Routes>
     </>
   );

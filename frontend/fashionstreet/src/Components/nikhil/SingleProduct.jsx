@@ -19,6 +19,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { ButtonStyle } from "./nikhil.css";
 import { Link, useParams } from "react-router-dom";
 import { get_single_product } from "../../Redux/Products/action";
+import Loading from "./Loading";
 
 export default function SingleProduct() {
   const dispatch = useDispatch();
@@ -33,14 +34,23 @@ export default function SingleProduct() {
 
   const data = PRODUCTS[0];
 
-  console.log(data);
-
   useEffect(() => {
     dispatch(get_single_product(params.id));
   }, []);
 
+  const handleAdd = (id) => {
+    console.log(id);
+    dispatch(
+      add_to_cart({
+        productsId: id,
+        quantity: 1,
+        size: "SM",
+      })
+    );
+  };
+
   return !PRODUCTS.length ? (
-    <Text>LOADING...</Text>
+    <Loading />
   ) : (
     <Box textAlign={"justify"} minH="100vh">
       <Flex
@@ -63,14 +73,7 @@ export default function SingleProduct() {
           <Text>CATEGEORY: {data.category}</Text>
           <Text>Earn up to 1312 points when you buy.</Text>
 
-          <Button
-            {...ButtonStyle}
-            onClick={() =>
-              dispatch(
-                add_to_cart({ productsId: data._id, quantity: 10, size: "xxxl" })
-              )
-            }
-          >
+          <Button {...ButtonStyle} onClick={() => handleAdd(data._id)}>
             ADD TO CART
           </Button>
         </Stack>
