@@ -1,14 +1,69 @@
-# pushy-dime-8312
-It is a fashion web store to make your wardrobe fashionable
-<br>
-# Team Member
-  ## Ragini Kaushal
-  ## nikhil angolkar
-  ## Faizal Siddiqui
-  ## Devarshi Ojha
-  ## Prince Kishorbhai Mendpara
+# Upstyle
+A Full Stack web store that provides user-interface that enables customers to browse products, add filters to them, add them to their cart, and checkout seamlessly. It also includes admin panel where admin can track and manage the products, orders, feedback, users and ratings.
+
+## Tech Stack Used
+   
+   ### Fontend
+     - React
+     - React Router Dom
+     - React Redux
+     - Redux thunk
+     - Chart Js
+     - Css
+     - Chakra Ui (External Css)
+   
+   ### Backend
+     - NodeJs
+     - Express Js
+     - Mongo Db (For storing Data)
+     - Mongoose (To connect database with the server)
+
+## Team Member
+  - Faizal Siddiqui
+  - nikhil angolkar
+  - Devarshi Ojha
+  - Prince Kishorbhai Mendpara
+  - Ragini Kaushal
+  
+  
+## Key Responsibilities
+  - Faizal Siddiqui
+      - Managed Team
+      - Created backend
+      - Created Admin Crud Functionality for
+          - Products
+          - Users
+          - Feedbacks
+          - Ratings
+          - Orders
+ 
+  - Nikhil Angolkar
+      - Created 
+          - Navbar
+          - Products Page
+          - Filter Functionalities
+          - Cart Functionality
+          - Payment page
+          
+  - Prince Kishorbhai Mendpara
+       - Created 
+          - Admin landing Page
+          - Charts
+          - Orders Page
+          
+  - Devarshi Ojha
+       - Created 
+          - Landing page
+          - Login Authentication Page
+          - Signup Page
+          - Admin SignUp Page
+          
+  - Ragini Kaushal
+        - Created 
+          - Data 
+          
 # FrontEnd
-  react application
+  React application
   
 # landing page
 its a page where you can go to the menpage or women page and also you can do login if you want to do
