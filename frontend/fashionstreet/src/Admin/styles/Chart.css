@@ -1,29 +1,29 @@
 .Chart-box{
-    width: 800px;
     background-color: white;
     padding: 10px;
     margin: auto;
     margin-top: 30px;
+    width: 100%
 }
 
 
 @media screen and (max-width: 768px) and (min-width: 490px) {
     
     .Chart-box{
-    margin-top: 20px;
-    width: 300px;
-}
+        margin-top: 20px;
+        width: 100%
+    }
 }
 @media screen and (max-width: 489px) and (min-width: 310px) {
     
     .Chart-box{
         margin-top: 20px;
-        width: 200px;
+        width: 100%
     }
 }
 @media screen and (max-width:309px){
     .Chart-box{
         margin-top: 20px;
-        width: 200px;
+        width: 100%
     }
 }

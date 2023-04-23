@@ -6,6 +6,7 @@ import { getFeedback } from "../../Redux/Feedback/Feedback.actions";
 import AdminFeedbackTable from "../Components/AdminFeedback/AdminFeedbackTable";
 import Navbar from "../Components/Navbar";
 import Sidebar from "../Components/Sidebar";
+import SidebarWithHeader from "../Components/AdminSidebar";
 
 const AdminFeedback = () => {
   const { feedback } = useSelector((state) => state.feedbackManager);
@@ -18,19 +19,11 @@ const AdminFeedback = () => {
   }, []);
   return (
     <div>
-      <div>
-        <Navbar />
-        <Flex>
-          <Sidebar
-            color={"hsla(283, 64%, 47%, 0.538)"}
-            textColor={"blackAlpha.800"}
-          />
-          <Box mt="50px" w={{ lg: "80%", md: "75%", sm: "70%", base: "100%" }}>
-            <Box></Box>
-            <AdminFeedbackTable feedback={feedback} />
-          </Box>
-        </Flex>
-      </div>
+      <SidebarWithHeader>
+        <Box mt="10px">
+          <AdminFeedbackTable feedback={feedback} />
+        </Box>
+      </SidebarWithHeader>
     </div>
   );
 };

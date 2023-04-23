@@ -1,7 +1,7 @@
 import { Button, Heading, Text, useToast } from "@chakra-ui/react";
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import "../prince/OrderStatus.css";
+import styles from "./OrderStatus.module.css";
 import CompletedProcess from "./CompletedProcess";
 import Feedback from "./Feedback";
 import PendingProgress from "./PendingProgress";
@@ -23,20 +23,23 @@ const OrderStatus = () => {
       .then((res) => {
         getOrderProducts();
         toast({
-          title: "Product Deleted",
-          description: "We've created your account for you.",
+          title: "Order Cancelled",
+          position: "top",
           status: "success",
-          duration: 9000,
+          duration: 3000,
           isClosable: true,
         });
       })
-      .catch((err) => console.log(err));
+      .catch((err) =>
+        toast({
+          title: err.message,
+          position: "top",
+          status: "error",
+          duration: 3000,
+          isClosable: true,
+        })
+      );
   };
-
-  useEffect(() => {
-    getOrderProducts();
-    console.log(process.env.REACT_APP_URL);
-  }, []);
 
   const getOrderProducts = () => {
     axios({
@@ -53,17 +56,22 @@ const OrderStatus = () => {
         console.log(err);
       });
   };
+
+  useEffect(() => {
+    getOrderProducts();
+  }, []);
+
   console.log(data);
   return (
-    <div className="order-main-box">
+    <div className={styles.orderMainBox}>
       <Heading textAlign={"center"} mb="30px">
         Order Details
       </Heading>
       <div>
         <Feedback />
       </div>
-      <div className="Order-main-table">
-        <table>
+      <div className={styles.OrderMainTable}>
+        <table className={styles.orderTable}>
           <thead>
             <tr style={{ backgroundColor: "black", color: "white" }}>
               <th style={{ padding: "20px" }}>Product</th>
@@ -108,7 +116,7 @@ const OrderStatus = () => {
                   <Button
                     isDisabled={e.status === "delivered"}
                     bgColor="red.500"
-                    className="button-order-status"
+                    className={styles.buttonOrderStatus}
                     padding={"20px"}
                     borderRadius="20px"
                     onClick={() => deleteOrder(e._id)}

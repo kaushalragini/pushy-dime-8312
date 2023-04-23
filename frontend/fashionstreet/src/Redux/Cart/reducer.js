@@ -30,22 +30,13 @@ export const CartReducer = (state = initialState, { type, payload }) => {
       };
     }
     case UPDATE_CART: {
-      let updated = state.CART.map((el) => {
-        if (el.id === payload.id) {
-          return payload;
-        }
-        return el;
-      });
       return {
         ...state,
-        CART: updated,
       };
     }
     case DELETE_FROM_CART: {
-      let filtered = state.CART.filter((el) => el._id !== payload);
       return {
         ...state,
-        CART: filtered,
       };
     }
     case EMPTY_CART: {

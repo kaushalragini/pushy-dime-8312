@@ -25,7 +25,7 @@ const UserssTable = ({
         <table className="table">
           <thead>
             <tr>
-              {disableImg ? "" : <th>Image</th>}
+              {/* {disableImg ? "" : <th>Image</th>} */}
               {heading?.map((el) => {
                 return <th key={el}>{el}</th>;
               })}
@@ -36,13 +36,12 @@ const UserssTable = ({
             {users?.map((user, index) => {
               return (
                 <tr className="table-row" key={user._id}>
-                  {disableImg ? (
-                    ""
-                  ) : (
-                    <td data-label="Image">
-                      <Image w="30px" src={user.img} alt={user.img} />
-                    </td>
-                  )}
+                  {disableImg
+                    ? ""
+                    : // <td data-label="Image">
+                      //   <Image w="30px" src={user.img} alt={user.img} />
+                      // </td>
+                      ""}
                   {heading.map((el, i) => {
                     return (
                       <td data-label={el} key={el}>

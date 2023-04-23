@@ -9,9 +9,12 @@ import { FaWarehouse } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 import "../styles/Sidebar.css";
-const Sidebar = ({ color = "#333840", textColor = "#7F8DA1" }) => {
+const Sidebar = ({
+  color = "hsla(283, 64%, 47%, 1.8)",
+  textColor = "#000",
+}) => {
   return (
-    <div style={{ width: "15rem" }} className="sidebar-main">
+    <div className="sidebar-main">
       <Box
         width={"100%"}
         bgColor={color}

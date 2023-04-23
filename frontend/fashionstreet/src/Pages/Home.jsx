@@ -1,7 +1,6 @@
 import {
   Box,
   Button,
-  Center,
   Flex,
   Grid,
   GridItem,
@@ -144,8 +143,6 @@ const Home = () => {
           <GridItem
             p="10px"
             textAlign={"center"}
-            // w="100%"
-            // h="500px"
             ml={{ sm: "0px", md: "50px", lg: "100px" }}
           >
             <Heading
@@ -190,11 +187,7 @@ const Home = () => {
               <Box>
                 <Image
                   src="https://cdn.modesens.com/static/img/20221231bg2_en.png"
-                  // h={{ base: "40vh", md: "40vh", lg: "45vh" }}
                   w={{ base: "40vw", md: "40vw", lg: "45vw" }}
-                  // position="absolute"
-                  // right={{ sm: "0px", md: "60px", lg: "250px" }}
-                  // top={{ base: "5250px", md: "2750px", lg: "2200px" }}
                 />
               </Box>
             </Flex>
@@ -222,12 +215,7 @@ const Home = () => {
             base: "repeat(1, 1fr)",
           }}
         >
-          <GridItem
-            p="10px"
-            w="100%"
-            // h="500px"
-            // ml={{ sm: "0px", md: "50px", lg: "100px" }}
-          >
+          <GridItem p="10px" w="100%">
             <Heading
               fontSize={{ sm: "15px", md: "30px", lg: "30px" }}
               fontWeight={450}
@@ -255,27 +243,10 @@ const Home = () => {
               INSTALL NOW
             </Button>
           </GridItem>
-          <GridItem
-            p="10px"
-
-            // h="500px"
-            // mt={100}
-            // mr="100px"
-          >
+          <GridItem p="10px">
             <Flex h="100%" justify="center" align="center">
               <Box>
-                <Image
-                  src="https://cdn.modesens.com/static/img/20221231bg3_en.png"
-                  // h={{ base: "40vh", md: "40vh", lg: "45vh" }}
-                  // w={{ base: "40vw", md: "40vw", lg: "45vw" }}
-                  // position="absolute"
-                  // right={{ sm: "0px", md: "40px", lg: "250px" }}
-                  // top={{ base: "6080px", md: "3600px", lg: "2930px" }}
-                  //  h={{base:"200px",lg:"400px"}}
-                  //  w={{base:"100px",lg:"400px"}}
-                  //  ml={{base:"30px",md:"150px"}}
-                  //  mt={{base:"130px"}}
-                />
+                <Image src="https://cdn.modesens.com/static/img/20221231bg3_en.png" />
               </Box>
             </Flex>
           </GridItem>
@@ -290,35 +261,14 @@ const Home = () => {
             base: "repeat(1, 1fr)",
           }}
         >
-          <GridItem
-            p="10px"
-            // h="500px"
-            //  mt={100}
-          >
+          <GridItem p="10px">
             <Flex h="100%" justify="center" align="center">
               <Box>
-                <Image
-                  src="https://cdn.modesens.com/static/img/20221231bg4_en.png"
-                  // h={{ base: "40vh", md: "40vh", lg: "60vh" }}
-                  // w={{ base: "40vw", md: "40vw", lg: "40vw" }}
-                  // position="absolute"
-                  // right={{ sm: "0px", md: "400px", lg: "700px" }}
-                  // top={{ base: "6470px", md: "4100px", lg: "3450px" }}
-                  //  h={{base:"400px",md:"300px",lg:"400px"}}
-                  //  w={{base:"100vw",md:"300px",lg:"400px"}}
-                  //  mr={{base:"0px",md:"300px"}}
-                  // mt={{ base: "130px", md: "0px" }}
-                />
+                <Image src="https://cdn.modesens.com/static/img/20221231bg4_en.png" />
               </Box>
             </Flex>
           </GridItem>
-          <GridItem
-            p="10px"
-
-            // w="100%"
-            // h="500px"
-            // ml={{ sm: "0px", md: "50px", lg: "100px" }}
-          >
+          <GridItem p="10px">
             <Flex h="100%" justify="center" align={"center"}>
               <Box
                 // h="fit-content"
@@ -454,23 +404,11 @@ const Home = () => {
             p="10px"
             // mt={100}
           >
-            <Image
-              src={fashion}
-              // h={{ base: "40vh", md: "40vh", lg: "60vh" }}
-              // w={{ base: "40vw", md: "40vw", lg: "40vw" }}
-              // position="absolute"
-              // right={{ sm: "0px", md: "370px", lg: "700px" }}
-              // top={{ base: "7850px", md: "5800px", lg: "5100px" }}
-            />
+            <Image src={fashion} />
           </GridItem>
-          <GridItem
-            p="10px"
-            // w="100%"
-            // h="500px"
-            // ml={{ sm: "0px", md: "50px", lg: "100px" }}
-          >
+          <GridItem p="10px">
             <Flex h="100%" justify="center" align="center">
-              <Box>
+              <Box p={{ lg: "10px", md: "20px", sm: "20px", base: "20px" }}>
                 <Heading
                   fontSize={{ sm: "15px", md: "30px", lg: "35px" }}
                   fontWeight={600}

@@ -19,7 +19,6 @@ export const getUsers = (Toast, disableToast) => (dispatch) => {
     },
   })
     .then((res) => {
-      console.log(res);
       dispatch({ type: GET_ALL_USERS, payload: res?.data?.data });
       if (!disableToast) {
         Toast("Here's All the Users", "success");
@@ -33,7 +32,7 @@ export const getUsers = (Toast, disableToast) => (dispatch) => {
 };
 
 //* UPDATE
-export const updateUsers = (data, Toast, id) => (dispatch) => {
+export const updateUsers = (data, Toast, id, msg) => (dispatch) => {
   let token = localStorage.getItem("token");
   dispatch({ type: LOADING_USERS });
   axios({
@@ -45,10 +44,13 @@ export const updateUsers = (data, Toast, id) => (dispatch) => {
     },
   })
     .then((res) => {
-      console.log(res);
       dispatch({ type: UPDATE_USERS });
       dispatch(getUsers(Toast, true));
-      Toast(res?.data?.msg, "success");
+      if (msg) {
+        Toast(msg, "success");
+      } else {
+        Toast(res?.data?.msg, "success");
+      }
     })
     .catch((err) => {
       Toast(err?.response?.data?.msg, "error");

@@ -68,7 +68,7 @@ const Dashboard = () => {
       <SalesChart />
       <Flex mt="10px" wrap="wrap" justifyContent={"space-around"}>
         <LatestOrder />
-        <TrendingItem />
+        {/* <TrendingItem /> */}
       </Flex>
     </div>
   );

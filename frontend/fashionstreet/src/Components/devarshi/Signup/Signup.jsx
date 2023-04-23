@@ -80,7 +80,7 @@ const Signup = () => {
       })
       .catch((err) => {
         Toast(err?.response?.data?.msg, "error");
-            console.log(err);
+        console.log(err);
       });
   };
 
@@ -296,8 +296,6 @@ const Signup = () => {
                         name="name"
                         value={name}
                         onChange={(e) => setName(e.target.value)}
-                        paddingRight={"200px"}
-                        paddingLeft={"30px"}
                         placeholder="Name"
                       />
                     </FormControl>
@@ -308,8 +306,6 @@ const Signup = () => {
                         name="email"
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
-                        paddingRight={"200px"}
-                        paddingLeft={"30px"}
                         placeholder="Email"
                       />
                     </FormControl>

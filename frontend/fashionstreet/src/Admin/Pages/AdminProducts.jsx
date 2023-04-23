@@ -5,17 +5,13 @@ import ProductModal from "../Components/AdminProducts/ProductModal";
 import ProductsCompo from "../Components/AdminProducts/ProductsCompo";
 import Navbar from "../Components/Navbar";
 import Sidebar from "../Components/Sidebar";
+import SidebarWithHeader from "../Components/AdminSidebar";
 
 const AdminProducts = () => {
   return (
     <div>
-      <Navbar />
-      <Flex>
-        <Sidebar
-          color={"hsla(283, 64%, 47%, 0.538)"}
-          textColor={"blackAlpha.800"}
-        />
-        <Box mt="20px" w={{ lg: "80%", md: "75%", sm: "70%", base: "100%" }}>
+      <SidebarWithHeader>
+        <Box mt="10px">
           <Box>
             <ProductModal
               title={"Add New Products"}
@@ -27,7 +23,7 @@ const AdminProducts = () => {
           </Box>
           <ProductsCompo />
         </Box>
-      </Flex>
+      </SidebarWithHeader>
     </div>
   );
 };
