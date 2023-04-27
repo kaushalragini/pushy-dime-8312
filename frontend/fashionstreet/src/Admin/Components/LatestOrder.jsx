@@ -1,6 +1,6 @@
 import { Flex, Heading, Text } from "@chakra-ui/react";
 import React, { useEffect, useState } from "react";
-import "../styles/LatestOrder.css";
+import styles from "../styles/LatestOrder.module.css";
 import DeliveredButton from "./DeliveredButton";
 import FailedButton from "./FailedButton";
 import PendingButton from "./PendingButton";
@@ -31,7 +31,7 @@ const LatestOrder = () => {
   };
 
   return (
-    <div className="latest-main-box">
+    <div className={styles.latestMainBox}>
       <Heading mb="10px" fontSize={"23px"}>
         Latest Orders
       </Heading>
@@ -43,10 +43,9 @@ const LatestOrder = () => {
         return (
           <>
             <Flex
-              gap={"20px"}
               wrap="wrap"
               alignItems={"center"}
-              justifyContent="space-evenly"
+              justifyContent="space-between"
               key={e._id}
             >
               <Text>{e._id}</Text>
@@ -61,7 +60,7 @@ const LatestOrder = () => {
                 <DeliveredButton />
               )}
             </Flex>
-            <div className="latest-line"></div>
+            <div className={styles.latestLine}></div>
           </>
         );
       })}
