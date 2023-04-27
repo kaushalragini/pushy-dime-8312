@@ -1,42 +1,27 @@
-import React, { useEffect, useState } from "react";
-import { Route, Routes, useParams } from "react-router-dom";
+import React from "react";
+import { Route, Routes } from "react-router-dom";
 import AdminProducts from "../Admin/Pages/AdminProducts";
+import Navbar from "../Components/nikhil/Navbar";
 
 import Home from "./Home";
+import Signup from "../Components/devarshi/Signup/Signup";
+import Login from "../Components/devarshi/Login/Login";
 import Products from "../Components/nikhil/Products";
 import SingleProduct from "../Components/nikhil/SingleProduct";
+import Checkout from "../Components/nikhil/CheckoutComp/Checkout";
+import OrderStatus from "../Components/prince/OrderStatus";
 
+import AdminSignup from "../Components/devarshi/Admin/AdminSignup";
+import AdminHomePage from "../Admin/Pages/AdminHomePage";
 import AdminUsers from "../Admin/Pages/AdminUsers";
 import AdminOrderedProducts from "../Admin/Pages/AdminOrderedProducts";
-import Signup from "../Components/devarshi/Signup/Signup";
-import Navbar from "../Components/nikhil/Navbar";
-import Checkout from "../Components/nikhil/CheckoutComp/Checkout";
-
 import AdminFeedback from "../Admin/Pages/AdminFeedback";
-
-import Login from "../Components/devarshi/Login/Login";
-import AdminSignup from "../Components/devarshi/Admin/AdminSignup";
-import OrderStatus from "../Components/prince/OrderStatus";
-import AdminHomePage from "../Admin/Pages/AdminHomePage";
+import PrivateRoute from "./PrivateRoute";
 
 const Routing = () => {
   return (
     <>
       <Routes>
-
- <Route path="/order/status" element={
-           <>
-              <Navbar />
-              <OrderStatus/>
-            </>
- }/>
- <Route path="/admin/signup" element={
- 
-            <>
-              <Navbar />
-              <AdminSignup/>
-            </>
- }/>
         <Route
           path="/"
           element={
@@ -47,28 +32,21 @@ const Routing = () => {
           }
         />
 
-
-        <Route path="/admin/products" element={<AdminProducts />} />
-        <Route path="/admin/users" element={<AdminUsers />} />
-        <Route path="/admin/orders" element={<AdminOrderedProducts />} />
-        <Route path="/admin" element={<AdminHomePage />} />
-          <Route path="/admin/feedback" element={<AdminFeedback />} />
-        
-        <Route
-          path="/login"
-          element={
-            <>
-              <Navbar />
-              <Login />
-            </>
-          }
-        />
         <Route
           path="/signup"
           element={
             <>
               <Navbar />
               <Signup />
+            </>
+          }
+        />
+        <Route
+          path="/login"
+          element={
+            <>
+              <Navbar />
+              <Login />
             </>
           }
         />
@@ -93,16 +71,80 @@ const Routing = () => {
         <Route
           path="/checkout"
           element={
+            <PrivateRoute>
+              <>
+                <Navbar />
+                <Checkout />
+              </>
+            </PrivateRoute>
+          }
+        />
+        <Route
+          path="/order/status"
+          element={
+            <PrivateRoute>
+              <>
+                <Navbar />
+                <OrderStatus />
+              </>
+            </PrivateRoute>
+          }
+        />
+
+        {/*=============== ADMIN ROUTES ==================== */}
+
+        <Route
+          path="/admin"
+          element={
+            <PrivateRoute>
+              <AdminHomePage />
+            </PrivateRoute>
+          }
+        />
+        <Route
+          path="/admin/signup"
+          element={
             <>
               <Navbar />
-              <Checkout />
+              <AdminSignup />
             </>
           }
         />
 
+        <Route
+          path="/admin/products"
+          element={
+            <PrivateRoute>
+              <AdminProducts />
+            </PrivateRoute>
+          }
+        />
+        <Route
+          path="/admin/users"
+          element={
+            <PrivateRoute>
+              <AdminUsers />
+            </PrivateRoute>
+          }
+        />
+        <Route
+          path="/admin/orders"
+          element={
+            <PrivateRoute>
+              <AdminOrderedProducts />
+            </PrivateRoute>
+          }
+        />
+        <Route
+          path="/admin/feedback"
+          element={
+            <PrivateRoute>
+              <AdminFeedback />
+            </PrivateRoute>
+          }
+        />
       </Routes>
     </>
-
   );
 };
 

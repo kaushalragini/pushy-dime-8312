@@ -5,6 +5,7 @@ import { useDispatch } from "react-redux";
 import useToastCompo from "../../../CustomHook/useToast";
 import { empty_cart } from "../../../Redux/Cart/action";
 import { ButtonStyle } from "../nikhil.css";
+import { useNavigate } from "react-router-dom";
 
 const initialData = {
   name: "",
@@ -12,10 +13,11 @@ const initialData = {
   cvv: "",
 };
 
-export default function Address() {
+export default function Address({ checkAddress }) {
   const [inputData, setInputData] = useState(initialData);
   const { Toast } = useToastCompo();
   const dispatch = useDispatch();
+  const navigate = useNavigate();
   const handleChange = (e) => {
     const { name, value } = e.target;
     setInputData({ ...inputData, [name]: value });
@@ -43,6 +45,7 @@ export default function Address() {
             Toast("Payment Successful", "success");
             setInputData(initialData);
             dispatch(empty_cart());
+            navigate("/products");
           })
           .catch((err) => {
             console.log(err);
@@ -57,29 +60,36 @@ export default function Address() {
     <Stack w="300px">
       <Text fontWeight={"bold"}>1. Payment (by debit card)</Text>
       <p>Card Holders Name</p>
-      <Input onChange={handleChange} name="name" value={inputData.name} />
+      <Input
+        placeholder="Enter Card Holders Name"
+        onChange={handleChange}
+        name="name"
+        value={inputData.name}
+      />
       <p>Card Number</p>
       <Input
+        placeholder="Enter Card Number"
         onChange={handleChange}
         name="number"
-        type="password"
+        type="number"
         value={inputData.number}
         maxLength="12"
         minLength="12"
       />
       <p>CVV</p>
       <Input
+        placeholder="Enter CVV"
         onChange={handleChange}
         name="cvv"
         type="password"
         value={inputData.cvv}
         w="100px"
-        maxLength="3"
-        minLength="3"
+        maxLength="4"
+        minLength="4"
       />
       <br />
-      <Button {...ButtonStyle} onClick={handleSubmit}>
-        SUBMIT
+      <Button isDisabled={checkAddress} {...ButtonStyle} onClick={handleSubmit}>
+        PAY
       </Button>
     </Stack>
   );

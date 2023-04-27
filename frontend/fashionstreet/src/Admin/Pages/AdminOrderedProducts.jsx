@@ -11,6 +11,7 @@ import OrderedProductsTable from "../Components/OrderedProducts/OrderedProductsT
 import { getOrders } from "../../Redux/OrderedProducts/OrderedProducts.action";
 import Navbar from "../Components/Navbar";
 import Sidebar from "../Components/Sidebar";
+import SidebarWithHeader from "../Components/AdminSidebar";
 
 const AdminOrderedProducts = () => {
   const { orders } = useSelector((state) => state.orderedProductsManager);
@@ -23,25 +24,11 @@ const AdminOrderedProducts = () => {
   // console.log(orders);
   return (
     <div>
-      <Navbar />
-      <Flex>
-        <Sidebar
-          color={"hsla(283, 64%, 47%, 0.538)"}
-          textColor={"blackAlpha.800"}
-        />
-        <Box mt="50px" w={{ lg: "80%", md: "75%", sm: "70%", base: "100%" }}>
-          <Box>
-            {/* <ProductModal
-              title={"Add New Products"}
-              size={"lg"}
-              btnText={"Add New Products"}
-            >
-              <h1>Hello</h1>
-            </ProductModal> */}
-          </Box>
+      <SidebarWithHeader>
+        <Box mt="10px">
           <OrderedProductsTable orders={orders} />
         </Box>
-      </Flex>
+      </SidebarWithHeader>
     </div>
   );
 };

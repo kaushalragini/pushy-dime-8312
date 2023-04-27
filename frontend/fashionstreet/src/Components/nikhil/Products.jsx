@@ -36,13 +36,7 @@ export default function Products() {
   return (
     <>
       <Stack>
-        <Box
-          // border={"1px solid"}
-          textAlign="center"
-          position="sticky"
-          top="53px"
-          zIndex={"100"}
-        >
+        <Box textAlign="center" position="sticky" top="53px" zIndex={"100"}>
           <Show below="lg">
             <Box position={"absolute"} top="0px" left="0">
               <FilterDrower />
@@ -70,7 +64,7 @@ export default function Products() {
           {!PRODUCTS.length ? (
             <Loading />
           ) : (
-            PRODUCTS.map((product) => (
+            PRODUCTS?.map((product) => (
               <Stack
                 key={product._id}
                 justify={"space-between"}

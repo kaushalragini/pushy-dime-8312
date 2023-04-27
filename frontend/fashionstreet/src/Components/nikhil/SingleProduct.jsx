@@ -20,17 +20,32 @@ import { ButtonStyle } from "./nikhil.css";
 import { Link, useParams } from "react-router-dom";
 import { get_single_product } from "../../Redux/Products/action";
 import Loading from "./Loading";
+import useToastCompo from "../../CustomHook/useToast";
 
 export default function SingleProduct() {
   const dispatch = useDispatch();
   const params = useParams();
+  const { PRODUCTS } = useSelector((store) => store.productsManager);
+  const { Toast } = useToastCompo();
+  let { CART, addCartloading } = useSelector((store) => store.cartManager);
+  console.log("addCartloading:", addCartloading);
 
   const Style = {
     w: { base: "100%", sm: "50%", md: "50%", lg: "50%" },
     p: "20px",
   };
 
-  const { PRODUCTS } = useSelector((store) => store.productsManager);
+  function productAlreadyAdded() {
+    let flag = false;
+
+    CART.forEach((el) => {
+      if (el.productsId._id === PRODUCTS[0]._id) {
+        flag = true;
+      }
+    });
+
+    return flag;
+  }
 
   const data = PRODUCTS[0];
 
@@ -39,13 +54,16 @@ export default function SingleProduct() {
   }, []);
 
   const handleAdd = (id) => {
-    console.log(id);
+    // console.log("cartstore", id);
     dispatch(
-      add_to_cart({
-        productsId: id,
-        quantity: 1,
-        size: "SM",
-      })
+      add_to_cart(
+        {
+          productsId: id,
+          quantity: 1,
+          size: "SM",
+        },
+        Toast
+      )
     );
   };
 
@@ -73,7 +91,12 @@ export default function SingleProduct() {
           <Text>CATEGEORY: {data.category}</Text>
           <Text>Earn up to 1312 points when you buy.</Text>
 
-          <Button {...ButtonStyle} onClick={() => handleAdd(data._id)}>
+          <Button
+            isLoading={addCartloading}
+            isDisabled={productAlreadyAdded()}
+            {...ButtonStyle}
+            onClick={() => handleAdd(data._id)}
+          >
             ADD TO CART
           </Button>
         </Stack>

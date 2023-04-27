@@ -4,13 +4,10 @@ import { useSelector } from "react-redux";
 
 export default function Summary() {
   const { CART } = useSelector((store) => store.cartManager);
-  console.log(CART);
 
   const total = CART.reduce((acc, el, i) => {
-    return acc + el.productsId.price;
+    return acc + el.productsId.price * el.quantity;
   }, 0);
-
-  console.log(total);
 
   return (
     <Stack w="300px">

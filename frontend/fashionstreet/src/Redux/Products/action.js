@@ -6,7 +6,7 @@ const baseURL = process.env.REACT_APP_URL;
 export const get_products =
   ({ page = 1, brand, q, sort, min, max, category, gender }) =>
   async (dispatch) => {
-    console.log(category);
+    // console.log(category);
     let res = await axios({
       method: "GET",
       baseURL,

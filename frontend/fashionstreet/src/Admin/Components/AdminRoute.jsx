@@ -1,12 +1,12 @@
-import React from 'react'
-import Dashboard from '../Pages/Dashboard'
+import React from "react";
+import Dashboard from "../Pages/Dashboard";
 
 const AdminRoute = () => {
   return (
     <div>
-        <Dashboard/>
+      <Dashboard />
     </div>
-  )
-}
+  );
+};
 
-export default AdminRoute
+export default AdminRoute;

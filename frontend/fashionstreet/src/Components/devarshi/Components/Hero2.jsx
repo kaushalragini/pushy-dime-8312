@@ -1,4 +1,4 @@
- import {
+import {
   Box,
   Center,
   Flex,
@@ -25,16 +25,10 @@ const Hero2 = ({ head, head2, text, text1, text2, text3, red, url }) => {
       }}
       bg="#D8D7DB"
     >
-      <GridItem
-        p="10px"
-        // w="100%"
-        // h="500px"
-        // ml={{ sm: "0px", md: "50px", lg: "100px" }}
-      >
+      <GridItem p={{ lg: "40px", md: "30px", sm: "30px", base: "10px" }}>
         <Heading
           fontSize={{ sm: "20px", md: "30px", lg: "30px" }}
           fontWeight={450}
-          // mt={"200px"}
         >
           {head}
         </Heading>
@@ -73,27 +67,14 @@ const Hero2 = ({ head, head2, text, text1, text2, text3, red, url }) => {
           {red}
         </Text>
       </GridItem>
-      <GridItem
-        p="10px"
-        //  h="500px"
-        //  mb="50px"
-      >
+      <GridItem p="10px">
         <Flex h="100%" align="center">
           <Box>
-            <Image
-              src={url}
-              // h={{ base: "40vh", md: "40vh", lg: "45vh" }}
-              // w={{ base: "40vw", md: "40vw", lg: "45vw" }}
-              // position="absolute"
-              // right={{ sm: "0px", md: "40px", lg: "250px" }}
-              // top={{ base: "900px", md: "1000px", lg: "800px" }}
-            />
+            <Image src={url} />
           </Box>
         </Flex>
       </GridItem>
     </Grid>
-
-    // </Box>
   );
 };
 

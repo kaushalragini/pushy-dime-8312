@@ -22,19 +22,33 @@ import {
   DrawerBody,
   DrawerFooter,
 } from "@chakra-ui/react";
-import React from "react";
+import React, { useEffect } from "react";
 import CartDrower from "./CartDrower";
 import { SearchDrower } from "./FilterDrower";
 import { ButtonStyle } from "./nikhil.css";
 import { Link } from "react-router-dom";
 import { get_products } from "../../Redux/Products/action";
 import { useDispatch, useSelector } from "react-redux";
-
-const token = localStorage.getItem("token");
+import {
+  getUserDetails,
+  logoutUser,
+  resetUser,
+} from "../../Redux/Auth/Auth.actions";
 
 export default function Navbar() {
   const { params } = useSelector((store) => store.productsManager);
   const dispatch = useDispatch();
+
+  const { token, userData } = useSelector((state) => state.authManager);
+
+  useEffect(() => {
+    dispatch(getUserDetails());
+  }, [token]);
+
+  const logoutUserFunc = () => {
+    dispatch(logoutUser());
+    dispatch(resetUser());
+  };
 
   return (
     <HStack
@@ -86,9 +100,14 @@ export default function Navbar() {
           {!token ? (
             <Link to="/login">LOGIN</Link>
           ) : (
-            <Link to="/" onClick={() => localStorage.removeItem("token")}>
-              LOGOUT
-            </Link>
+            <>
+              <Text fontWeight="600">{userData?.name}</Text>
+              <Link to="/">
+                <Text cursor="pointer" onClick={logoutUserFunc}>
+                  LOGOUT
+                </Text>
+              </Link>
+            </>
           )}
 
           <Box>
@@ -114,6 +133,18 @@ export function NavDrawer() {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const btnRef = React.useRef();
   const dispatch = useDispatch();
+
+  const { token, userData } = useSelector((state) => state.authManager);
+
+  useEffect(() => {
+    dispatch(getUserDetails());
+  }, []);
+
+  const logoutUserFunc = () => {
+    dispatch(logoutUser());
+    dispatch(resetUser());
+  };
+
   return (
     <div>
       <HStack justify={"space-between"} w="100%">
@@ -171,14 +202,29 @@ export function NavDrawer() {
                 <Button {...ButtonStyle}>
                   <CartDrower />
                 </Button>
-                <Button
-                  {...ButtonStyle}
-                  onClick={onClose}
-                  as={Link}
-                  to="/login"
-                >
-                  LOGIN
-                </Button>
+
+                {!token ? (
+                  <Button
+                    {...ButtonStyle}
+                    onClick={onClose}
+                    as={Link}
+                    to="/login"
+                  >
+                    LOGIN
+                  </Button>
+                ) : (
+                  <>
+                    <Button {...ButtonStyle}>{userData?.name}</Button>
+                    <Button
+                      {...ButtonStyle}
+                      onClick={logoutUserFunc}
+                      as={Link}
+                      to="/"
+                    >
+                      LOGOUT
+                    </Button>
+                  </>
+                )}
               </Stack>
             </DrawerFooter>
           </DrawerContent>

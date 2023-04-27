@@ -8,9 +8,9 @@ import {
 } from "./Auth.types";
 
 const initialState = {
-  userAuth: false,
+  userAuth: localStorage.getItem("token") ? true : false,
   adminAuth: false,
-  token: "",
+  token: localStorage.getItem("token"),
   userData: {},
 };
 
