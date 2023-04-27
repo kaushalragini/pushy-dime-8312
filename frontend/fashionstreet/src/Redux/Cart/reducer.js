@@ -1,32 +1,46 @@
 // import * as types from "./cart.types";
 
 import {
+  ADD_CART_LOADING,
   ADD_TO_CART,
+  CART_LOADING,
   DELETE_FROM_CART,
   EMPTY_CART,
   GET_CART,
-  ITEM_EXIST,
   UPDATE_CART,
 } from "./actionTypes";
 
 const initialState = {
   CART: [],
   loading: false,
+  addCartloading: false,
 };
 
 export const CartReducer = (state = initialState, { type, payload }) => {
   switch (type) {
+    case CART_LOADING: {
+      return {
+        ...state,
+        loading: true,
+      };
+    }
+    case ADD_CART_LOADING: {
+      return {
+        ...state,
+        addCartloading: true,
+      };
+    }
     case GET_CART: {
       return {
         ...state,
         CART: payload,
         loading: false,
+        addCartloading: false,
       };
     }
     case ADD_TO_CART: {
       return {
         ...state,
-        loading: false,
       };
     }
     case UPDATE_CART: {
@@ -43,6 +57,7 @@ export const CartReducer = (state = initialState, { type, payload }) => {
       return {
         ...state,
         CART: [],
+        loading: false,
       };
     }
     default:

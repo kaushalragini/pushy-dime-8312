@@ -66,7 +66,7 @@ export const getCheckoutPercentage = (cart, products) => async (dispatch) => {
 
   dispatch({
     type: GET_CONVERSION_RATE,
-    payload: +((cart.data.count / products.data.count) * 100).toFixed(2),
+    payload: +((checkout.data.count / products.data.count) * 100).toFixed(2),
   });
   dispatch({
     type: GET_CHECKOUT_PERCENTAGE,

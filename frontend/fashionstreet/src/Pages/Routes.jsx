@@ -93,7 +93,14 @@ const Routing = () => {
 
         {/*=============== ADMIN ROUTES ==================== */}
 
-        <Route path="/admin" element={<AdminHomePage />} />
+        <Route
+          path="/admin"
+          element={
+            <PrivateRoute>
+              <AdminHomePage />
+            </PrivateRoute>
+          }
+        />
         <Route
           path="/admin/signup"
           element={
@@ -104,10 +111,38 @@ const Routing = () => {
           }
         />
 
-        <Route path="/admin/products" element={<AdminProducts />} />
-        <Route path="/admin/users" element={<AdminUsers />} />
-        <Route path="/admin/orders" element={<AdminOrderedProducts />} />
-        <Route path="/admin/feedback" element={<AdminFeedback />} />
+        <Route
+          path="/admin/products"
+          element={
+            <PrivateRoute>
+              <AdminProducts />
+            </PrivateRoute>
+          }
+        />
+        <Route
+          path="/admin/users"
+          element={
+            <PrivateRoute>
+              <AdminUsers />
+            </PrivateRoute>
+          }
+        />
+        <Route
+          path="/admin/orders"
+          element={
+            <PrivateRoute>
+              <AdminOrderedProducts />
+            </PrivateRoute>
+          }
+        />
+        <Route
+          path="/admin/feedback"
+          element={
+            <PrivateRoute>
+              <AdminFeedback />
+            </PrivateRoute>
+          }
+        />
       </Routes>
     </>
   );

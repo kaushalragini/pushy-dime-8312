@@ -278,7 +278,7 @@ const Login = () => {
                         bg: "black",
                       }}
                     >
-                      LOG IN
+                      LOGIN
                     </Button>
                   </Stack>
                 </Stack>
