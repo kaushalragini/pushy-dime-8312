@@ -39,7 +39,13 @@ const TrendingItem = () => {
         } else {
           return (
             <>
-              <Flex gap={"20px"} wrap="wrap" alignItems={"center"} key={e._id}>
+              <Flex
+                gap={"20px"}
+                wrap="wrap"
+                justifyContent="space-evenly"
+                alignItems={"center"}
+                key={e._id}
+              >
                 <Box className="trending-image">
                   <img src={e.productsId.img} alt={e.productsId.product_name} />
                 </Box>

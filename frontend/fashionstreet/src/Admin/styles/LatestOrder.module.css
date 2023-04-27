@@ -1,0 +1,24 @@
+
+    .latestMainBox{
+        background-color: white;
+        margin-top: 25px;
+        padding: 30px;
+        width: 100%;
+    }
+    
+    
+    .latestLine{
+        border: 1px solid #EEF0F2;
+        margin: 7px;
+    }
+
+    @media all and (min-width: 300px) and (max-width: 670px) {
+        .latestMainBox{
+            padding: 10px;
+            font-size: 14px; 
+        }
+
+        .latestMainBox button{
+            font-size: 14px;
+        }
+    }

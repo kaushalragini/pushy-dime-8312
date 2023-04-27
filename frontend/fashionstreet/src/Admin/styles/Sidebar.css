@@ -6,11 +6,26 @@
 
 .sidebar-main{
     box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
-    height: 100vh;
+    height: 100dvh;
+    position: fixed;
+    z-index: 500;
+    width: 20%;
+    top: 60px;
+    left: 0;
+    border: 1px solid yellow;
+    background-color: hsla(283, 64%, 47%, 1.8);
+    padding: 20px;
+}
+@media all and (min-width: 481px) and (max-width:880px) {
+    .sidebar-main{
+        display:none;
+        width: 45%
+    }
 }
 
 @media   (max-width:480px) {
     .sidebar-main{
-        display:none
+        display:none;
+        width: 30%
     }
 }

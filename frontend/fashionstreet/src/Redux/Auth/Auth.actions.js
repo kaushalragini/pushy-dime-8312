@@ -7,24 +7,50 @@ import { RESET_USERS } from "../Users/Users.types";
 import {
   ADMIN_LOGIN,
   ADMIN_LOGOUT,
+  GET_USER_DETAILS,
   RESET_LOGIN,
   USER_LOGIN,
   USER_LOGOUT,
 } from "./Auth.types";
 
 export const getUserDetails = () => (dispatch) => {
+  let token = localStorage.getItem("token");
   axios({
     method: "get",
     url: `${process.env.REACT_APP_URL}/users`,
+    headers: {
+      Authorization: token,
+    },
   })
-    .then((res) => console.log(res))
+    .then((res) => {
+      dispatch({ type: GET_USER_DETAILS, payload: res.data });
+    })
     .catch((err) => {
       console.log(err);
     });
 };
 
-export const loginUser = (token) => (dispatch) => {
-  dispatch({ type: USER_LOGIN, payload: token });
+export const loginUser = (payload, Toast, navigate) => (dispatch) => {
+  fetch(`${process.env.REACT_APP_URL}/users/login`, {
+    method: "POST",
+    body: JSON.stringify(payload),
+    headers: {
+      "Content-type": "application/json",
+    },
+  })
+    .then((res) => res.json())
+    .then((res) => {
+      console.log(res);
+      Toast(res?.msg, "success");
+      if (res.token) {
+        localStorage.setItem("token", res.token);
+        dispatch({ type: USER_LOGIN, payload: res.token });
+        navigate("/");
+      }
+    })
+    .catch((err) => {
+      Toast(err?.response?.data?.msg, "error");
+    });
 };
 
 export const logoutUser = () => (dispatch) => {

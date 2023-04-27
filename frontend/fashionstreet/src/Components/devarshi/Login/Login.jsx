@@ -25,37 +25,23 @@ import apple from "../png/Apple_logo_black.jpg";
 import wechat from "../png/wechat.png";
 import { Link, useNavigate } from "react-router-dom";
 import useToastCompo from "../../../CustomHook/useToast";
+import { useDispatch } from "react-redux";
+import { loginUser } from "../../../Redux/Auth/Auth.actions";
 
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const { Toast } = useToastCompo();
   const navigate = useNavigate();
+  const dispatch = useDispatch();
 
   const handleSubmit = () => {
     const payload = {
       email,
       password,
     };
-    fetch(`${process.env.REACT_APP_URL}/users/login`, {
-      method: "POST",
-      body: JSON.stringify(payload),
-      headers: {
-        "Content-type": "application/json",
-      },
-    })
-      .then((res) => res.json())
-      .then((res) => {
-        console.log(res);
-        Toast(res?.msg, "success");
-        if (res.token) {
-          localStorage.setItem("token", res.token);
-          navigate("/");
-        }
-      })
-      .catch((err) => {
-        Toast(err?.response?.data?.msg, "error");
-      });
+
+    dispatch(loginUser(payload, Toast, navigate));
   };
   return (
     <div>
@@ -262,8 +248,6 @@ const Login = () => {
                     <Input
                       type="email"
                       value={email}
-                      paddingRight={"200px"}
-                      paddingLeft={"30px"}
                       placeholder="Email"
                       onChange={(e) => setEmail(e.target.value)}
                     />
@@ -294,7 +278,7 @@ const Login = () => {
                         bg: "black",
                       }}
                     >
-                      LOG IN
+                      LOGIN
                     </Button>
                   </Stack>
                 </Stack>

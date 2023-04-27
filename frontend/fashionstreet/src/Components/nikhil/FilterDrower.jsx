@@ -248,7 +248,6 @@ export function SearchDrower() {
                   <br />
                   <HStack
                     as={Link}
-                    target="_blank"
                     href={`/products/${el._id}`}
                     justify="space-between"
                   >

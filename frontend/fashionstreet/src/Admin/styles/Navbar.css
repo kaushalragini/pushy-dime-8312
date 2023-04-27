@@ -1,5 +1,15 @@
 .nav-main {
   background-color: white;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 500;
+  padding-left: 10px;
+  padding-right: 10px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 .nav-right {
@@ -13,7 +23,7 @@
 .Search-input::placeholder {
   color: grey;
 }
-@media screen and (max-width: 544px) {
+@media screen and (max-width: 844px) {
   .Search-field {
     display: none;
   }

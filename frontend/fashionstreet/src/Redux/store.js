@@ -14,6 +14,8 @@ import { orderedProductsReducer } from "./OrderedProducts/OrderedProducts.reduce
 import { ProductReducer } from "./Products/reducer";
 import { usersReducer } from "./Users/Users.reducer";
 import { ratingsReducer } from "./Ratings/Ratings.reducer";
+import { authReducer } from "./Auth/Auth.reducer";
+import { AdminStatsReducer } from "./AdminStats/AdminStats.reducer";
 
 // combining reducers
 const root_reducer = combineReducers({
@@ -24,6 +26,8 @@ const root_reducer = combineReducers({
   orderedProductsManager: orderedProductsReducer,
   ratingsManager: ratingsReducer,
   feedbackManager: feedbackReducer,
+  authManager: authReducer,
+  adminStatsManager: AdminStatsReducer,
 });
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
