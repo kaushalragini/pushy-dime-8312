@@ -38,7 +38,9 @@ export const orderedProductsReducer = (state = initialState, action) => {
         error: false,
       };
     }
-    case UPDATE_ORDERS:
+    case UPDATE_ORDERS: {
+      return { ...state };
+    }
     case DELETE_ORDERS: {
       return { ...state };
     }
