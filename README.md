@@ -1,5 +1,7 @@
 # Upstyle
 A Full Stack web store that provides user-interface that enables customers to browse products, add filters to them, add them to their cart, and checkout seamlessly. It also includes admin panel where admin can track and manage the products, orders, feedback, users and ratings.
+![Screenshot (428)](https://user-images.githubusercontent.com/107465553/235299099-63eb9f33-0b82-4012-bf22-e14b68832542.png)
+
 
 ## Tech Stack Used
    
