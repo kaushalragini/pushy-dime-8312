@@ -40,12 +40,16 @@ export const loginUser = (payload, Toast, navigate) => (dispatch) => {
   })
     .then((res) => res.json())
     .then((res) => {
-      console.log(res);
-      Toast(res?.msg, "success");
+      console.log(res, "faizal");
+      Toast(res?.msg, res.token ? "success" : "error");
       if (res.token) {
         localStorage.setItem("token", res.token);
         dispatch({ type: USER_LOGIN, payload: res.token });
-        navigate("/");
+        if (res.is_admin === true) {
+          navigate("/admin");
+        } else if (res.is_admin === false) {
+          navigate("/");
+        }
       }
     })
     .catch((err) => {

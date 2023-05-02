@@ -28,67 +28,141 @@ export const Footer = () => {
       <div className={style.mainbox}>
         <div className={style.customercare}>
           <h3>CUSTOMER CARE</h3>
-          <a href="https://modesens.com/protection/">Shopper Protection</a>
+          <Link
+            className={style.link}
+            to="https://modesens.com/protection/"
+          >
+            Shopper Protection
+          </Link>
           <br />
-          <a href="https://modesens.com/loyalty/">Loyalty Program</a>
+          <Link
+            className={style.link}
+            to="https://modesens.com/loyalty/"
+          >
+            Loyalty Program
+          </Link>
           <br />
-          <a href="https://modesens.com/faq/">Help Center</a>
+          <Link
+            className={style.link}
+            to="https://modesens.com/faq/"
+          >
+            Help Center
+          </Link>
           <br />
-          <a href="https://modesens.com/size-guide/">Size Guides</a>
+          <Link
+            className={style.link}
+            to="https://modesens.com/size-guide/"
+          >
+            Size Guides
+          </Link>
           <br />
-          <a href="https://modesens.com/size-guide/">
+          <Link
+            className={style.link}
+            to="https://modesens.com/size-guide/"
+          >
             {" "}
             Contact Us / Feedback
-          </a>{" "}
+          </Link>{" "}
           <br />
-          <a href="https://modesens.com/faq/#shipping-return">
+          <Link
+            className={style.link}
+            to="https://modesens.com/faq/#shipping-return"
+          >
             Shipping / Returns
-          </a>
+          </Link>
         </div>
         <div className={style.Information}>
           <h3>INFORMATION</h3>
-          <a href="https://modesens.com/about/">About Us</a>
+          <Link
+            className={style.link}
+            to="https://modesens.com/about/"
+          >
+            About Us
+          </Link>
           <br />
-          <a href="https://modesens.com/influencer/">Influencer Program</a>
+          <Link
+            className={style.link}
+            to="https://modesens.com/influencer/"
+          >
+            Influencer Program
+          </Link>
           <br />
-          <a href="https://modesens.com/stores/">Partner Stores</a>
+          <Link
+            className={style.link}
+            to="https://modesens.com/stores/"
+          >
+            Partner Stores
+          </Link>
           <br />
-          <a href="https://modesens.com/fashion-sitemap/">Sitemap</a>
+          <Link
+            className={style.link}
+            to="https://modesens.com/fashion-sitemap/"
+          >
+            Sitemap
+          </Link>
+          <br />
+          <Link
+            className={style.link}
+            to="/admin"
+          >
+            Admin
+          </Link>
+
           <br />
         </div>
         <div className={style.Legal}>
           <h3>LEGAL</h3>
-          <a href="https://modesens.com/legal/">Terms Of Use</a>
+          <Link
+            className={style.link}
+            to="https://modesens.com/legal/"
+          >
+            Terms Of Use
+          </Link>
           <br />
-          <a href="https://modesens.com/disclosure/">Disclosure</a>
+          <Link
+            className={style.link}
+            to="https://modesens.com/disclosure/"
+          >
+            Disclosure
+          </Link>
           <br />
-          <a href="https://modesens.com/privacy/">Privacy Policy</a>
+          <Link
+            className={style.link}
+            to="https://modesens.com/privacy/"
+          >
+            Privacy Policy
+          </Link>
           <br />
-          <a href="https://modesens.com/community-guidelines/">
+          <Link
+            className={style.link}
+            to="https://modesens.com/community-guidelines/"
+          >
             Community Guidelines
-          </a>
+          </Link>
+
           <br />
         </div>
         <div className={style.connect}>
-          <h3>CONNECT WITH US</h3>
+          <h3>CONNECT US</h3>
           <div>
-            <a href="https://play.google.com/store/apps/details?id=com.modesens.androidapp&hl=en_IN&gl=US">
+            <Link
+              className={style.link}
+              to="https://play.google.com/store/apps/details?id=com.modesens.androidapp&hl=en_IN&gl=US"
+            >
               {" "}
-            </a>
+            </Link>
             <br />
           </div>
           <div>
             <BsApple fontSize={"30px"} />
             <DiAndroid fontSize={"30px"} />
             <MdExtension fontSize={"30px"} />
-            <a
-              href="https://microsoftedge.microsoft.com/addons/detail/modesens-shopping-assista/bpmcdjmehcbmbedbhmmipkcccmhigamj"
+            <Link
+              className={style.link}
+              to="https://microsoftedge.microsoft.com/addons/detail/modesens-shopping-assista/bpmcdjmehcbmbedbhmmipkcccmhigamj"
               style={{ marginTop: "10px" }}
-            ></a>
+            ></Link>
             <br />
-            <div style={{ fontWeight: "bolder" }}>
-              <Link to="/admin">Admin</Link>
-            </div>
           </div>
         </div>
         <div className={style.News}>
@@ -126,7 +200,11 @@ export const Footer = () => {
               />{" "}
               &nbsp; Men's &nbsp;
             </div>
-            <input className={style.inputSubmit} type="submit" value="submit" />
+            <input
+              className={style.inputSubmit}
+              type="submit"
+              value="submit"
+            />
           </form>
         </div>
       </div>
