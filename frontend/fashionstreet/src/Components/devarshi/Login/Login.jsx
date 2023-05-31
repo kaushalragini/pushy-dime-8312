@@ -44,115 +44,98 @@ const Login = () => {
     dispatch(loginUser(payload, Toast, navigate));
   };
   return (
-    <div>
-      <Grid templateColumns="repeat(2, 1fr)" ml={200} mr={150} mt={"10px"}>
-        <GridItem w="100%" h="800px" bg="black">
-          <Heading
-            color={"white"}
-            fontSize={75}
-            letterSpacing={1}
-            fontFamily={"Serif"}
-            mt={20}
-            ml={20}
-            textAlign={"left"}
-            fontWeight={100}
-          >
-            UPSTYLE
-          </Heading>
-          <Heading
-            color={"white"}
-            fontSize={"25px"}
-            letterSpacing={2}
-            fontFamily={"Serif"}
-            fontWeight={100}
-            ml={"90px"}
-            textAlign={"left"}
-          >
-            BY SHOPPERS FOR SHOPPERS
-          </Heading>
-          <Heading
-            color={"white"}
-            fontSize={40}
-            letterSpacing={2}
-            fontWeight={100}
-            mt={"100px"}
-            ml={20}
-            textAlign={"left"}
-          >
-            We're Your
-          </Heading>
-          <Heading
-            color={"white"}
-            fontSize={40}
-            letterSpacing={2}
-            fontWeight={100}
-            // mt={"100px"}
-            ml={20}
-            textAlign={"left"}
-          >
-            Shopping Assistant
-          </Heading>
+    <Box display={{sm:"grid",md:"grid",lg:"flex"}} justifyContent="center" alignItems="center">
+       <Box  style={{background:"black"}} padding={{md:"80px",lg:"80px"}} >
+        <div>
+        <p  style={{color:"white",
+            fontSize:75,
+            letterSpacing:1,
+            fontFamily:"Serif",
+            marginTop:20,
+           
+            textAlign:"center",
+            fontWeight:100}}>UPSTYLE</p>
+        <p style={{color:"white",
+            fontSize:25,
+            letterSpacing:1,
+            fontFamily:"Serif",
+          
+           
+            textAlign:"center",
+            fontWeight:100}}> BY SHOPPERS FOR SHOPPERS</p>
+            </div>
+         <div style={{color:"white",
+            fontSize:25,
+            letterSpacing:1,
+            fontFamily:"Serif",marginTop:50}}>
+          <p> We're Your</p>
+          <p>Shopping Assistant</p>
+         </div>
+         
+          <div style={{ color:"white",
+            fontSize:"16px",
+            letterSpacing:2,
+            fontWeight:400, marginTop:50,}}>
+            <p> WITH US YOU CAN:</p>
+          </div>
 
-          <Heading
-            color={"white"}
-            fontSize={"16px"}
+         
+
+         
+
+          
+
+         
+<div  style={{display:"flex",gap:"20px",marginTop:20}} 
+            
             letterSpacing={2}
             fontWeight={400}
-            mt={"50px"}
-            ml={20}
-            textAlign={"left"}
-          >
-            WITH US YOU CAN:
-          </Heading>
-
-          <Heading
-            color={"white"}
-            fontSize={"16px"}
-            // letterSpacing={2}
+            mt={"5px"}>
+              
+  <div >  <Image src={bag} alt="bag" w={"30px"} h={"30px"} /></div>
+  <div ><p style={{color:"white",fontSize:"18px",fontWeight:"bold"}}> COMPARE PRICES ACROSS 500+ STORES</p> </div>
+         
+          </div>
+<div  style={{display:"flex",gap:"20px",marginTop:20}} 
+            
+            letterSpacing={2}
             fontWeight={400}
-            mt={"30px"}
-            ml={20}
-            // textAlign={"left"}
-          >
-            <Image src={bag} alt="bag" w={"30px"} h={"30px"} />
-            <span
-              style={{
-                position: "relative",
-                left: "40px",
-                bottom: "23px",
-                fontWeight: "400",
-                fontSize: "18px",
-                wordSpacing: "2px",
-              }}
-            >
-              COMPARE ACROSS 500+ STORES
-            </span>
-          </Heading>
-
-          <Heading
-            color={"white"}
-            fontSize={"16px"}
-            // letterSpacing={2}
+            mt={"5px"}>
+              
+  <div > <Image src={bell} alt="bell" w={"30px"} h={"30px"} bg={"none"} /></div>
+  <div ><p style={{color:"white",fontSize:"18px",fontWeight:"bold"}}>GET PRICE DROP & SALE ALERT</p> </div>
+         
+          </div>
+<div  style={{display:"flex",gap:"20px",marginTop:20}} 
+            
+            letterSpacing={2}
             fontWeight={400}
-            mt={"5px"}
-            ml={20}
-            // textAlign={"left"}
-          >
-            {/* <BsBell color={"white"} fontSize={"25px"}/> */}
-            <Image src={bell} alt="bell" w={"30px"} h={"30px"} bg={"none"} />
-            <span
-              style={{
-                position: "relative",
-                left: "40px",
-                bottom: "27px",
-                fontWeight: "400",
-                fontSize: "18px",
-                wordSpacing: "2px",
-              }}
-            >
-              GET ALERTS ON YOUR ITEMS
-            </span>
-          </Heading>
+            mt={"5px"}>
+              
+  <div > <MdOutlineDataSaverOn fontSize={"30px"} color="white" /> </div>
+  <div ><p style={{color:"white",fontSize:"18px",fontWeight:"bold"}}>DISCOVER UPSTYLE CONCIERGE</p> </div>
+         
+          </div>
+<div  style={{display:"flex",gap:"20px",marginTop:20}} 
+            
+            letterSpacing={2}
+            fontWeight={400}
+            mt={"5px"}>
+              
+  <div > <FaHeart fontSize={"30px"} color="white"/></div>
+  <div ><p style={{color:"white",fontSize:"18px",fontWeight:"bold"}}>MANAGE YOUR SHOPPING LISTS</p> </div>
+         
+          </div>
+<div  style={{display:"flex",gap:"20px",marginTop:20}} 
+            
+            letterSpacing={2}
+            fontWeight={400}
+            mt={"5px"}>
+              
+  <div > <AiFillTrophy fontSize={"30px"} color="white"/></div>
+  <div ><p style={{color:"white",fontSize:"18px",fontWeight:"bold"}}> EARN POINTS TOWARDS PURCHASES</p> </div>
+         
+          </div>
 
           <Heading
             color={"white"}
@@ -160,74 +143,27 @@ const Login = () => {
             letterSpacing={2}
             fontWeight={400}
             mt={"5px"}
-            ml={20}
-          >
-            {/* <Image src={note} alt="bag" w={"25px"} h={"20px"} color={"white"}/> */}
-            <MdOutlineDataSaverOn fontSize={"30px"} />
-            <span
-              style={{
-                position: "relative",
-                left: "40px",
-                bottom: "27px",
-                fontWeight: "400",
-                fontSize: "18px",
-                wordSpacing: "2px",
-              }}
-            >
-              SAVE YOUR SEARCHES
-            </span>
-          </Heading>
-
-          <Heading
-            color={"white"}
-            fontSize={"16px"}
-            letterSpacing={2}
-            fontWeight={400}
-            mt={"5px"}
-            ml={20}
+            // ml={20}
             // textAlign={"left"}
           >
-            <FaHeart fontSize={"30px"} />
+           
             {/* <Image src={bag} alt="bag" w={"25px"} h={"20px"} /> */}
-            <span
+            <Text
               style={{
                 position: "relative",
-                left: "40px",
-                bottom: "25px",
-                fontWeight: "400",
-                fontSize: "18px",
-              }}
-            >
-              MANAGE YOUR SHOPPING LISTS
-            </span>
-          </Heading>
-
-          <Heading
-            color={"white"}
-            fontSize={"16px"}
-            letterSpacing={2}
-            fontWeight={400}
-            mt={"5px"}
-            ml={20}
-            // textAlign={"left"}
-          >
-            <AiFillTrophy fontSize={"30px"} />
-            {/* <Image src={bag} alt="bag" w={"25px"} h={"20px"} /> */}
-            <span
-              style={{
-                position: "relative",
-                left: "40px",
+                // left: "40px",
                 bottom: "27px",
                 fontWeight: "400",
                 fontSize: "18px",
               }}
             >
-              EARN POINTS
-            </span>
+             
+            </Text>
           </Heading>
-        </GridItem>
+        </Box>
+       
         {/* =========================Signup Card======================================== */}
-        <GridItem w="100%" h="800px">
+        <div w="100%" h="800px">
           <Flex minH={"100vh"} align={"center"} justify={"center"}>
             <Stack spacing={8} mx={"auto"} maxW={"lg"} py={12} px={6}>
               <Stack align={"center"}>
@@ -310,9 +246,9 @@ const Login = () => {
               </Box>
             </Stack>
           </Flex>
-        </GridItem>
-      </Grid>
-    </div>
+        </div>
+  
+    </Box>
   );
 };
 
